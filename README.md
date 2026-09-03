@@ -54,10 +54,10 @@ http://localhost:8080/dhis
 
 | Step | Screenshot |
 | :--- | :--- |
-| Environment Setup | ![Java Version](../images/java -version.png) |
-| PostgreSQL Installation | ![PostgreSQL Version](../images/psql --version.png) |
-| Tomcat Server Configuration | ![Tomcat Version](../images/tomcat.png) |
-| DHIS2 Login Page | ![DHIS2 Login](../images/dhis2_login.png) |
+| Environment Setup | ![Java Version](https://github.com/HaddyMiSol/dhis2-setup/blob/main/images/java%20-version.png) |
+| PostgreSQL Installation | ![PostgreSQL Version](https://github.com/HaddyMiSol/dhis2-setup/blob/main/images/psql%20--version.png) |
+| Tomcat Server Configuration | ![Tomcat Version](https://github.com/HaddyMiSol/dhis2-setup/blob/main/images/tomcat.png) |
+| DHIS2 Login Page | ![DHIS2 Login](https://github.com/HaddyMiSol/dhis2-setup/blob/main/images/dhis2_login.png) |
 
 ## 🚑 Troubleshooting
 
