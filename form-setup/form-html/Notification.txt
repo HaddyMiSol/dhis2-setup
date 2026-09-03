@@ -1,0 +1,742 @@
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<style type="text/css">:root{
+    --peach:#FBE2D5;
+    --peach-border:#e3c4ae;
+    --ink:#242424;
+    --line:#c7c7c7;
+    --head-bg:#f7f0ea;
+    --blue:#0a6fb0;
+    --blue-bg:#eef3f7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    padding:16px;
+    font-family:"Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+    color:#222;
+    font-size:13px;
+  }
+  .block-title{
+    background:var(--peach);
+    color:var(--ink);
+    font-weight:700;
+    padding:9px 12px;
+    border:1px solid var(--peach-border);
+    font-size:13.5px;
+    margin-top:22px;
+    border-radius:3px 3px 0 0;
+  }
+  .block-subtitle{
+    background:#fff6f0;
+    border:1px solid var(--peach-border);
+    border-top:none;
+    padding:6px 12px;
+    font-size:12.5px;
+    font-weight:600;
+    color:#5a4636;
+  }
+  .table-wrap{
+    overflow-x:auto;
+    border:1px solid var(--peach-border);
+    border-top:none;
+  }
+  table.tb-table{
+    border-collapse:collapse;
+    width:100%;
+    min-width:640px;
+    font-size:12px;
+  }
+  table.tb-table th, table.tb-table td{
+    border:1px solid var(--line);
+    padding:5px 6px;
+    text-align:center;
+    vertical-align:middle;
+  }
+  table.tb-table thead th{
+    background:var(--head-bg);
+    font-weight:600;
+    color:#333;
+    font-size:11.5px;
+    line-height:1.3;
+  }
+  table.tb-table td.row-label, table.tb-table th.row-label{
+    text-align:left;
+    font-weight:600;
+    background:#fbfbfb;
+    white-space:nowrap;
+    padding-left:10px;
+  }
+  table.tb-table tr.computed-row td.row-label{
+    font-weight:700;
+  }
+  input.de-input{
+    width:100%;
+    min-width:56px;
+    border:1px solid #cfcfcf;
+    border-radius:3px;
+    padding:5px 4px;
+    text-align:right;
+    font-size:12px;
+    background:#fff;
+  }
+  input.de-input:focus{
+    outline:none;
+    border-color:var(--blue);
+    box-shadow:0 0 0 2px rgba(10,111,176,.15);
+  }
+  input.de-input[readonly]{
+    background:var(--blue-bg);
+    color:var(--blue);
+    font-weight:700;
+    border-color:#cfe0ea;
+  }
+  .single-field-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px;
+    border:1px solid var(--peach-border);
+    border-top:none;
+    background:#fff;
+  }
+  .single-field-row label{
+    font-weight:600;
+    font-size:12.5px;
+    flex:1;
+  }
+  .single-field-row input.de-input{
+    max-width:140px;
+  }
+</style>
+<div id="dhis2-custom-form">
+<div class="form-title" style="text-align: center;"><strong><span style="font-size:28px;"><span style="font-family:Arial,Helvetica,sans-serif;">National TB Notification Form</span></span></strong></div>
+<!-- ================= BLOCK 2a ================= -->
+
+<div class="block-title">Block 2a: Break down of all TB cases registered during the quarter by category and type of diagnosis</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-2a">
+	<thead>
+		<tr>
+			<th class="row-label" rowspan="3"><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">TB cases</span></span></span></th>
+			<th colspan="7"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Pulmonary TB cases</span></span></span></th>
+			<th colspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">EPTB cases</span></span></span></th>
+			<th rowspan="3"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total TB cases notified</span></span></span></th>
+		</tr>
+		<tr>
+			<th colspan="6"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Bacteriologically Diagnosed</span></span></span></th>
+			<th rowspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Clinically diagnosed (X-ray + other clinically diagnosed)</span></span></span></th>
+			<th rowspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Xpert positive</span></span></span></th>
+			<th rowspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Clinically diagnosed (X-ray + other clinically diagnosed)</span></span></span></th>
+		</tr>
+		<tr>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Xpert positive</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Truenat Positive</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Cobas Positive</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">TB Lamp</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Smear positive</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">LF-LAM Positive</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">New</span></span></span></strong></td>
+			<td><input id="DEdfzg3cHu0-TBmpSc5fpmz-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), Xpert" value="[ New TB Case Notified Pulmonary TB (PTB), Xpert ]" /></td>
+			<td><input id="DEdfzg3cHu0-oJBbCqy2x11-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), Truenat" value="[ New TB Case Notified Pulmonary TB (PTB), Truenat ]" /></td>
+			<td><input id="DEdfzg3cHu0-Za68JUQFqX7-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), Cobas" value="[ New TB Case Notified Pulmonary TB (PTB), Cobas ]" /></td>
+			<td><input id="DEdfzg3cHu0-lMCVHuVK8c4-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), TB-LAMP" value="[ New TB Case Notified Pulmonary TB (PTB), TB-LAMP ]" /></td>
+			<td><input id="DEdfzg3cHu0-wi1f5BlGS3e-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), AFB Smear" value="[ New TB Case Notified Pulmonary TB (PTB), AFB Smear ]" /></td>
+			<td><input id="DEdfzg3cHu0-Ef2t5saJMZf-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), LF-LAM" value="[ New TB Case Notified Pulmonary TB (PTB), LF-LAM ]" /></td>
+			<td><input id="DEdfzg3cHu0-xIHsNtyBRf2-val" name="entryfield" title="New TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis" value="[ New TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis ]" /></td>
+			<td><input id="DEdfzg3cHu0-JLsfAroAc6d-val" name="entryfield" title="New TB Case Notified Extra Pulmonary TB (EPTB), Xpert" value="[ New TB Case Notified Extra Pulmonary TB (EPTB), Xpert ]" /></td>
+			<td><input id="DEdfzg3cHu0-hQVymquqZ7N-val" name="entryfield" title="New TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis" value="[ New TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis ]" /></td>
+			<td><strong><input dataelementid="DEdfzg3cHu0" id="totalDEdfzg3cHu0" name="total" readonly="readonly" title="New TB Case Notified" value="[ New TB Case Notified ]" /></strong></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">Relapse (Recurrent)</span></span></span></strong></td>
+			<td><input id="DEjuupaBfLe-TBmpSc5fpmz-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Xpert" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Xpert ]" /></td>
+			<td><input id="DEjuupaBfLe-oJBbCqy2x11-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Truenat" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Truenat ]" /></td>
+			<td><input id="DEjuupaBfLe-Za68JUQFqX7-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Cobas" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Cobas ]" /></td>
+			<td><input id="DEjuupaBfLe-lMCVHuVK8c4-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), TB-LAMP" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), TB-LAMP ]" /></td>
+			<td><input id="DEjuupaBfLe-wi1f5BlGS3e-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), AFB Smear" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), AFB Smear ]" /></td>
+			<td><input id="DEjuupaBfLe-Ef2t5saJMZf-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), LF-LAM" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), LF-LAM ]" /></td>
+			<td><input id="DEjuupaBfLe-xIHsNtyBRf2-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis" value="[ Relapse/Recurrent TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis ]" /></td>
+			<td><input id="DEjuupaBfLe-JLsfAroAc6d-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Extra Pulmonary TB (EPTB), Xpert" value="[ Relapse/Recurrent TB Case Notified Extra Pulmonary TB (EPTB), Xpert ]" /></td>
+			<td><input id="DEjuupaBfLe-hQVymquqZ7N-val" name="entryfield" title="Relapse/Recurrent TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis" value="[ Relapse/Recurrent TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis ]" /></td>
+			<td><strong><input dataelementid="DEjuupaBfLe" id="totalDEjuupaBfLe" name="total" readonly="readonly" title="Relapse/Recurrent TB Case Notified" value="[ Relapse/Recurrent TB Case Notified ]" /></strong></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">Previous treat. history unknown</span></span></span></strong></td>
+			<td><input id="DEtB4fiWb4J-TBmpSc5fpmz-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Xpert" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Xpert ]" /></td>
+			<td><input id="DEtB4fiWb4J-oJBbCqy2x11-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Truenat" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Truenat ]" /></td>
+			<td><input id="DEtB4fiWb4J-Za68JUQFqX7-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Cobas" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Cobas ]" /></td>
+			<td><input id="DEtB4fiWb4J-lMCVHuVK8c4-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), TB-LAMP" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), TB-LAMP ]" /></td>
+			<td><input id="DEtB4fiWb4J-wi1f5BlGS3e-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), AFB Smear" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), AFB Smear ]" /></td>
+			<td><input id="DEtB4fiWb4J-Ef2t5saJMZf-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), LF-LAM" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), LF-LAM ]" /></td>
+			<td><input id="DEtB4fiWb4J-xIHsNtyBRf2-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis" value="[ Previous treatment history unknown TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis ]" /></td>
+			<td><input id="DEtB4fiWb4J-JLsfAroAc6d-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Extra Pulmonary TB (EPTB), Xpert" value="[ Previous treatment history unknown TB Case Notified Extra Pulmonary TB (EPTB), Xpert ]" /></td>
+			<td><input id="DEtB4fiWb4J-hQVymquqZ7N-val" name="entryfield" title="Previous treatment history unknown TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis" value="[ Previous treatment history unknown TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis ]" /></td>
+			<td><strong><input dataelementid="DEtB4fiWb4J" id="totalDEtB4fiWb4J" name="total" readonly="readonly" title="Previous treatment history unknown TB Case Notified" value="[ Previous treatment history unknown TB Case Notified ]" /></strong></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">All other retreatment (Re-registered)</span></span></span></strong></td>
+			<td><input id="DEqZVvXmLGY-TBmpSc5fpmz-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Xpert" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Xpert ]" /></td>
+			<td><input id="DEqZVvXmLGY-oJBbCqy2x11-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Truenat" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Truenat ]" /></td>
+			<td><input id="DEqZVvXmLGY-Za68JUQFqX7-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Cobas" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Cobas ]" /></td>
+			<td><input id="DEqZVvXmLGY-lMCVHuVK8c4-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), TB-LAMP" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), TB-LAMP ]" /></td>
+			<td><input id="DEqZVvXmLGY-wi1f5BlGS3e-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), AFB Smear" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), AFB Smear ]" /></td>
+			<td><input id="DEqZVvXmLGY-Ef2t5saJMZf-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), LF-LAM" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), LF-LAM ]" /></td>
+			<td><input id="DEqZVvXmLGY-xIHsNtyBRf2-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis" value="[ All other retreatment (Re-registered) TB Case Notified Pulmonary TB (PTB), Other Clinical Diagnosis ]" /></td>
+			<td><input id="DEqZVvXmLGY-JLsfAroAc6d-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Extra Pulmonary TB (EPTB), Xpert" value="[ All other retreatment (Re-registered) TB Case Notified Extra Pulmonary TB (EPTB), Xpert ]" /></td>
+			<td><input id="DEqZVvXmLGY-hQVymquqZ7N-val" name="entryfield" title="All other retreatment (Re-registered) TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis" value="[ All other retreatment (Re-registered) TB Case Notified Extra Pulmonary TB (EPTB), Other Clinical Diagnosis ]" /></td>
+			<td><strong><input dataelementid="DEqZVvXmLGY" id="totalDEqZVvXmLGY" name="total" readonly="readonly" title="All other retreatment (Re-registered) TB Case Notified" value="[ All other retreatment (Re-registered) TB Case Notified ]" /></strong></td>
+		</tr>
+		<tr class="computed-row">
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">All forms</span></span></span></strong></td>
+			<td><strong><input id="indicatorhLQDsSNo1u5" indicatorid="hLQDsSNo1u5" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_Xpert" value="[ Notification_Total TB_Cases Notified (PTB)_Xpert ]" /></strong></td>
+			<td><strong><input id="indicatorfxGqLzs64fP" indicatorid="fxGqLzs64fP" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_Truenat" value="[ Notification_Total TB_Cases Notified (PTB)_Truenat ]" /></strong></td>
+			<td><strong><input id="indicatorGkfVQjS5tR9" indicatorid="GkfVQjS5tR9" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_Cobas" value="[ Notification_Total TB_Cases Notified (PTB)_Cobas ]" /></strong></td>
+			<td><strong><input id="indicatorNgUiERkedVC" indicatorid="NgUiERkedVC" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_TB-LAMP" value="[ Notification_Total TB_Cases Notified (PTB)_TB-LAMP ]" /></strong></td>
+			<td><strong><input id="indicatorWPW4cuypirc" indicatorid="WPW4cuypirc" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_AFB Smear" value="[ Notification_Total TB_Cases Notified (PTB)_AFB Smear ]" /></strong></td>
+			<td><strong><input id="indicatorAOkexRWab0r" indicatorid="AOkexRWab0r" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_LF-LAM" value="[ Notification_Total TB_Cases Notified (PTB)_LF-LAM ]" /></strong></td>
+			<td><strong><input id="indicatorLQDTl6peXis" indicatorid="LQDTl6peXis" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (PTB)_Clinically Diagnosed" value="[ Notification_Total TB_Cases Notified (PTB)_Clinically Diagnosed ]" /></strong></td>
+			<td><strong><input id="indicatorJhyLpkSn2jw" indicatorid="JhyLpkSn2jw" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (EPTB)_Xpert" value="[ Notification_Total TB_Cases Notified (EPTB)_Xpert ]" /></strong></td>
+			<td><strong><input id="indicatormtdRlsTtoev" indicatorid="mtdRlsTtoev" name="indicator" readonly="readonly" title="Notification_Total TB_Cases Notified (EPTB)_Clinically Diagnosed" value="[ Notification_Total TB_Cases Notified (EPTB)_Clinically Diagnosed ]" /></strong></td>
+			<td><input id="indicatorKn44W0imVEO" indicatorid="Kn44W0imVEO" name="indicator" readonly="readonly" title="Notification_Total TB Cases Notified" value="[ Notification_Total TB Cases Notified ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= NEW BLOCK 2d (Broken away from Block 2a) ================= -->
+
+<div class="block-title">Block 2a cont&#39;d: Breakdown of TB cases by diagnostic test type</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-2d">
+	<thead>
+		<tr>
+			<th class="row-label"><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">TB cases</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">All TB cases who had Xpert test</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">All TB cases who had Truenat test</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">All TB cases who had COBAS test</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">All TB cases who had TB LAMP test</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">New</span></span></span></strong></td>
+			<td><input id="DEtyVFQNP3E-HllvX50cXC0-val" name="entryfield" title="New_All TB cases who had Xpert test" value="[ New_All TB cases who had Xpert test ]" /></td>
+			<td><input id="DEavoGS4N97-HllvX50cXC0-val" name="entryfield" title="New_All TB cases who had Truenat test" value="[ New_All TB cases who had Truenat test ]" /></td>
+			<td><input id="DEuyeCJulfM-HllvX50cXC0-val" name="entryfield" title="New_All TB cases who had COBAS test" value="[ New_All TB cases who had COBAS test ]" /></td>
+			<td><input id="DEPxbUlY4Ok-HllvX50cXC0-val" name="entryfield" title="New_All TB cases who had TB LAMP test" value="[ New_All TB cases who had TB LAMP test ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">Relapse (Recurrent)</span></span></span></strong></td>
+			<td><input id="DENoDl9BUci-HllvX50cXC0-val" name="entryfield" title="Relapse/Recurrent_ All TB cases who had Xpert test" value="[ Relapse/Recurrent_ All TB cases who had Xpert test ]" /></td>
+			<td><input id="DEDUuvN82zS-HllvX50cXC0-val" name="entryfield" title="Relapse/Recurrent_ All TB cases who had Truenat test" value="[ Relapse/Recurrent_ All TB cases who had Truenat test ]" /></td>
+			<td><input id="DEfAaHeRz9q-HllvX50cXC0-val" name="entryfield" title="Relapse/Recurrent_All TB cases who had COBAS test" value="[ Relapse/Recurrent_All TB cases who had COBAS test ]" /></td>
+			<td><input id="DElpvqAAgdw-HllvX50cXC0-val" name="entryfield" title="Relapse/Recurrent_ All TB cases who had TB LAMP test" value="[ Relapse/Recurrent_ All TB cases who had TB LAMP test ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">Previous treat. history unknown</span></span></span></strong></td>
+			<td><input id="DEQxoe2dGHj-HllvX50cXC0-val" name="entryfield" title="Previous treatment history unknown_All TB cases who had Xpert test" value="[ Previous treatment history unknown_All TB cases who had Xpert test ]" /></td>
+			<td><input id="DExdiPv2T8P-HllvX50cXC0-val" name="entryfield" title="Previous treatment history unknown_ All TB cases who had Truenat test" value="[ Previous treatment history unknown_ All TB cases who had Truenat test ]" /></td>
+			<td><input id="DEsXbG2FiFH-HllvX50cXC0-val" name="entryfield" title="Previous treatment history unknown_ All TB cases who had COBAS test" value="[ Previous treatment history unknown_ All TB cases who had COBAS test ]" /></td>
+			<td><input id="DEO4Wyh8GNX-HllvX50cXC0-val" name="entryfield" title="Previous treatment history unknown_ All TB cases who had TB LAMP test" value="[ Previous treatment history unknown_ All TB cases who had TB LAMP test ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">All other retreatment (Re-registered)</span></span></span></strong></td>
+			<td><input id="DEw3vqFmty6-HllvX50cXC0-val" name="entryfield" title="Other Retreatment_All TB cases who had Xpert test" value="[ Other Retreatment_All TB cases who had Xpert test ]" /></td>
+			<td><input id="DEemm93mJft-HllvX50cXC0-val" name="entryfield" title="Other Retreatment_All TB cases who had Truenat test" value="[ Other Retreatment_All TB cases who had Truenat test ]" /></td>
+			<td><input id="DEvH5YHWETW-HllvX50cXC0-val" name="entryfield" title="Other Retreatment_All TB cases who had COBAS test" value="[ Other Retreatment_All TB cases who had COBAS test ]" /></td>
+			<td><input id="DEpZJEynFhN-HllvX50cXC0-val" name="entryfield" title="Other Retreatment_All TB cases who had TB LAMP test" value="[ Other Retreatment_All TB cases who had TB LAMP test ]" /></td>
+		</tr>
+		<tr class="computed-row">
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">All forms</span></span></span></strong></td>
+			<td><strong><input id="indicatorlKzLkNrwk15" indicatorid="lKzLkNrwk15" name="indicator" readonly="readonly" title="Notification_Total All TB Cases who had Xpert test" value="[ Notification_Total All TB Cases who had Xpert test ]" /></strong></td>
+			<td><strong><input id="indicatorT7pk37MEy32" indicatorid="T7pk37MEy32" name="indicator" readonly="readonly" title="Notification_Total All TB Cases who had Truenat test" value="[ Notification_Total All TB Cases who had Truenat test ]" /></strong></td>
+			<td><strong><input id="indicatorkOzinF1etL3" indicatorid="kOzinF1etL3" name="indicator" readonly="readonly" title="Notification_Total All TB Cases who had Cobas test" value="[ Notification_Total All TB Cases who had Cobas test ]" /></strong></td>
+			<td><strong><input id="indicatorBS551oW9dKX" indicatorid="BS551oW9dKX" name="indicator" readonly="readonly" title="Notification_Total All TB Cases who had TB LAMP test" value="[ Notification_Total All TB Cases who had TB LAMP test ]" /></strong></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 2b ================= -->
+
+<div class="block-title">Block 2b: Breakdown of the total (All forms) of TB cases (a+b+c+d) registered during the quarter by sex and age group</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-2b">
+	<thead>
+		<tr>
+			<th class="row-label"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Sex</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">0-4</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">5-14</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">15&ndash;24</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">25&ndash;34</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">35&ndash;44</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">45&ndash;54</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">55&ndash;64</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">&gt; 65</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;">Male</span></strong></span></td>
+			<td><input id="DE3XLERhd1w-WPHZbqs7hoJ-val" name="entryfield" title="All Forms TB Cases Notified Male, 0-4" value="[ All Forms TB Cases Notified Male, 0-4 ]" /></td>
+			<td><input id="DE3XLERhd1w-MKsndSGSSVI-val" name="entryfield" title="All Forms TB Cases Notified Male, 5-14" value="[ All Forms TB Cases Notified Male, 5-14 ]" /></td>
+			<td><input id="DE3XLERhd1w-jgesELCY7An-val" name="entryfield" title="All Forms TB Cases Notified Male, 15-24" value="[ All Forms TB Cases Notified Male, 15-24 ]" /></td>
+			<td><input id="DE3XLERhd1w-RDQsOCGXo5W-val" name="entryfield" title="All Forms TB Cases Notified Male, 25-34" value="[ All Forms TB Cases Notified Male, 25-34 ]" /></td>
+			<td><input id="DE3XLERhd1w-COABbANsJhc-val" name="entryfield" title="All Forms TB Cases Notified Male, 35-44" value="[ All Forms TB Cases Notified Male, 35-44 ]" /></td>
+			<td><input id="DE3XLERhd1w-ybxe67I8jx4-val" name="entryfield" title="All Forms TB Cases Notified Male, 45-54" value="[ All Forms TB Cases Notified Male, 45-54 ]" /></td>
+			<td><input id="DE3XLERhd1w-aqaxqEoFxqA-val" name="entryfield" title="All Forms TB Cases Notified Male, 55-64" value="[ All Forms TB Cases Notified Male, 55-64 ]" /></td>
+			<td><input id="DE3XLERhd1w-LLQ7wPxd6oD-val" name="entryfield" title="All Forms TB Cases Notified Male, &gt;=65" value="[ All Forms TB Cases Notified Male, &gt;=65 ]" /></td>
+			<td><strong><input id="indicatoro1OTSN9xBsx" indicatorid="o1OTSN9xBsx" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_Male" value="[ Notification_Total All Forms of  TB Cases Notified_Male ]" /></strong></td>
+		</tr>
+		<tr>
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;">Female</span></strong></span></td>
+			<td><input id="DE3XLERhd1w-dBXzW8hcypJ-val" name="entryfield" title="All Forms TB Cases Notified Female, 0-4" value="[ All Forms TB Cases Notified Female, 0-4 ]" /></td>
+			<td><input id="DE3XLERhd1w-mCTerYyo95F-val" name="entryfield" title="All Forms TB Cases Notified Female, 5-14" value="[ All Forms TB Cases Notified Female, 5-14 ]" /></td>
+			<td><input id="DE3XLERhd1w-dckTXLgiktr-val" name="entryfield" title="All Forms TB Cases Notified Female, 15-24" value="[ All Forms TB Cases Notified Female, 15-24 ]" /></td>
+			<td><input id="DE3XLERhd1w-aeTGjA10y5G-val" name="entryfield" title="All Forms TB Cases Notified Female, 25-34" value="[ All Forms TB Cases Notified Female, 25-34 ]" /></td>
+			<td><input id="DE3XLERhd1w-L7lJy2mmmrr-val" name="entryfield" title="All Forms TB Cases Notified Female, 35-44" value="[ All Forms TB Cases Notified Female, 35-44 ]" /></td>
+			<td><input id="DE3XLERhd1w-UorAbSw8o3R-val" name="entryfield" title="All Forms TB Cases Notified Female, 45-54" value="[ All Forms TB Cases Notified Female, 45-54 ]" /></td>
+			<td><input id="DE3XLERhd1w-Boi5sbD13S9-val" name="entryfield" title="All Forms TB Cases Notified Female, 55-64" value="[ All Forms TB Cases Notified Female, 55-64 ]" /></td>
+			<td><input id="DE3XLERhd1w-el0HCMncwV1-val" name="entryfield" title="All Forms TB Cases Notified Female, &gt;=65" value="[ All Forms TB Cases Notified Female, &gt;=65 ]" /></td>
+			<td><strong><input id="indicatorGoitH50FKsc" indicatorid="GoitH50FKsc" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_Female" value="[ Notification_Total All Forms of  TB Cases Notified_Female ]" /></strong></td>
+		</tr>
+		<tr class="computed-row">
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;">Total</span></strong></span></td>
+			<td><strong><input id="indicatorZwyQo33aYoX" indicatorid="ZwyQo33aYoX" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_0-4" value="[ Notification_Total All Forms of  TB Cases Notified_0-4 ]" /></strong></td>
+			<td><strong><input id="indicatorW6tHPXvtgKP" indicatorid="W6tHPXvtgKP" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_5-14" value="[ Notification_Total All Forms of  TB Cases Notified_5-14 ]" /></strong></td>
+			<td><strong><input id="indicatortFRWDmURtid" indicatorid="tFRWDmURtid" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_15-24" value="[ Notification_Total All Forms of  TB Cases Notified_15-24 ]" /></strong></td>
+			<td><strong><input id="indicatorGT7z8LEf91Z" indicatorid="GT7z8LEf91Z" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_25-34" value="[ Notification_Total All Forms of  TB Cases Notified_25-34 ]" /></strong></td>
+			<td><strong><input id="indicatorGD8JhgTnffx" indicatorid="GD8JhgTnffx" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_35-44" value="[ Notification_Total All Forms of  TB Cases Notified_35-44 ]" /></strong></td>
+			<td><strong><input id="indicatorQXuzDv7waIE" indicatorid="QXuzDv7waIE" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_45-54" value="[ Notification_Total All Forms of  TB Cases Notified_45-54 ]" /></strong></td>
+			<td><strong><input id="indicatortfwgpSu0lDQ" indicatorid="tfwgpSu0lDQ" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_55-64" value="[ Notification_Total All Forms of  TB Cases Notified_55-64 ]" /></strong></td>
+			<td><strong><input id="indicatoruwd0OJxsVL0" indicatorid="uwd0OJxsVL0" name="indicator" readonly="readonly" title="Notification_Total All Forms of  TB Cases Notified_&gt;65" value="[ Notification_Total All Forms of  TB Cases Notified_&gt;65 ]" /></strong></td>
+			<td><strong><input dataelementid="DE3XLERhd1w" id="totalDE3XLERhd1w" name="total" readonly="readonly" title="All Forms TB Cases Notified" value="[ All Forms TB Cases Notified ]" /></strong></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 2c ================= -->
+
+<div class="block-title">Block 2c: Breakdown of New and relapse (a+b) registered by sex and age group</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-2c">
+	<thead>
+		<tr>
+			<th class="row-label"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Sex</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">0-4</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">5-14</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">15&ndash;24</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">25&ndash;34</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">35&ndash;44</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">45&ndash;54</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">55&ndash;64</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">&gt; 65</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Male</span></span></strong></span></td>
+			<td><input id="DEPAwVvUYl8-WPHZbqs7hoJ-val" name="entryfield" title="New and Relapse TB Cases Male, 0-4" value="[ New and Relapse TB Cases Male, 0-4 ]" /></td>
+			<td><input id="DEPAwVvUYl8-MKsndSGSSVI-val" name="entryfield" title="New and Relapse TB Cases Male, 5-14" value="[ New and Relapse TB Cases Male, 5-14 ]" /></td>
+			<td><input id="DEPAwVvUYl8-jgesELCY7An-val" name="entryfield" title="New and Relapse TB Cases Male, 15-24" value="[ New and Relapse TB Cases Male, 15-24 ]" /></td>
+			<td><input id="DEPAwVvUYl8-RDQsOCGXo5W-val" name="entryfield" title="New and Relapse TB Cases Male, 25-34" value="[ New and Relapse TB Cases Male, 25-34 ]" /></td>
+			<td><input id="DEPAwVvUYl8-COABbANsJhc-val" name="entryfield" title="New and Relapse TB Cases Male, 35-44" value="[ New and Relapse TB Cases Male, 35-44 ]" /></td>
+			<td><input id="DEPAwVvUYl8-ybxe67I8jx4-val" name="entryfield" title="New and Relapse TB Cases Male, 45-54" value="[ New and Relapse TB Cases Male, 45-54 ]" /></td>
+			<td><input id="DEPAwVvUYl8-aqaxqEoFxqA-val" name="entryfield" title="New and Relapse TB Cases Male, 55-64" value="[ New and Relapse TB Cases Male, 55-64 ]" /></td>
+			<td><input id="DEPAwVvUYl8-LLQ7wPxd6oD-val" name="entryfield" title="New and Relapse TB Cases Male, &gt;=65" value="[ New and Relapse TB Cases Male, &gt;=65 ]" /></td>
+			<td><strong><input id="indicatorknhEQtUZ19t" indicatorid="knhEQtUZ19t" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_Male" value="[ Notification_Total New and Relapse TB Cases_Male ]" /></strong></td>
+		</tr>
+		<tr>
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Female</span></span></strong></span></td>
+			<td><input id="DEPAwVvUYl8-dBXzW8hcypJ-val" name="entryfield" title="New and Relapse TB Cases Female, 0-4" value="[ New and Relapse TB Cases Female, 0-4 ]" /></td>
+			<td><input id="DEPAwVvUYl8-mCTerYyo95F-val" name="entryfield" title="New and Relapse TB Cases Female, 5-14" value="[ New and Relapse TB Cases Female, 5-14 ]" /></td>
+			<td><input id="DEPAwVvUYl8-dckTXLgiktr-val" name="entryfield" title="New and Relapse TB Cases Female, 15-24" value="[ New and Relapse TB Cases Female, 15-24 ]" /></td>
+			<td><input id="DEPAwVvUYl8-aeTGjA10y5G-val" name="entryfield" title="New and Relapse TB Cases Female, 25-34" value="[ New and Relapse TB Cases Female, 25-34 ]" /></td>
+			<td><input id="DEPAwVvUYl8-L7lJy2mmmrr-val" name="entryfield" title="New and Relapse TB Cases Female, 35-44" value="[ New and Relapse TB Cases Female, 35-44 ]" /></td>
+			<td><input id="DEPAwVvUYl8-UorAbSw8o3R-val" name="entryfield" title="New and Relapse TB Cases Female, 45-54" value="[ New and Relapse TB Cases Female, 45-54 ]" /></td>
+			<td><input id="DEPAwVvUYl8-Boi5sbD13S9-val" name="entryfield" title="New and Relapse TB Cases Female, 55-64" value="[ New and Relapse TB Cases Female, 55-64 ]" /></td>
+			<td><input id="DEPAwVvUYl8-el0HCMncwV1-val" name="entryfield" title="New and Relapse TB Cases Female, &gt;=65" value="[ New and Relapse TB Cases Female, &gt;=65 ]" /></td>
+			<td><strong><input id="indicatorB9COvDUnzcM" indicatorid="B9COvDUnzcM" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_Female" value="[ Notification_Total New and Relapse TB Cases_Female ]" /></strong></td>
+		</tr>
+		<tr class="computed-row">
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total</span></span></strong></span></td>
+			<td><strong><input id="indicatorUBdrvUmssdt" indicatorid="UBdrvUmssdt" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_0-4" value="[ Notification_Total New and Relapse TB Cases_0-4 ]" /></strong></td>
+			<td><strong><input id="indicatormUFK8WvVewS" indicatorid="mUFK8WvVewS" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_5-14" value="[ Notification_Total New and Relapse TB Cases_5-14 ]" /></strong></td>
+			<td><strong><input id="indicatorVfKBT0VdoYj" indicatorid="VfKBT0VdoYj" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_15-24" value="[ Notification_Total New and Relapse TB Cases_15-24 ]" /></strong></td>
+			<td><strong><input id="indicatorTjVsgVeM1Qp" indicatorid="TjVsgVeM1Qp" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_25-34" value="[ Notification_Total New and Relapse TB Cases_25-34 ]" /></strong></td>
+			<td><strong><input id="indicatoruyFQDXih2n0" indicatorid="uyFQDXih2n0" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_35-44" value="[ Notification_Total New and Relapse TB Cases_35-44 ]" /></strong></td>
+			<td><strong><input id="indicatorvKwRSsFLVL6" indicatorid="vKwRSsFLVL6" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_45-54" value="[ Notification_Total New and Relapse TB Cases_45-54 ]" /></strong></td>
+			<td><strong><input id="indicatorpwDFJeHXfZP" indicatorid="pwDFJeHXfZP" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_55-64" value="[ Notification_Total New and Relapse TB Cases_55-64 ]" /></strong></td>
+			<td><strong><input id="indicatordRLF0cGmnYD" indicatorid="dRLF0cGmnYD" name="indicator" readonly="readonly" title="Notification_Total New and Relapse TB Cases_&gt;65" value="[ Notification_Total New and Relapse TB Cases_&gt;65 ]" /></strong></td>
+			<td><strong><input dataelementid="DEPAwVvUYl8" id="totalDEPAwVvUYl8" name="total" readonly="readonly" title="New and Relapse TB Cases" value="[ New and Relapse TB Cases ]" /></strong></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 2d ================= -->
+
+<div class="block-title">Block 2d: Breakdown of the total (All forms) of TB cases (a+b+c+d) that are HIV Positive registered during the quarter by sex and age group</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-2d">
+	<thead>
+		<tr>
+			<th class="row-label"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Sex</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">0-4</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">5-14</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">15&ndash;24</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">25&ndash;34</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">35&ndash;44</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">45&ndash;54</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">55&ndash;64</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">&gt; 65</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Male</span></span></strong></span></td>
+			<td><input id="DEdzFZkIw5h-WPHZbqs7hoJ-val" name="entryfield" title="TB/HIV Cases Notified Male, 0-4" value="[ TB/HIV Cases Notified Male, 0-4 ]" /></td>
+			<td><input id="DEdzFZkIw5h-MKsndSGSSVI-val" name="entryfield" title="TB/HIV Cases Notified Male, 5-14" value="[ TB/HIV Cases Notified Male, 5-14 ]" /></td>
+			<td><input id="DEdzFZkIw5h-jgesELCY7An-val" name="entryfield" title="TB/HIV Cases Notified Male, 15-24" value="[ TB/HIV Cases Notified Male, 15-24 ]" /></td>
+			<td><input id="DEdzFZkIw5h-RDQsOCGXo5W-val" name="entryfield" title="TB/HIV Cases Notified Male, 25-34" value="[ TB/HIV Cases Notified Male, 25-34 ]" /></td>
+			<td><input id="DEdzFZkIw5h-COABbANsJhc-val" name="entryfield" title="TB/HIV Cases Notified Male, 35-44" value="[ TB/HIV Cases Notified Male, 35-44 ]" /></td>
+			<td><input id="DEdzFZkIw5h-ybxe67I8jx4-val" name="entryfield" title="TB/HIV Cases Notified Male, 45-54" value="[ TB/HIV Cases Notified Male, 45-54 ]" /></td>
+			<td><input id="DEdzFZkIw5h-aqaxqEoFxqA-val" name="entryfield" title="TB/HIV Cases Notified Male, 55-64" value="[ TB/HIV Cases Notified Male, 55-64 ]" /></td>
+			<td><input id="DEdzFZkIw5h-LLQ7wPxd6oD-val" name="entryfield" title="TB/HIV Cases Notified Male, &gt;=65" value="[ TB/HIV Cases Notified Male, &gt;=65 ]" /></td>
+			<td><strong><input id="indicatormANlmeXUNqL" indicatorid="mANlmeXUNqL" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_Male" value="[ Notification_Total TB/HIV Cases Notified_Male ]" /></strong></td>
+		</tr>
+		<tr>
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Female</span></span></strong></span></td>
+			<td><input id="DEdzFZkIw5h-dBXzW8hcypJ-val" name="entryfield" title="TB/HIV Cases Notified Female, 0-4" value="[ TB/HIV Cases Notified Female, 0-4 ]" /></td>
+			<td><input id="DEdzFZkIw5h-mCTerYyo95F-val" name="entryfield" title="TB/HIV Cases Notified Female, 5-14" value="[ TB/HIV Cases Notified Female, 5-14 ]" /></td>
+			<td><input id="DEdzFZkIw5h-dckTXLgiktr-val" name="entryfield" title="TB/HIV Cases Notified Female, 15-24" value="[ TB/HIV Cases Notified Female, 15-24 ]" /></td>
+			<td><input id="DEdzFZkIw5h-aeTGjA10y5G-val" name="entryfield" title="TB/HIV Cases Notified Female, 25-34" value="[ TB/HIV Cases Notified Female, 25-34 ]" /></td>
+			<td><input id="DEdzFZkIw5h-L7lJy2mmmrr-val" name="entryfield" title="TB/HIV Cases Notified Female, 35-44" value="[ TB/HIV Cases Notified Female, 35-44 ]" /></td>
+			<td><input id="DEdzFZkIw5h-UorAbSw8o3R-val" name="entryfield" title="TB/HIV Cases Notified Female, 45-54" value="[ TB/HIV Cases Notified Female, 45-54 ]" /></td>
+			<td><input id="DEdzFZkIw5h-Boi5sbD13S9-val" name="entryfield" title="TB/HIV Cases Notified Female, 55-64" value="[ TB/HIV Cases Notified Female, 55-64 ]" /></td>
+			<td><input id="DEdzFZkIw5h-el0HCMncwV1-val" name="entryfield" title="TB/HIV Cases Notified Female, &gt;=65" value="[ TB/HIV Cases Notified Female, &gt;=65 ]" /></td>
+			<td><strong><input id="indicatoruhwPv4O9Q3L" indicatorid="uhwPv4O9Q3L" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_Female" value="[ Notification_Total TB/HIV Cases Notified_Female ]" /></strong></td>
+		</tr>
+		<tr class="computed-row">
+			<td class="row-label"><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total</span></span></strong></span></td>
+			<td><strong><input id="indicatorXXtu42tTHRw" indicatorid="XXtu42tTHRw" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_0-4" value="[ Notification_Total TB/HIV Cases Notified_0-4 ]" /></strong></td>
+			<td><strong><input id="indicatorMoLLodKRBmU" indicatorid="MoLLodKRBmU" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_5-14" value="[ Notification_Total TB/HIV Cases Notified_5-14 ]" /></strong></td>
+			<td><strong><input id="indicatorST7MkmOLa9S" indicatorid="ST7MkmOLa9S" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_15-24" value="[ Notification_Total TB/HIV Cases Notified_15-24 ]" /></strong></td>
+			<td><strong><input id="indicatorXV2zYYhC6xj" indicatorid="XV2zYYhC6xj" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_25-34" value="[ Notification_Total TB/HIV Cases Notified_25-34 ]" /></strong></td>
+			<td><strong><input id="indicatorbO72r8SlMIS" indicatorid="bO72r8SlMIS" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_35-44" value="[ Notification_Total TB/HIV Cases Notified_35-44 ]" /></strong></td>
+			<td><strong><input id="indicatorpcSGuwhzFCh" indicatorid="pcSGuwhzFCh" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_45-54" value="[ Notification_Total TB/HIV Cases Notified_45-54 ]" /></strong></td>
+			<td><strong><input id="indicatorFDC2srz7fw4" indicatorid="FDC2srz7fw4" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_55-64" value="[ Notification_Total TB/HIV Cases Notified_55-64 ]" /></strong></td>
+			<td><strong><input id="indicatortuyouuAOKer" indicatorid="tuyouuAOKer" name="indicator" readonly="readonly" title="Notification_Total TB/HIV Cases Notified_&gt;65" value="[ Notification_Total TB/HIV Cases Notified_&gt;65 ]" /></strong></td>
+			<td><strong><input dataelementid="DEdzFZkIw5h" id="totalDEdzFZkIw5h" name="total" readonly="readonly" title="TB/HIV Cases Notified" value="[ TB/HIV Cases Notified ]" /></strong></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 2e ================= -->
+
+<div class="block-title">Block 2e: Breakdown of TB/HIV activities by case category and sex</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-2e">
+	<thead>
+		<tr>
+			<th class="row-label" rowspan="3"><span style="font-size:12px;"><span style="color:#000000;"><span style="font-family:Arial,Helvetica,sans-serif;">TB cases</span></span></span></th>
+			<th colspan="2" rowspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total TB cases notified</span></span></span></th>
+			<th colspan="4"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">TB cases with known HIV status</span></span></span></th>
+			<th colspan="2" rowspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">TB cases with unknown HIV status</span></span></span></th>
+			<th colspan="4"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">TB/HIV</span></span></span></th>
+		</tr>
+		<tr>
+			<th colspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Positive</span></span></span></th>
+			<th colspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Negative</span></span></span></th>
+			<th colspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">CPT</span></span></span></th>
+			<th colspan="2"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">ART</span></span></span></th>
+		</tr>
+		<tr>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">M</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">F</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">M</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">F</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">M</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">F</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">M</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">F</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">M</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">F</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">M</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">F</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><strong><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">New</span></span></span></strong></td>
+			<td><strong><input id="indicatorhVvaXn7KyB6" indicatorid="hVvaXn7KyB6" name="indicator" readonly="readonly" title="Notification_Total New TB/HIV Cases with HIV Status_Male" value="[ Notification_Total New TB/HIV Cases with HIV Status_Male ]" /></strong></td>
+			<td><strong><input id="indicatorujA6FI46hsC" indicatorid="ujA6FI46hsC" name="indicator" readonly="readonly" title="Notification_Total New TB/HIV Cases with HIV Status_Female" value="[ Notification_Total New TB/HIV Cases with HIV Status_Female ]" /></strong></td>
+			<td><input id="DEuOqBJpQF4-LdhWLEP9Pwm-val" name="entryfield" title="New TB Cases_HIV Status Positive, Male" value="[ New TB Cases_HIV Status Positive, Male ]" /></td>
+			<td><input id="DEuOqBJpQF4-lLfxeKm4GMo-val" name="entryfield" title="New TB Cases_HIV Status Positive, Female" value="[ New TB Cases_HIV Status Positive, Female ]" /></td>
+			<td><input id="DEuOqBJpQF4-yf8tH1D7QM1-val" name="entryfield" title="New TB Cases_HIV Status Negative, Male" value="[ New TB Cases_HIV Status Negative, Male ]" /></td>
+			<td><input id="DEuOqBJpQF4-nF18YrT0Fpc-val" name="entryfield" title="New TB Cases_HIV Status Negative, Female" value="[ New TB Cases_HIV Status Negative, Female ]" /></td>
+			<td><input id="DEuOqBJpQF4-ojSeaQ950SQ-val" name="entryfield" title="New TB Cases_HIV Status Unknown, Male" value="[ New TB Cases_HIV Status Unknown, Male ]" /></td>
+			<td><input id="DEuOqBJpQF4-grQrXS0BWZA-val" name="entryfield" title="New TB Cases_HIV Status Unknown, Female" value="[ New TB Cases_HIV Status Unknown, Female ]" /></td>
+			<td><input id="DEzALEkcGV5-AGWvEy9biPz-val" name="entryfield" title="New Cases _TB/HIV_CPT Male" value="[ New Cases _TB/HIV_CPT Male ]" /></td>
+			<td><input id="DEzALEkcGV5-aiGhr624csg-val" name="entryfield" title="New Cases _TB/HIV_CPT Female" value="[ New Cases _TB/HIV_CPT Female ]" /></td>
+			<td><input id="DE0s1CrfBHr-AGWvEy9biPz-val" name="entryfield" title="New Cases_TB/HIV_ART Male" value="[ New Cases_TB/HIV_ART Male ]" /></td>
+			<td><input id="DE0s1CrfBHr-aiGhr624csg-val" name="entryfield" title="New Cases_TB/HIV_ART Female" value="[ New Cases_TB/HIV_ART Female ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Relapse</span></span></span></strong></td>
+			<td><input id="indicatorCNAlfwqxFd2" indicatorid="CNAlfwqxFd2" name="indicator" readonly="readonly" title="Notification_Total Relapse TB/HIV Cases with HIV Status_Male" value="[ Notification_Total Relapse TB/HIV Cases with HIV Status_Male ]" /></td>
+			<td><input id="indicatorHBe0SZemWte" indicatorid="HBe0SZemWte" name="indicator" readonly="readonly" title="Notification_Total Relapse TB/HIV Cases with HIV Status_Female" value="[ Notification_Total Relapse TB/HIV Cases with HIV Status_Female ]" /></td>
+			<td><input id="DEr7lbOTDc9-LdhWLEP9Pwm-val" name="entryfield" title="Relapse/Recurrent TB Cases_HIV Status Positive, Male" value="[ Relapse/Recurrent TB Cases_HIV Status Positive, Male ]" /></td>
+			<td><input id="DEr7lbOTDc9-lLfxeKm4GMo-val" name="entryfield" title="Relapse/Recurrent TB Cases_HIV Status Positive, Female" value="[ Relapse/Recurrent TB Cases_HIV Status Positive, Female ]" /></td>
+			<td><input id="DEr7lbOTDc9-yf8tH1D7QM1-val" name="entryfield" title="Relapse/Recurrent TB Cases_HIV Status Negative, Male" value="[ Relapse/Recurrent TB Cases_HIV Status Negative, Male ]" /></td>
+			<td><input id="DEr7lbOTDc9-nF18YrT0Fpc-val" name="entryfield" title="Relapse/Recurrent TB Cases_HIV Status Negative, Female" value="[ Relapse/Recurrent TB Cases_HIV Status Negative, Female ]" /></td>
+			<td><input id="DEr7lbOTDc9-ojSeaQ950SQ-val" name="entryfield" title="Relapse/Recurrent TB Cases_HIV Status Unknown, Male" value="[ Relapse/Recurrent TB Cases_HIV Status Unknown, Male ]" /></td>
+			<td><input id="DEr7lbOTDc9-grQrXS0BWZA-val" name="entryfield" title="Relapse/Recurrent TB Cases_HIV Status Unknown, Female" value="[ Relapse/Recurrent TB Cases_HIV Status Unknown, Female ]" /></td>
+			<td><input id="DEm6e6zXgJV-AGWvEy9biPz-val" name="entryfield" title="Relapse/Recurrent_TB/HIV_CPT Male" value="[ Relapse/Recurrent_TB/HIV_CPT Male ]" /></td>
+			<td><input id="DEm6e6zXgJV-aiGhr624csg-val" name="entryfield" title="Relapse/Recurrent_TB/HIV_CPT Female" value="[ Relapse/Recurrent_TB/HIV_CPT Female ]" /></td>
+			<td><input id="DEBwEmnoc4e-AGWvEy9biPz-val" name="entryfield" title="Relapse/Recurrent_TB/HIV_ART Male" value="[ Relapse/Recurrent_TB/HIV_ART Male ]" /></td>
+			<td><input id="DEBwEmnoc4e-aiGhr624csg-val" name="entryfield" title="Relapse/Recurrent_TB/HIV_ART Female" value="[ Relapse/Recurrent_TB/HIV_ART Female ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Previous treat. history unknown</span></span></span></strong></td>
+			<td><strong><input id="indicatorZjwMPquNWBn" indicatorid="ZjwMPquNWBn" name="indicator" readonly="readonly" title="Notification_Total Previous Treat. History Unknown TB/HIV Cases with HIV Status_Male" value="[ Notification_Total Previous Treat. History Unknown TB/HIV Cases with HIV Status_Male ]" /></strong></td>
+			<td><strong><input id="indicatorFkm1I1ERkzx" indicatorid="Fkm1I1ERkzx" name="indicator" readonly="readonly" title="Notification_Total Previous Treat. History Unknown TB/HIV Cases with HIV Status_Female" value="[ Notification_Total Previous Treat. History Unknown TB/HIV Cases with HIV Status_Female ]" /></strong></td>
+			<td><input id="DEi13n1C33W-LdhWLEP9Pwm-val" name="entryfield" title="Previous treatment TB Cases _HIV Status Positive, Male" value="[ Previous treatment TB Cases _HIV Status Positive, Male ]" /></td>
+			<td><input id="DEi13n1C33W-lLfxeKm4GMo-val" name="entryfield" title="Previous treatment TB Cases _HIV Status Positive, Female" value="[ Previous treatment TB Cases _HIV Status Positive, Female ]" /></td>
+			<td><input id="DEi13n1C33W-yf8tH1D7QM1-val" name="entryfield" title="Previous treatment TB Cases _HIV Status Negative, Male" value="[ Previous treatment TB Cases _HIV Status Negative, Male ]" /></td>
+			<td><input id="DEi13n1C33W-nF18YrT0Fpc-val" name="entryfield" title="Previous treatment TB Cases _HIV Status Negative, Female" value="[ Previous treatment TB Cases _HIV Status Negative, Female ]" /></td>
+			<td><input id="DEi13n1C33W-ojSeaQ950SQ-val" name="entryfield" title="Previous treatment TB Cases _HIV Status Unknown, Male" value="[ Previous treatment TB Cases _HIV Status Unknown, Male ]" /></td>
+			<td><input id="DEi13n1C33W-grQrXS0BWZA-val" name="entryfield" title="Previous treatment TB Cases _HIV Status Unknown, Female" value="[ Previous treatment TB Cases _HIV Status Unknown, Female ]" /></td>
+			<td><input id="DE5aOHc6T2B-AGWvEy9biPz-val" name="entryfield" title="Previous treated_TB/HIV_CPT Male" value="[ Previous treated_TB/HIV_CPT Male ]" /></td>
+			<td><input id="DE5aOHc6T2B-aiGhr624csg-val" name="entryfield" title="Previous treated_TB/HIV_CPT Female" value="[ Previous treated_TB/HIV_CPT Female ]" /></td>
+			<td><input id="DEslgPYnbwj-AGWvEy9biPz-val" name="entryfield" title="Previous treated_TB/HIV_ART Male" value="[ Previous treated_TB/HIV_ART Male ]" /></td>
+			<td><input id="DEslgPYnbwj-aiGhr624csg-val" name="entryfield" title="Previous treated_TB/HIV_ART Female" value="[ Previous treated_TB/HIV_ART Female ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">All other retreatment</span></span></span></strong></td>
+			<td><strong><input id="indicatorUNoD1tjHnOY" indicatorid="UNoD1tjHnOY" name="indicator" readonly="readonly" title="Notification_Total All Other Retreatment TB/HIV Cases with HIV Status_Male" value="[ Notification_Total All Other Retreatment TB/HIV Cases with HIV Status_Male ]" /></strong></td>
+			<td><strong><input id="indicatoregicdiAJ9ek" indicatorid="egicdiAJ9ek" name="indicator" readonly="readonly" title="Notification_Total All Other Retreatment TB/HIV Cases with HIV Status_Female" value="[ Notification_Total All Other Retreatment TB/HIV Cases with HIV Status_Female ]" /></strong></td>
+			<td><input id="DErJ8txQdpk-LdhWLEP9Pwm-val" name="entryfield" title="All other retreatment TB Cases_HIV Status Positive, Male" value="[ All other retreatment TB Cases_HIV Status Positive, Male ]" /></td>
+			<td><input id="DErJ8txQdpk-lLfxeKm4GMo-val" name="entryfield" title="All other retreatment TB Cases_HIV Status Positive, Female" value="[ All other retreatment TB Cases_HIV Status Positive, Female ]" /></td>
+			<td><input id="DErJ8txQdpk-yf8tH1D7QM1-val" name="entryfield" title="All other retreatment TB Cases_HIV Status Negative, Male" value="[ All other retreatment TB Cases_HIV Status Negative, Male ]" /></td>
+			<td><input id="DErJ8txQdpk-nF18YrT0Fpc-val" name="entryfield" title="All other retreatment TB Cases_HIV Status Negative, Female" value="[ All other retreatment TB Cases_HIV Status Negative, Female ]" /></td>
+			<td><input id="DErJ8txQdpk-ojSeaQ950SQ-val" name="entryfield" title="All other retreatment TB Cases_HIV Status Unknown, Male" value="[ All other retreatment TB Cases_HIV Status Unknown, Male ]" /></td>
+			<td><input id="DErJ8txQdpk-grQrXS0BWZA-val" name="entryfield" title="All other retreatment TB Cases_HIV Status Unknown, Female" value="[ All other retreatment TB Cases_HIV Status Unknown, Female ]" /></td>
+			<td><input id="DEnnPAIy8Ec-AGWvEy9biPz-val" name="entryfield" title="All other retreatment_TB/HIV_CPT Male" value="[ All other retreatment_TB/HIV_CPT Male ]" /></td>
+			<td><input id="DEnnPAIy8Ec-aiGhr624csg-val" name="entryfield" title="All other retreatment_TB/HIV_CPT Female" value="[ All other retreatment_TB/HIV_CPT Female ]" /></td>
+			<td><input id="DEiT4hC1IbG-AGWvEy9biPz-val" name="entryfield" title="All other retreatment_TB/HIV_ART Male" value="[ All other retreatment_TB/HIV_ART Male ]" /></td>
+			<td><input id="DEiT4hC1IbG-aiGhr624csg-val" name="entryfield" title="All other retreatment_TB/HIV_ART Female" value="[ All other retreatment_TB/HIV_ART Female ]" /></td>
+		</tr>
+		<tr class="computed-row">
+			<td class="row-label"><strong><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">All forms</span></span></span></strong></td>
+			<td><strong><input id="indicatorO9L4sFIZdx8" indicatorid="O9L4sFIZdx8" name="indicator" readonly="readonly" title="Notification_Total All Forms of TB/HIV Cases with HIV Status_Male" value="[ Notification_Total All Forms of TB/HIV Cases with HIV Status_Male ]" /></strong></td>
+			<td><strong><input id="indicatorWOUIsA1gtjB" indicatorid="WOUIsA1gtjB" name="indicator" readonly="readonly" title="Notification_Total All Forms TB/HIV Cases with HIV Status_Female" value="[ Notification_Total All Forms TB/HIV Cases with HIV Status_Female ]" /></strong></td>
+			<td><strong><input id="indicatora25hDnkdBYU" indicatorid="a25hDnkdBYU" name="indicator" readonly="readonly" title="Notification_Total TB Cases with Known HIV Status_Positive_Male" value="[ Notification_Total TB Cases with Known HIV Status_Positive_Male ]" /></strong></td>
+			<td><strong><input id="indicatorCaOPDiaKxvy" indicatorid="CaOPDiaKxvy" name="indicator" readonly="readonly" title="Notification_Total TB Cases with Known HIV Status_Positive_Female" value="[ Notification_Total TB Cases with Known HIV Status_Positive_Female ]" /></strong></td>
+			<td><strong><input id="indicatorvKgre0yoVv1" indicatorid="vKgre0yoVv1" name="indicator" readonly="readonly" title="Notification_Total TB Cases with Known HIV Status_Negative_Male" value="[ Notification_Total TB Cases with Known HIV Status_Negative_Male ]" /></strong></td>
+			<td><strong><input id="indicatorvLQL5JRQg4M" indicatorid="vLQL5JRQg4M" name="indicator" readonly="readonly" title="Notification_Total TB Cases with Known HIV Status_Negative_Female" value="[ Notification_Total TB Cases with Known HIV Status_Negative_Female ]" /></strong></td>
+			<td><strong><input id="indicatorpK6BROwDYCB" indicatorid="pK6BROwDYCB" name="indicator" readonly="readonly" title="Notification_Total TB Cases with Unknown HIV Status_Male" value="[ Notification_Total TB Cases with Unknown HIV Status_Male ]" /></strong></td>
+			<td><strong><input id="indicatorzfdqqPdxZu4" indicatorid="zfdqqPdxZu4" name="indicator" readonly="readonly" title="Notification_Total TB Cases with Unknown HIV Status_Female" value="[ Notification_Total TB Cases with Unknown HIV Status_Female ]" /></strong></td>
+			<td><strong><input id="indicatorFg3pDsXz1Jf" indicatorid="Fg3pDsXz1Jf" name="indicator" readonly="readonly" title="Notification_Total TB/HIV CPT_Male" value="[ Notification_Total TB/HIV CPT_Male ]" /></strong></td>
+			<td><strong><input id="indicatore9LCHMRa64R" indicatorid="e9LCHMRa64R" name="indicator" readonly="readonly" title="Notification_Total TB/HIV CPT_Female" value="[ Notification_Total TB/HIV CPT_Female ]" /></strong></td>
+			<td><strong><input id="indicatorbLbHbSuhLfl" indicatorid="bLbHbSuhLfl" name="indicator" readonly="readonly" title="Notification_Total TB/HIV ART_Male" value="[ Notification_Total TB/HIV ART_Male ]" /></strong></td>
+			<td><strong><input id="indicatorABnUwJPxjzP" indicatorid="ABnUwJPxjzP" name="indicator" readonly="readonly" title="Notification_Total TB/HIV ART_Female" value="[ Notification_Total TB/HIV ART_Female ]" /></strong></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 3a ================= -->
+
+<div class="block-title">Block 3a: Source of referral</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-3a">
+	<thead>
+		<tr>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Referred from PPM</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Referred from community</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">TB cases managed by TS</span></span></strong></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input id="DErn6gZUKuf-HllvX50cXC0-val" name="entryfield" title="Referral_TB Case referred from PPM" value="[ Referral_TB Case referred from PPM ]" /></td>
+			<td><input id="DEP7lhD0aWf-HllvX50cXC0-val" name="entryfield" title="Referral_TB Case referred from Community" value="[ Referral_TB Case referred from Community ]" /></td>
+			<td><input id="DEcjC6PdjCf-HllvX50cXC0-val" name="entryfield" title="Referral_TB Cases Managed by Treatment Supporter" value="[ Referral_TB Cases Managed by Treatment Supporter ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 3b ================= -->
+
+<div class="block-title">Block 3b: HCWs Among TB Patients</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-3b">
+	<thead>
+		<tr>
+			<th class="row-label"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Sex</span></span></strong></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Total</span></span></strong></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Male</span></span></strong></td>
+			<td><input id="DEPw7YYoAPf-aiGhr624csg-val" name="entryfield" title="Notified_Healthcare Workers among Patients Female" value="[ Notified_Healthcare Workers among Patients Female ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Female</span></span></strong></td>
+			<td><input id="DEPw7YYoAPf-AGWvEy9biPz-val" name="entryfield" title="Notified_Healthcare Workers among Patients Male" value="[ Notified_Healthcare Workers among Patients Male ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 3c ================= -->
+
+<div class="block-title">Block 3c: TB COINFECTIONS</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-3c">
+	<thead>
+		<tr>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Number of TB/CVD coinfected patients</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Number of TB Mental health Co-Morbid patients</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Number of TB Diabetis Mellitus Co-Morbid patients</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Number of TB COPD Co-Morbid patients</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input id="DEhXWLV10qA-repcLn0Qb7N-val" name="entryfield" title="TB Coinfection TB/Cardio Vascular Disease (CVD)" value="[ TB Coinfection TB/Cardio Vascular Disease (CVD) ]" /></td>
+			<td><input id="DEhXWLV10qA-qeatoPgtuxt-val" name="entryfield" title="TB Coinfection TB Mental health" value="[ TB Coinfection TB Mental health ]" /></td>
+			<td><input id="DEhXWLV10qA-lnjauqTFMcb-val" name="entryfield" title="TB Coinfection TB Diabetis Mellitus" value="[ TB Coinfection TB Diabetis Mellitus ]" /></td>
+			<td><input id="DEhXWLV10qA-JKshg4WD5W6-val" name="entryfield" title="TB Coinfection TB COPD" value="[ TB Coinfection TB COPD ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 3d ================= -->
+
+<div class="block-title">Block 3d: Contact Investigation</div>
+
+<div class="single-field-row"><label><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Number of TB Patients who had their contacts investigated</span></span></strong></label><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"> </span></span><input id="DMIgHFivepr-HllvX50cXC0-val" name="entryfield" title="TB Patient Contact Investigated" value="[ TB Patient Contact Investigated ]" /></div>
+<!-- ================= BLOCK 4a ================= -->
+
+<div class="block-title">Block 4a: Household Contact TB Preventive Activities (CTPA) (0&lt;5yrs)</div>
+
+<div class="block-subtitle" style="text-align: center;"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Evaluation of TPT activities (0&lt;5yrs)</span></span></span></div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-4a">
+	<thead>
+		<tr>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Contacts identified</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Contacts Screened for TB</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Eligible for TPT among screened</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Placed on TPT in the Health facility among eligible</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Placed on TPT in the community among eligible</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Screened contacts identified with active TB</span></span></strong></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input id="DE8kbTV3PWw-HllvX50cXC0-val" name="entryfield" title="Under 5_Contacts identified" value="[ Under 5_Contacts identified ]" /></td>
+			<td><input id="DEg9Lq3edpi-HllvX50cXC0-val" name="entryfield" title="Under 5_Contacts Screened for TB" value="[ Under 5_Contacts Screened for TB ]" /></td>
+			<td><input id="DEzMGIhH8uX-HllvX50cXC0-val" name="entryfield" title="Under 5_ Eligible for TPT among screened" value="[ Under 5_ Eligible for TPT among screened ]" /></td>
+			<td><input id="DENVOBofhgV-HllvX50cXC0-val" name="entryfield" title="Under 5_Placed on TPT in the Health facility among eligible" value="[ Under 5_Placed on TPT in the Health facility among eligible ]" /></td>
+			<td><input id="DEZY2wPYiam-HllvX50cXC0-val" name="entryfield" title="Under 5_Placed on TPT in the community among eligible" value="[ Under 5_Placed on TPT in the community among eligible ]" /></td>
+			<td><input id="DE4Yi0kqk2Z-HllvX50cXC0-val" name="entryfield" title="Under 5_SCREENED CONTACTS IDENTIFIED WITH ACTIVE TB" value="[ Under 5_SCREENED CONTACTS IDENTIFIED WITH ACTIVE TB ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 4b ================= -->
+
+<div class="block-title">Block 4b: Household Contact TB Preventive Activities (CTPA) (5yrs and above)</div>
+
+<div class="block-subtitle" style="text-align: center;"><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Evaluation of TPT activities (5yrs and above)</span></span></span></div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-4b">
+	<thead>
+		<tr>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Contacts identified</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Contacts Screened for TB</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Eligible for TPT among screened</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Placed on TPT in the Health facility among eligible</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Placed on TPT in the community among eligible</span></span></strong></span></th>
+			<th><span style="color:#000000;"><strong><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">Screened contacts identified with active TB</span></span></strong></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input id="DEebXyJNHlt-HllvX50cXC0-val" name="entryfield" title="5yrs and Above_ Contacts identified" value="[ 5yrs and Above_ Contacts identified ]" /></td>
+			<td><input id="DELWubjr7AE-HllvX50cXC0-val" name="entryfield" title="5yrs and Above_ Contacts Screened for TB" value="[ 5yrs and Above_ Contacts Screened for TB ]" /></td>
+			<td><input id="DEA1XjPI3dJ-HllvX50cXC0-val" name="entryfield" title="5yrs and Above_ Eligible for TPT among screened" value="[ 5yrs and Above_ Eligible for TPT among screened ]" /></td>
+			<td><input id="DElJYAHw61f-HllvX50cXC0-val" name="entryfield" title="5yrs and Above_ Placed on TPT in the Health facility among eligible" value="[ 5yrs and Above_ Placed on TPT in the Health facility among eligible ]" /></td>
+			<td><input id="DEcHtbPjNgS-HllvX50cXC0-val" name="entryfield" title="5yrs and Above_ Placed on TPT in the community among eligible" value="[ 5yrs and Above_ Placed on TPT in the community among eligible ]" /></td>
+			<td><input id="DEZX2MulO8O-HllvX50cXC0-val" name="entryfield" title="5yrs and Above_ SCREENED CONTACTS IDENTIFIED WITH ACTIVE TB" value="[ 5yrs and Above_ SCREENED CONTACTS IDENTIFIED WITH ACTIVE TB ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- ================= BLOCK 4c ================= -->
+
+<div class="block-title">Block 4c: TPT Regimen and age for all contacts</div>
+
+<div class="table-wrap">
+<table class="tb-table" id="tbl-4c">
+	<thead>
+		<tr>
+			<th class="row-label">&nbsp;</th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">6H (Isonazid)</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">3HP (Isonazid&amp;Rifampentine)</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">3HR (Isonazid&amp;Rifampicine)</span></span></span></th>
+			<th><span style="color:#000000;"><span style="font-size:12px;"><span style="font-family:Arial,Helvetica,sans-serif;">1HP (Isonazid&amp;Rifampemtine)</span></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;">0-&lt;5 years</span></span></strong></td>
+			<td><input id="DEgcjXiRKwA-HVRnOylDKLl-val" name="entryfield" title="Enrolled on TPT 6H  (Isonazid), 0-4" value="[ Enrolled on TPT 6H  (Isonazid), 0-4 ]" /></td>
+			<td><input id="DEgcjXiRKwA-dAXhhB6rndN-val" name="entryfield" title="Enrolled on TPT 3HP (Isonaizid&amp;Rifampentine), 0-4" value="[ Enrolled on TPT 3HP (Isonaizid&amp;Rifampentine), 0-4 ]" /></td>
+			<td><input id="DEgcjXiRKwA-YJiKR1dB2gZ-val" name="entryfield" title="Enrolled on TPT 3HR (Isonazid&amp;Rifampicine), 0-4" value="[ Enrolled on TPT 3HR (Isonazid&amp;Rifampicine), 0-4 ]" /></td>
+			<td><input id="DEgcjXiRKwA-Z6Glp1fsOS2-val" name="entryfield" title="Enrolled on TPT 1HP (Isonazid&amp;Rifampemtine), 0-4" value="[ Enrolled on TPT 1HP (Isonazid&amp;Rifampemtine), 0-4 ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;">5-14</span></span></strong></td>
+			<td><input id="DEgcjXiRKwA-qhHcFN0nF1u-val" name="entryfield" title="Enrolled on TPT 6H  (Isonazid), 5-14" value="[ Enrolled on TPT 6H  (Isonazid), 5-14 ]" /></td>
+			<td><input id="DEgcjXiRKwA-x4ShCVJ0bNr-val" name="entryfield" title="Enrolled on TPT 3HP (Isonaizid&amp;Rifampentine), 5-14" value="[ Enrolled on TPT 3HP (Isonaizid&amp;Rifampentine), 5-14 ]" /></td>
+			<td><input id="DEgcjXiRKwA-iKtTcH5SXJc-val" name="entryfield" title="Enrolled on TPT 3HR (Isonazid&amp;Rifampicine), 5-14" value="[ Enrolled on TPT 3HR (Isonazid&amp;Rifampicine), 5-14 ]" /></td>
+			<td><input id="DEgcjXiRKwA-XnF3F8MLEJe-val" name="entryfield" title="Enrolled on TPT 1HP (Isonazid&amp;Rifampemtine), 5-14" value="[ Enrolled on TPT 1HP (Isonazid&amp;Rifampemtine), 5-14 ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;">15 Years and above</span></span></strong></td>
+			<td><input id="DEgcjXiRKwA-DTWloexQIGa-val" name="entryfield" title="Enrolled on TPT 6H  (Isonazid), 15+" value="[ Enrolled on TPT 6H  (Isonazid), 15+ ]" /></td>
+			<td><input id="DEgcjXiRKwA-DIdkq2bcYaH-val" name="entryfield" title="Enrolled on TPT 3HP (Isonaizid&amp;Rifampentine), 15+" value="[ Enrolled on TPT 3HP (Isonaizid&amp;Rifampentine), 15+ ]" /></td>
+			<td><input id="DEgcjXiRKwA-UZFEIRi2QV3-val" name="entryfield" title="Enrolled on TPT 3HR (Isonazid&amp;Rifampicine), 15+" value="[ Enrolled on TPT 3HR (Isonazid&amp;Rifampicine), 15+ ]" /></td>
+			<td><input id="DEgcjXiRKwA-eZENYCziXL5-val" name="entryfield" title="Enrolled on TPT 1HP (Isonazid&amp;Rifampemtine), 15+" value="[ Enrolled on TPT 1HP (Isonazid&amp;Rifampemtine), 15+ ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-label"><strong><span style="font-size:12px;"><span style="color:#000000;">Total</span></span></strong></td>
+			<td><strong><input id="indicatore48H1yt8S1L" indicatorid="e48H1yt8S1L" name="indicator" readonly="readonly" title="Notification_Total Enrolled on TPT_6H" value="[ Notification_Total Enrolled on TPT_6H ]" /></strong></td>
+			<td><strong><input id="indicatorDM9hP6J7XXF" indicatorid="DM9hP6J7XXF" name="indicator" readonly="readonly" title="Notification_Total Enrolled on TPT_3HP" value="[ Notification_Total Enrolled on TPT_3HP ]" /></strong></td>
+			<td><strong><input id="indicatorolGrnzIUALE" indicatorid="olGrnzIUALE" name="indicator" readonly="readonly" title="Notification_Total Enrolled on TPT_3HR" value="[ Notification_Total Enrolled on TPT_3HR ]" /></strong></td>
+			<td><strong><input id="indicatorY0vEU5bmY1m" indicatorid="Y0vEU5bmY1m" name="indicator" readonly="readonly" title="Notification_Total Enrolled on TPT_1HP" value="[ Notification_Total Enrolled on TPT_1HP ]" /></strong></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<!-- /#dhis2-custom-form -->

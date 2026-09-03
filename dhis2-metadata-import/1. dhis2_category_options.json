@@ -1,0 +1,406 @@
+{
+  "categoryOptions": [
+    {
+      "id": "OgTpigTHKbf",
+      "name": "DRTB",
+      "shortName": "DRTB",
+      "code": "OPT_TYPE_OF_TB_DRTB"
+    },
+    {
+      "id": "oFbmOHnKYaX",
+      "name": "DSTB",
+      "shortName": "DSTB",
+      "code": "OPT_TYPE_OF_TB_DSTB"
+    },
+    {
+      "id": "SArnVgxwvqc",
+      "name": "Pulmonary TB (PTB)",
+      "shortName": "Pulmonary TB (PTB)",
+      "code": "OPT_SITE_OF_DISEASE_PULMONARY_TB_PTB"
+    },
+    {
+      "id": "DH8xIZM1JRc",
+      "name": "Extra Pulmonary TB (EPTB)",
+      "shortName": "Extra Pulmonary TB (EPTB)",
+      "code": "OPT_SITE_OF_DISEASE_EXTRA_PULMONARY_TB_EPTB"
+    },
+    {
+      "id": "oV911xCZkwP",
+      "name": "Male",
+      "shortName": "Male",
+      "code": "OPT_SEX_MALE"
+    },
+    {
+      "id": "S6OLkTkx9NI",
+      "name": "Female",
+      "shortName": "Female",
+      "code": "OPT_SEX_FEMALE"
+    },
+    {
+      "id": "RuVdYXye4JS",
+      "name": "0-14",
+      "shortName": "0-14",
+      "code": "OPT_AGE_GROUP_0_14"
+    },
+    {
+      "id": "nOy4CqpIqK3",
+      "name": "15+",
+      "shortName": "15+",
+      "code": "OPT_AGE_GROUP_15+"
+    },
+    {
+      "id": "zw9iEU1jjQK",
+      "name": "0-4",
+      "shortName": "0-4",
+      "code": "OPT_AGE_GROUP_0-4"
+    },
+    {
+      "id": "yx9G81aSQHq",
+      "name": "5-14",
+      "shortName": "5-14",
+      "code": "OPT_AGE_GROUP_5-14"
+    },
+    {
+      "id": "PvsjaSS8VFg",
+      "name": "15\u009624",
+      "shortName": "15\u009624",
+      "code": "OPT_AGE_GROUP_15-24"
+    },
+    {
+      "id": "OsNLjVHWGau",
+      "name": "25\u009634",
+      "shortName": "25\u009634",
+      "code": "OPT_AGE_GROUP_25-34"
+    },
+    {
+      "id": "bgw9YooJeTY",
+      "name": "35\u009644",
+      "shortName": "35\u009644",
+      "code": "OPT_AGE_GROUP_35-44"
+    },
+    {
+      "id": "WHhO6kGL75U",
+      "name": "45\u009654",
+      "shortName": "45\u009654",
+      "code": "OPT_AGE_GROUP_45-54"
+    },
+    {
+      "id": "Smt9OBGhnuK",
+      "name": "55\u009664",
+      "shortName": "55\u009664",
+      "code": "OPT_AGE_GROUP_55-64"
+    },
+    {
+      "id": "oKaRdebuFrE",
+      "name": ">=65",
+      "shortName": ">=65",
+      "code": "OPT_AGE_GROUP_>=65"
+    },
+    {
+      "id": "Ii6JDWYlgAA",
+      "name": "Xpert",
+      "shortName": "Xpert",
+      "code": "OPT_DIAGNOSTIC_METHOD_XPERT"
+    },
+    {
+      "id": "D1dOOdTXglH",
+      "name": "Truenat",
+      "shortName": "Truenat",
+      "code": "OPT_DIAGNOSTIC_METHOD_TRUENAT"
+    },
+    {
+      "id": "iArp5B1Id9Z",
+      "name": "Cobas",
+      "shortName": "Cobas",
+      "code": "OPT_DIAGNOSTIC_METHOD_COBAS"
+    },
+    {
+      "id": "f50kEnydx9q",
+      "name": "TB-LAMP",
+      "shortName": "TB-LAMP",
+      "code": "OPT_DIAGNOSTIC_METHOD_TB_LAMP"
+    },
+    {
+      "id": "YWrRTWPElnd",
+      "name": "NPOC",
+      "shortName": "NPOC",
+      "code": "OPT_DIAGNOSTIC_METHOD_NPOC"
+    },
+    {
+      "id": "VHUdKF0j7el",
+      "name": "AFB Smear",
+      "shortName": "AFB Smear",
+      "code": "OPT_DIAGNOSTIC_METHOD_AFB_SMEAR"
+    },
+    {
+      "id": "Me1z6JJcfOJ",
+      "name": "LF-LAM",
+      "shortName": "LF-LAM",
+      "code": "OPT_DIAGNOSTIC_METHOD_LF_LAM"
+    },
+    {
+      "id": "u5mSoyPstUe",
+      "name": "X-Ray",
+      "shortName": "X-Ray",
+      "code": "OPT_DIAGNOSTIC_METHOD_X_RAY"
+    },
+    {
+      "id": "DMIgHFivepr",
+      "name": "Other Clinical Diagnosis",
+      "shortName": "Other Clinical Diagnosis",
+      "code": "OPT_DIAGNOSTIC_METHOD_OTHER_CLINICAL_DIAGNOSIS"
+    },
+    {
+      "id": "CZRL9OaYsP6",
+      "name": "6H  (Isonazid)",
+      "shortName": "6H  (Isonazid)",
+      "code": "OPT_TPT_REGIMEN_6H__ISONAZID"
+    },
+    {
+      "id": "iq3UjrnvQ0F",
+      "name": "3HP (Isonaizid&Rifampentine)",
+      "shortName": "3HP (Isonaizid&Rifampentine)",
+      "code": "OPT_TPT_REGIMEN_3HP_ISONAIZIDRIFAMPENTINE"
+    },
+    {
+      "id": "q40fAraVNqT",
+      "name": "3HR (Isonazid&Rifampicine)",
+      "shortName": "3HR (Isonazid&Rifampicine)",
+      "code": "OPT_TPT_REGIMEN_3HR_ISONAZIDRIFAMPICINE"
+    },
+    {
+      "id": "JRIg6QjcwIA",
+      "name": "1HP (Isonazid&Rifampemtine)",
+      "shortName": "1HP (Isonazid&Rifampemtine)",
+      "code": "OPT_TPT_REGIMEN_1HP_ISONAZIDRIFAMPEMTINE"
+    },
+    {
+      "id": "ct3X13npgW2",
+      "name": "Positive",
+      "shortName": "Positive",
+      "code": "OPT_HIV_STATUS_POSITIVE"
+    },
+    {
+      "id": "A8U5okXkzl5",
+      "name": "Negative",
+      "shortName": "Negative",
+      "code": "OPT_HIV_STATUS_NEGATIVE"
+    },
+    {
+      "id": "Y5X1YqWg21n",
+      "name": "Unknown",
+      "shortName": "Unknown",
+      "code": "OPT_HIV_STATUS_UNKNOWN"
+    },
+    {
+      "id": "DvY2nOyreVv",
+      "name": "New",
+      "shortName": "New",
+      "code": "OPT_TREATMENT_HISTORY_NEW"
+    },
+    {
+      "id": "Gy8H6h8l7qg",
+      "name": "Relapse",
+      "shortName": "Relapse",
+      "code": "OPT_TREATMENT_HISTORY_RELAPSE"
+    },
+    {
+      "id": "BvWB9h3lcBG",
+      "name": "Treatment History Unknown",
+      "shortName": "Treatment History Unknown",
+      "code": "OPT_TREATMENT_HISTORY_TREATMENT_HISTORY_UNKNOWN"
+    },
+    {
+      "id": "ZHSUPwePut0",
+      "name": "Other Retreatment",
+      "shortName": "Other Retreatment",
+      "code": "OPT_TREATMENT_HISTORY_OTHER_RETREATMENT"
+    },
+    {
+      "id": "U3FPuRIlPxU",
+      "name": "Primary",
+      "shortName": "Primary",
+      "code": "OPT_FACILITY_LEVEL_PRIMARY"
+    },
+    {
+      "id": "lMsHarAJOCB",
+      "name": "Secondary",
+      "shortName": "Secondary",
+      "code": "OPT_FACILITY_LEVEL_SECONDARY"
+    },
+    {
+      "id": "nFX7TOrPMf7",
+      "name": "Tertiary",
+      "shortName": "Tertiary",
+      "code": "OPT_FACILITY_LEVEL_TERTIARY"
+    },
+    {
+      "id": "pPnmbpD0ezN",
+      "name": "Public",
+      "shortName": "Public",
+      "code": "OPT_FACILITY_OWNERSHIP_PUBLIC"
+    },
+    {
+      "id": "mSxyjQ312Wn",
+      "name": "Private-for-Profit",
+      "shortName": "Private-for-Profit",
+      "code": "OPT_FACILITY_OWNERSHIP_PRIVATE_FOR_PROFIT"
+    },
+    {
+      "id": "Z7Gdp0CXP9K",
+      "name": "Faith Based",
+      "shortName": "Faith Based",
+      "code": "OPT_FACILITY_OWNERSHIP_FAITH_BASED"
+    },
+    {
+      "id": "W3LSFZH3UDq",
+      "name": "Military/Paramilitary",
+      "shortName": "Military/Paramilitary",
+      "code": "OPT_FACILITY_OWNERSHIP_MILITARYPARAMILITARY"
+    },
+    {
+      "id": "p0rWEoBSou3",
+      "name": "Correctional Center",
+      "shortName": "Correctional Center",
+      "code": "OPT_FACILITY_OWNERSHIP_CORRECTIONAL_CENTER"
+    },
+    {
+      "id": "fioRRdzHzmA",
+      "name": "Previously Tested",
+      "shortName": "Previously Tested",
+      "code": "OPT_TESTING_PERIOD_PREVIOUSLY_TESTED"
+    },
+    {
+      "id": "XKR1VxavU07",
+      "name": "Newly Tested",
+      "shortName": "Newly Tested",
+      "code": "OPT_TESTING_PERIOD_NEWLY_TESTED"
+    },
+    {
+      "id": "pqwcWtLdlfd",
+      "name": "TB/Cardio Vascular Disease (CVD)",
+      "shortName": "TB/CVD",
+      "code": "OPT_TB_CVD"
+    },
+    {
+      "id": "mtF650d0s5V",
+      "name": "TB Mental health",
+      "shortName": "TB Mental health",
+      "code": "OPT_TB_MENTAL_HEALTH"
+    },
+    {
+      "id": "cb4MAyyXTmx",
+      "name": "TB Diabetis Mellitus",
+      "shortName": "TB Diabetis Mellitus",
+      "code": "OPT_TB_DIABETIS_MELLITUS"
+    },
+    {
+      "id": "QNBYPgcQKkF",
+      "name": "TB COPD",
+      "shortName": "TB COPD",
+      "code": "OPT_TB_COPD"
+    },
+    {
+      "id": "OhbVrpoiVgR",
+      "name": "Cured",
+      "shortName": "Cured",
+      "code": "OPT_TREATMENT_OUTCOME_CURED"
+    },
+    {
+      "id": "V5IfLBcbfno",
+      "name": "Treatment Completed",
+      "shortName": "Treatment Completed",
+      "code": "OPT_TREATMENT_OUTCOME_TREATMENT_COMPLETED"
+    },
+    {
+      "id": "GMbJmTPSIAo",
+      "name": "Died",
+      "shortName": "Died",
+      "code": "OPT_TREATMENT_OUTCOME_DIED"
+    },
+    {
+      "id": "CLrZ3aWZkSB",
+      "name": "Treatment failure",
+      "shortName": "Treatment failure",
+      "code": "OPT_TREATMENT_OUTCOME_TREATMENT_FAILURE"
+    },
+    {
+      "id": "vrjn9Wvgfyg",
+      "name": "Loss to Follow-up",
+      "shortName": "Loss to Follow-up",
+      "code": "OPT_TREATMENT_OUTCOME_LOSS_TO_FOLLOW_UP"
+    },
+    {
+      "id": "w2wMqZcUDIh",
+      "name": "Not Evaluated",
+      "shortName": "Not Evaluated",
+      "code": "OPT_TREATMENT_OUTCOME_NOT_EVALUATED"
+    },
+    {
+      "id": "yfJs1ON43xK",
+      "name": "Removed from Reg.",
+      "shortName": "Removed from Reg.",
+      "code": "OPT_TREATMENT_OUTCOME_REMOVED_FROM_REG"
+    },
+    {
+      "id": "UpkDyr7OSJo",
+      "name": "5 years and above",
+      "shortName": "5 years and above",
+      "code": "OPT_AGE_GROUP_5_YEARS_AND_ABOVE"
+    },
+    {
+      "id": "Ru1XXdo0cZu",
+      "name": "TPT Treatment Completed",
+      "shortName": "TPT Tx Comp",
+      "code": "OPT_TPT_OUTCOME_TREATMENT_COMPLETED"
+    },
+    {
+      "id": "zren68K4Tun",
+      "name": "Developed Active TB",
+      "shortName": "Dev Active TB",
+      "code": "OPT_TPT_OUTCOME_DEVELOPED_ACTIVE_TB"
+    },
+    {
+      "id": "PFz46PDjqip",
+      "name": "TPT Loss to Follow-up",
+      "shortName": "TPT Loss F/U",
+      "code": "OPT_TPT_OUTCOME_LOSS_TO_FOLLOW_UP"
+    },
+    {
+      "id": "VJIqVLB5Lzx",
+      "name": "TPT Discontinued due to toxicity",
+      "shortName": "TPT Toxicity",
+      "code": "OPT_TPT_OUTCOME_DISCONTINUED_DUE_TO_TOXICITY"
+    },
+    {
+      "id": "oiGFfWd3hjO",
+      "name": "Total Cases Enrolled",
+      "shortName": "Total Enrolled",
+      "code": "OPT_TOTAL_CASES_ENROLLED"
+    },
+    {
+      "id": "kYRBMeyyMDH",
+      "name": "Smear negative",
+      "shortName": "Smear neg",
+      "code": "OPT_DIAGNOSTIC_SMEAR_NEGATIVE"
+    },
+    {
+      "id": "qJ38aRUhR4I",
+      "name": "Smear positive",
+      "shortName": "Smear pos",
+      "code": "OPT_DIAGNOSTIC_SMEAR_POSITIVE"
+    },
+    {
+      "id": "WrXPvhsBkDa",
+      "name": "Continuing treatment",
+      "shortName": "Continuing tx",
+      "code": "OPT_TREATMENT_OUTCOME_CONTINUING_TREATMENT"
+    },
+    {
+      "id": "U4UqGWlG6g3",
+      "name": "Other bacteriological",
+      "shortName": "Other bact",
+      "code": "OPT_DIAGNOSTIC_OTHER_BACTERIOLOGICAL"
+    }
+  ]
+}

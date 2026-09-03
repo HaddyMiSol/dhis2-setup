@@ -1,0 +1,359 @@
+<div style="font-family: Arial, sans-serif; font-size: 12px; color: #000000;"><!-- Centered Bold Title for the Dataset -->
+<div style="font-weight: bold; font-size: 22px; margin-bottom: 15px; text-align: center; color: #000000;">National Presumptive TB Notification Reporting Form</div>
+<!-- SECTION 1: All SCREENED PATIENTS on the register -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="5" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">All SCREENED PATIENTS on the register</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th rowspan="2" style="padding: 6px; width: 40%; text-align: left; color: #000000; font-weight: bold;"><span style="color:#000000;">Age and sex disaggregation of all screened patients</span></th>
+			<th colspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Male</span></th>
+			<th colspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Female</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th style="text-align: center; padding: 6px; width: 15%; color: #000000; font-weight: bold;"><span style="color:#000000;">&lt;15</span></th>
+			<th style="text-align: center; padding: 6px; width: 15%; color: #000000; font-weight: bold;"><span style="color:#000000;">15 and above</span></th>
+			<th style="text-align: center; padding: 6px; width: 15%; color: #000000; font-weight: bold;"><span style="color:#000000;">&lt;15</span></th>
+			<th style="text-align: center; padding: 6px; width: 15%; color: #000000; font-weight: bold;"><span style="color:#000000;">15 and above</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Screened for TB</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="OgTpigTHKbf-ddVaLtcn7cj-val" name="entryfield" title="Screened for TB Male, 0-14" value="[ Screened for TB Male, 0-14 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="OgTpigTHKbf-s4tuMM98eSk-val" name="entryfield" title="Screened for TB Male, 15+" value="[ Screened for TB Male, 15+ ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="OgTpigTHKbf-GLUUWSgBO3P-val" name="entryfield" title="Screened for TB Female, 0-14" value="[ Screened for TB Female, 0-14 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="OgTpigTHKbf-FDtJ5IWJrAM-val" name="entryfield" title="Screened for TB Female, 15+" value="[ Screened for TB Female, 15+ ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 2: All Presumptive TB cases on the register -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="7" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">All Presumptive TB cases on the register</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th rowspan="3" style="padding: 6px; width: 28%; color: #000000; font-weight: bold; text-align: left;">&nbsp;</th>
+			<th colspan="2" style="text-align: center; padding: 6px; width: 30%; color: #000000; font-weight: bold;"><span style="color:#000000;">Classification of Presumptive</span></th>
+			<th colspan="4" style="text-align: center; padding: 6px; width: 42%; color: #000000; font-weight: bold;"><span style="color:#000000;">AGE AND SEX DISAGGREGATION OF PRESUMPTIVE TB CASES</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th rowspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Presumptive DSTB</span></th>
+			<th rowspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Presumptive DRTB</span></th>
+			<th colspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">MALE</span></th>
+			<th colspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">FEMALE</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">&lt;15</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">15 and above</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">&lt;15</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">15 and above</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Presumptive TB</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="oFbmOHnKYaX-G667BMyR8PQ-val" name="entryfield" title="Presumptive TB_ Type of Disease DRTB" value="[ Presumptive TB_ Type of Disease DRTB ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oFbmOHnKYaX-gA5IgL0lQbH-val" name="entryfield" title="Presumptive TB_ Type of Disease DSTB" value="[ Presumptive TB_ Type of Disease DSTB ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="SArnVgxwvqc-ddVaLtcn7cj-val" name="entryfield" title="Presumptive TB_Age and Sex Male, 0-14" value="[ Presumptive TB_Age and Sex Male, 0-14 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="SArnVgxwvqc-s4tuMM98eSk-val" name="entryfield" title="Presumptive TB_Age and Sex Male, 15+" value="[ Presumptive TB_Age and Sex Male, 15+ ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="SArnVgxwvqc-GLUUWSgBO3P-val" name="entryfield" title="Presumptive TB_Age and Sex Female, 0-14" value="[ Presumptive TB_Age and Sex Female, 0-14 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="SArnVgxwvqc-FDtJ5IWJrAM-val" name="entryfield" title="Presumptive TB_Age and Sex Female, 15+" value="[ Presumptive TB_Age and Sex Female, 15+ ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 3: Examinations, result of examinations and Diagnosis (Examined & Diagnosed) -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="11" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">Examinations, result of examinations and Diagnosis</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4; font-size: 11px;">
+			<th style="padding: 6px; width: 20%; text-align: left; color: #000000; font-weight: bold;">&nbsp;</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">Xpert</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">Truenat</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">Cobas</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">TB LAMP</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">NPOC</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">AFB</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">LF-LAM</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">Screened with x-ray</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">Other Clinical Diagnosis</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;">Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Examined for Diagnosis</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-TTbYNq4I9Do-val" name="entryfield" title="Examined for Diagnosis Xpert" value="[ Examined for Diagnosis Xpert ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-E0zEbuf3eO6-val" name="entryfield" title="Examined for Diagnosis Truenat" value="[ Examined for Diagnosis Truenat ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-fiCpw972Yur-val" name="entryfield" title="Examined for Diagnosis Cobas" value="[ Examined for Diagnosis Cobas ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-ewM8e6c7UIX-val" name="entryfield" title="Examined for Diagnosis TB-LAMP" value="[ Examined for Diagnosis TB-LAMP ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-HmQb6jpTZWb-val" name="entryfield" title="Examined for Diagnosis NPOC" value="[ Examined for Diagnosis NPOC ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-nFf8jPKn0jV-val" name="entryfield" title="Examined for Diagnosis AFB Smear" value="[ Examined for Diagnosis AFB Smear ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-lGH4ADSwwt5-val" name="entryfield" title="Examined for Diagnosis LF-LAM" value="[ Examined for Diagnosis LF-LAM ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DH8xIZM1JRc-caO6WPipHUt-val" name="entryfield" title="Examined for Diagnosis X-Ray" value="[ Examined for Diagnosis X-Ray ]" /></td>
+			<td style="background-color: #333; color: #fff; text-align: center; font-weight: bold;">&nbsp;</td>
+			<td style="padding: 4px; text-align: center;"><input id="indicatordgg7N1i2fy6" indicatorid="dgg7N1i2fy6" name="indicator" readonly="readonly" title="Examined for Diagnosis" value="[ Examined for Diagnosis ]" /></td>
+		</tr>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Diagnosed TB Cases by Type of Diagnosis</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-TTbYNq4I9Do-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis Xpert" value="[ Diagnosed TB Cases by Type of Diagnosis Xpert ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-E0zEbuf3eO6-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis Truenat" value="[ Diagnosed TB Cases by Type of Diagnosis Truenat ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-fiCpw972Yur-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis Cobas" value="[ Diagnosed TB Cases by Type of Diagnosis Cobas ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-ewM8e6c7UIX-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis TB-LAMP" value="[ Diagnosed TB Cases by Type of Diagnosis TB-LAMP ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-HmQb6jpTZWb-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis NPOC" value="[ Diagnosed TB Cases by Type of Diagnosis NPOC ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-nFf8jPKn0jV-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis AFB Smear" value="[ Diagnosed TB Cases by Type of Diagnosis AFB Smear ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-lGH4ADSwwt5-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis LF-LAM" value="[ Diagnosed TB Cases by Type of Diagnosis LF-LAM ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-caO6WPipHUt-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis X-Ray" value="[ Diagnosed TB Cases by Type of Diagnosis X-Ray ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="oV911xCZkwP-Dvxf9TGgxXv-val" name="entryfield" title="Diagnosed TB Cases by Type of Diagnosis Other Clinical Diagnosis" value="[ Diagnosed TB Cases by Type of Diagnosis Other Clinical Diagnosis ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="indicatorROfwkd65oAg" indicatorid="ROfwkd65oAg" name="indicator" readonly="readonly" title="Diagnosed TB Cases by Type of Diagnosis" value="[ Diagnosed TB Cases by Type of Diagnosis ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 4: Presumptive TB_HIV Status -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="6" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">Presumptive TB - HIV Status</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th rowspan="2" style="padding: 6px; width: 30%; color: #000000; font-weight: bold; text-align: left;">&nbsp;</th>
+			<th colspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Previously known HIV Status</span></th>
+			<th colspan="3" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">HIV status</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Positive</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Negative</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Positive</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Negative</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Unknown</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Presumptive TB_HIV Status</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="RuVdYXye4JS-jO9kG3BvOVw-val" name="entryfield" title="Presumptive TB_HIV Status Previously Tested, Positive" value="[ Presumptive TB_HIV Status Previously Tested, Positive ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="RuVdYXye4JS-fB4ikm0MsfM-val" name="entryfield" title="Presumptive TB_HIV Status Previously Tested, Negative" value="[ Presumptive TB_HIV Status Previously Tested, Negative ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="RuVdYXye4JS-hKYzPbcyGKG-val" name="entryfield" title="Presumptive TB_HIV Status Newly Tested, Positive" value="[ Presumptive TB_HIV Status Newly Tested, Positive ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="RuVdYXye4JS-GagvxpODIif-val" name="entryfield" title="Presumptive TB_HIV Status Newly Tested, Negative" value="[ Presumptive TB_HIV Status Newly Tested, Negative ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="RuVdYXye4JS-A8m8hcaFu1z-val" name="entryfield" title="Presumptive TB_HIV Status Newly Tested, Unknown" value="[ Presumptive TB_HIV Status Newly Tested, Unknown ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 5: Presumptive TB Additional Indicators -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="6" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">Presumptive TB Additional Indicators</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4; font-size: 11px;">
+			<th style="padding: 6px; width: 20%; color: #000000; font-weight: bold; text-align: left;">&nbsp;</th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">No. of Presumptive that are HCWs</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">No. of Presumptive Referred from the community</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">No. of Presumptive Referred from PPM</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">No of Presumptive that are tested for COVID-19</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">No of Presumptive that are positive for COVID-19</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Presumptive TB</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="nOy4CqpIqK3-HllvX50cXC0-val" name="entryfield" title="Presumtive TB_Healthcare Worker" value="[ Presumtive TB_Healthcare Worker ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="yx9G81aSQHq-HllvX50cXC0-val" name="entryfield" title="Presumptive TB_Referred from Community" value="[ Presumptive TB_Referred from Community ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="zw9iEU1jjQK-HllvX50cXC0-val" name="entryfield" title="Presumptive TB_Referred from PPM" value="[ Presumptive TB_Referred from PPM ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="PvsjaSS8VFg-HllvX50cXC0-val" name="entryfield" title="Presumptive TB Tested for COVID 19" value="[ Presumptive TB Tested for COVID 19 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="OsNLjVHWGau-HllvX50cXC0-val" name="entryfield" title="Presumptive TB_COVID 19 Positive" value="[ Presumptive TB_COVID 19 Positive ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 6: Treatment History (Confirmed TB Cases) -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="4" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">All Confirmed TB cases on the register</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th style="padding: 6px; width: 40%; color: #000000; font-weight: bold; text-align: left;"><span style="color:#000000;">Treatment History</span></th>
+			<th style="text-align: center; padding: 6px; width: 20%; color: #000000; font-weight: bold;"><span style="color:#000000;">Pulmonary TB cases</span></th>
+			<th style="text-align: center; padding: 6px; width: 20%; color: #000000; font-weight: bold;"><span style="color:#000000;">EPTB Cases</span></th>
+			<th style="text-align: center; padding: 6px; width: 20%; color: #000000; font-weight: bold;"><span style="color:#000000;">Total</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; color: #000000;"><strong>New</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-cB9Jx5jKb3M-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), New" value="[ Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), New ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-LsfvyaWKqZ9-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), New" value="[ Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), New ]" /></td>
+			<td style="padding: 4px; text-align: center; color: #000000;"><input id="indicatortiqFNhbs1iE" indicatorid="tiqFNhbs1iE" name="indicator" readonly="readonly" title="Diagnosed TB Cases_ Site and History_New" value="[ Diagnosed TB Cases_ Site and History_New ]" /></td>
+		</tr>
+		<tr>
+			<td style="padding: 6px; color: #000000;"><strong>Relapse (Recurrent)</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-kFwW11Rpycy-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), Relapse" value="[ Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), Relapse ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-T6PBE09kf7Y-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), Relapse" value="[ Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), Relapse ]" /></td>
+			<td style="padding: 4px; text-align: center; color: #000000;"><input id="indicatorj00LZohVrZc" indicatorid="j00LZohVrZc" name="indicator" readonly="readonly" title="Diagnosed TB Cases_ Site and History_Relapse" value="[ Diagnosed TB Cases_ Site and History_Relapse ]" /></td>
+		</tr>
+		<tr>
+			<td style="padding: 6px; color: #000000;"><strong>Tx history unknown</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-lhAb8bVC0VB-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), Treatment History Unknown" value="[ Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), Treatment History Unknown ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-abTmv1Kvcfh-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), Treatment History Unknown" value="[ Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), Treatment History Unknown ]" /></td>
+			<td style="padding: 4px; text-align: center; color: #000000;"><input id="indicatorVdaMqbIX6xN" indicatorid="VdaMqbIX6xN" name="indicator" readonly="readonly" title="Diagnosed TB Cases_ Site and History_Unknown_Tx" value="[ Diagnosed TB Cases_ Site and History_Unknown_Tx ]" /></td>
+		</tr>
+		<tr>
+			<td style="padding: 6px; color: #000000;"><strong>All other retreatment TB Cases (Re-registered)</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-OD86J0gd4di-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), Other Retreatment" value="[ Diagnosed TB Cases_ Site and History Pulmonary TB (PTB), Other Retreatment ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="S6OLkTkx9NI-GLKWimcT6ZW-val" name="entryfield" title="Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), Other Retreatment" value="[ Diagnosed TB Cases_ Site and History Extra Pulmonary TB (EPTB), Other Retreatment ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="indicatordoPb77zInJv" indicatorid="doPb77zInJv" name="indicator" readonly="readonly" title="Diagnosed TB Cases_ Site and History_retreatment" value="[ Diagnosed TB Cases_ Site and History_retreatment ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 7: AGE AND SEX DISAGGREGATION OF TB CASES NOTIFIED -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="6" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">Age and Sex Disaggregation of Notified TB Cases</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th rowspan="2" style="padding: 6px; width: 30%; color: #000000; font-weight: bold; text-align: left;">&nbsp;</th>
+			<th colspan="2" style="text-align: center; padding: 6px; width: 35%; color: #000000; font-weight: bold;"><span style="color:#000000;">MALE</span></th>
+			<th colspan="2" style="text-align: center; padding: 6px; width: 35%; color: #000000; font-weight: bold;"><span style="color:#000000;">FEMALE</span></th>
+			<th rowspan="2" style="text-align: center; padding: 6px; width: 15%; color: #000000; font-weight: bold;"><span style="color:#000000;">Total</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">&lt;15</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">15 and above</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">&lt;15</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">15 and above</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Notified TB Cases</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="bgw9YooJeTY-ddVaLtcn7cj-val" name="entryfield" title="Notified TB Cases Male, 0-14" value="[ Notified TB Cases Male, 0-14 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="bgw9YooJeTY-s4tuMM98eSk-val" name="entryfield" title="Notified TB Cases Male, 15+" value="[ Notified TB Cases Male, 15+ ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="bgw9YooJeTY-GLUUWSgBO3P-val" name="entryfield" title="Notified TB Cases Female, 0-14" value="[ Notified TB Cases Female, 0-14 ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="bgw9YooJeTY-FDtJ5IWJrAM-val" name="entryfield" title="Notified TB Cases Female, 15+" value="[ Notified TB Cases Female, 15+ ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="indicatorpZAKETRchXr" indicatorid="pZAKETRchXr" name="indicator" readonly="readonly" title="Notified TB Cases_Age&amp;Sex " value="[ Notified TB Cases_Age&amp;Sex  ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 8: TB Cases_HIV Status -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="6" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">TB Cases - HIV Status</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th rowspan="2" style="padding: 6px; width: 30%; color: #000000; font-weight: bold; text-align: left;">&nbsp;</th>
+			<th colspan="2" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Previously known HIV Status</span></th>
+			<th colspan="3" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Tested for HIV</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4;">
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Positive</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Negative</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Positive</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Negative</span></th>
+			<th style="text-align: center; padding: 6px; color: #000000; font-weight: bold;">Not tested</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>TB Cases_HIV Status</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="WHhO6kGL75U-jO9kG3BvOVw-val" name="entryfield" title="TB Cases_HIV Status Previously Tested, Positive" value="[ TB Cases_HIV Status Previously Tested, Positive ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="WHhO6kGL75U-fB4ikm0MsfM-val" name="entryfield" title="TB Cases_HIV Status Previously Tested, Negative" value="[ TB Cases_HIV Status Previously Tested, Negative ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="WHhO6kGL75U-hKYzPbcyGKG-val" name="entryfield" title="TB Cases_HIV Status Newly Tested, Positive" value="[ TB Cases_HIV Status Newly Tested, Positive ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="WHhO6kGL75U-GagvxpODIif-val" name="entryfield" title="TB Cases_HIV Status Newly Tested, Negative" value="[ TB Cases_HIV Status Newly Tested, Negative ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="WHhO6kGL75U-A8m8hcaFu1z-val" name="entryfield" title="TB Cases_HIV Status Newly Tested, Unknown" value="[ TB Cases_HIV Status Newly Tested, Unknown ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 9: Enrolled TB Cases by Type of Diagnosis -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="11" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">Enrolled TB Cases by Type of Diagnosis</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4; font-size: 11px;">
+			<th rowspan="2" style="padding: 6px; width: 22%; color: #000000; font-weight: bold; text-align: left;">&nbsp;</th>
+			<th colspan="7" style="text-align: center; padding: 6px; color: #000000; font-weight: bold;"><span style="color:#000000;">Bacteriologically diagnosed</span></th>
+			<th rowspan="2" style="padding: 6px; text-align: center; width: 12%; color: #000000; font-weight: bold;"><span style="color:#000000;">Clinically diagnosed (X-Ray)</span></th>
+			<th rowspan="2" style="padding: 6px; text-align: center; width: 12%; color: #000000; font-weight: bold;"><span style="color:#000000;">Other Clinical Diagnosis</span></th>
+			<th rowspan="2" style="padding: 6px; text-align: center; width: 10%; color: #000000; font-weight: bold;"><span style="color:#000000;">Total</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4; font-size: 11px;">
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">Xpert positive</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">Truenat Positive</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">Cobas positive</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">TB-LAMP Positive</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">NPOC Positive</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">Smear positive</span></th>
+			<th style="padding: 6px; text-align: center; color: #000000; font-weight: bold;"><span style="color:#000000;">LF-LAM Positive</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 6px; font-weight: bold; color: #000000;"><strong>Enrolled TB Cases by Type of Diagnosis</strong></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-TTbYNq4I9Do-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis Xpert" value="[ Enrolled TB Cases by Type of Diagnosis Xpert ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-E0zEbuf3eO6-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis Truenat" value="[ Enrolled TB Cases by Type of Diagnosis Truenat ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-fiCpw972Yur-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis Cobas" value="[ Enrolled TB Cases by Type of Diagnosis Cobas ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-ewM8e6c7UIX-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis TB-LAMP" value="[ Enrolled TB Cases by Type of Diagnosis TB-LAMP ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-HmQb6jpTZWb-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis NPOC" value="[ Enrolled TB Cases by Type of Diagnosis NPOC ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-nFf8jPKn0jV-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis AFB Smear" value="[ Enrolled TB Cases by Type of Diagnosis AFB Smear ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-lGH4ADSwwt5-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis LF-LAM" value="[ Enrolled TB Cases by Type of Diagnosis LF-LAM ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-caO6WPipHUt-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis X-Ray" value="[ Enrolled TB Cases by Type of Diagnosis X-Ray ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Smt9OBGhnuK-Dvxf9TGgxXv-val" name="entryfield" title="Enrolled TB Cases by Type of Diagnosis Other Clinical Diagnosis" value="[ Enrolled TB Cases by Type of Diagnosis Other Clinical Diagnosis ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="indicatorVy27UeJ5D8z" indicatorid="Vy27UeJ5D8z" name="indicator" readonly="readonly" title="Enrolled TB Cases by Type of Diagnosis" value="[ Enrolled TB Cases by Type of Diagnosis ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- SECTION 10: Comorbidities, Community Activity, TPT & Social Protection -->
+
+<table border="1" style="border-collapse: collapse; width: 100%; border-color: #d8c2b5; color: #000000;">
+	<thead>
+		<tr style="background-color: #4a3b32;">
+			<th colspan="10" style="text-align: center; padding: 10px;"><span style="color: #ffffff !important; font-weight: bold; font-size: 14px;">Additional Program Indicators &amp; Support</span></th>
+		</tr>
+		<tr style="background-color: #f7ede4; font-size: 11px;">
+			<th rowspan="2" style="padding: 6px; width: 10%; color: #000000; font-weight: bold;"><span style="color:#000000;">No. of Health Care Workers diagnosed with TB</span></th>
+			<th rowspan="2" style="padding: 6px; width: 10%; color: #000000; font-weight: bold;"><span style="color:#000000;">Number of TB/Cardio Vascular Disease (CVD) coinfected patients</span></th>
+			<th rowspan="2" style="padding: 6px; width: 10%; color: #000000; font-weight: bold;"><span style="color:#000000;">No of TB patients with Depression or other Mental Health Issues</span></th>
+			<th rowspan="2" style="padding: 6px; width: 10%; color: #000000; font-weight: bold;"><span style="color:#000000;">No of TB patients with Diabetis Mellitus</span></th>
+			<th rowspan="2" style="padding: 6px; width: 10%; color: #000000; font-weight: bold;"><span style="color:#000000;">No of TB patients with Chronic Obstructive Pulmonary Disease (COPD)</span></th>
+			<th colspan="2" style="padding: 6px; width: 20%; color: #000000; font-weight: bold;"><span style="color:#000000;">Community activity</span></th>
+			<th colspan="3" style="padding: 6px; width: 30%; color: #000000; font-weight: bold;"><span style="color:#000000;">Patient covered by Social Protection</span></th>
+		</tr>
+		<tr style="background-color: #eedcd0; font-size: 10px;">
+			<th style="padding: 4px; color: #000000; font-weight: bold;"><span style="color:#000000;">Referred from the community</span></th>
+			<th style="padding: 4px; color: #000000; font-weight: bold;"><span style="color:#000000;">Managed by Treatment Supporter</span></th>
+			<th style="padding: 4px; color: #000000; font-weight: bold;"><span style="color:#000000;">Number of TB index cases that had their contacts investigated</span></th>
+			<th style="padding: 4px; color: #000000; font-weight: bold;"><span style="color:#000000;">Number of Contacts Identified</span></th>
+			<th style="padding: 4px; color: #000000; font-weight: bold;"><span style="color:#000000;">No of Contacts placed on TPT</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 4px; text-align: center;"><input id="D1dOOdTXglH-HllvX50cXC0-val" name="entryfield" title="Healthcare Workers among Patients" value="[ Healthcare Workers among Patients ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DEhXWLV10qA-repcLn0Qb7N-val" name="entryfield" title="TB Coinfection TB/Cardio Vascular Disease (CVD)" value="[ TB Coinfection TB/Cardio Vascular Disease (CVD) ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DEhXWLV10qA-qeatoPgtuxt-val" name="entryfield" title="TB Coinfection TB Mental health" value="[ TB Coinfection TB Mental health ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DEhXWLV10qA-lnjauqTFMcb-val" name="entryfield" title="TB Coinfection TB Diabetis Mellitus" value="[ TB Coinfection TB Diabetis Mellitus ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DEhXWLV10qA-JKshg4WD5W6-val" name="entryfield" title="TB Coinfection TB COPD" value="[ TB Coinfection TB COPD ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="Me1z6JJcfOJ-HllvX50cXC0-val" name="entryfield" title="Tb Cases Referred from Community" value="[ Tb Cases Referred from Community ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="u5mSoyPstUe-HllvX50cXC0-val" name="entryfield" title="TB Cases Managed by Treatment Supporter" value="[ TB Cases Managed by Treatment Supporter ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="DMIgHFivepr-HllvX50cXC0-val" name="entryfield" title="TB Patient Contact Investigated" value="[ TB Patient Contact Investigated ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="CZRL9OaYsP6-HllvX50cXC0-val" name="entryfield" title="Contacts Identified" value="[ Contacts Identified ]" /></td>
+			<td style="padding: 4px; text-align: center;"><input id="iq3UjrnvQ0F-HllvX50cXC0-val" name="entryfield" title="Contacts placed on TPT" value="[ Contacts placed on TPT ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>

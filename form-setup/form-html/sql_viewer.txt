@@ -1,0 +1,536 @@
+WITH current_outcomes AS (
+    SELECT 
+        curr_dv.sourceid,
+        curr_dv.periodid,
+        curr_de.name AS dataelement_name,
+        coc.uid AS coc_uid,
+        coc.name AS coc_name,
+        CASE 
+            WHEN coc.uid IN ('f1XHoFkWYWm', 'UGGYZ7Y8iuT', 'hLFl7M5FFnV', 'jFuc46JpLUt', 'hu2kDeacN9s', 'LxCCwS2jIG6', 'oGP1wC5OtiF') THEN 'Treatment Outcome - New'
+            WHEN coc.uid IN ('XpP0Xb8tDlq', 'ZIOucFDkVfX', 'vxGaRkoCJww', 'iuMXoHrqWIh', 'DuqRFk147lb', 'em0epriXLcC', 'KkyA4AXRQyl') THEN 'Treatment Outcome - Relapse'
+            WHEN coc.uid IN ('e0uehhVmS59', 'BxybHI93j9t', 'Fzk39NORUYS', 'XPD3KrYYx8o', 'm3fZWJs1W4o', 'k76a3MdgPRY', 's1cSp5wwpy8') THEN 'Treatment Outcome - Tx History Unknown'
+            WHEN coc.uid IN ('RUlhJ9YQ9XU', 'MBnFj9fBBZP', 'DJEazXcGx8z', 'cgSoxw6mfu9', 'PhujFAV45qW', 'mWXF1XxKcCY', 'sN9issmKt0o') THEN 'Treatment Outcome - Other Retreatment'
+            ELSE curr_de.name || ' (' || coc.name || ')'
+        END AS patient_category_row,
+        CASE 
+            WHEN coc.uid IN ('f1XHoFkWYWm', 'UGGYZ7Y8iuT', 'hLFl7M5FFnV', 'jFuc46JpLUt', 'hu2kDeacN9s', 'LxCCwS2jIG6', 'oGP1wC5OtiF') THEN 'DEdfzg3cHu0'
+            WHEN coc.uid IN ('XpP0Xb8tDlq', 'ZIOucFDkVfX', 'vxGaRkoCJww', 'iuMXoHrqWIh', 'DuqRFk147lb', 'em0epriXLcC', 'KkyA4AXRQyl') THEN 'DEjuupaBfLe'
+            WHEN coc.uid IN ('e0uehhVmS59', 'BxybHI93j9t', 'Fzk39NORUYS', 'XPD3KrYYx8o', 'm3fZWJs1W4o', 'k76a3MdgPRY', 's1cSp5wwpy8') THEN 'DEtB4fiWb4J'
+            WHEN coc.uid IN ('RUlhJ9YQ9XU', 'MBnFj9fBBZP', 'DJEazXcGx8z', 'cgSoxw6mfu9', 'PhujFAV45qW', 'mWXF1XxKcCY', 'sN9issmKt0o') THEN 'DEqZVvXmLGY'
+            ELSE NULL
+        END AS target_notified_de_uid,
+        CAST(curr_dv.value AS NUMERIC) AS outcome_value
+    FROM datavalue curr_dv
+    JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+    JOIN categoryoptioncombo coc ON curr_dv.categoryoptioncomboid = coc.categoryoptioncomboid
+    WHERE curr_de.uid = 'V5IfLBcbfno'
+      AND curr_dv.value IS NOT NULL
+),
+previous_notifications AS (
+    SELECT 
+        sourceid,
+        periodid,
+        dataelementid,
+        SUM(CAST(value AS NUMERIC)) AS total_notified
+    FROM datavalue
+    WHERE value IS NOT NULL
+    GROUP BY sourceid, periodid, dataelementid
+),
+hiv_neg_outcome AS (
+    SELECT 
+        curr_dv.sourceid,
+        curr_dv.periodid,
+        SUM(CAST(curr_dv.value AS NUMERIC)) AS current_value
+    FROM datavalue curr_dv
+    JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+    WHERE curr_de.uid = 'mTecQoXsf2o'
+      AND curr_dv.value IS NOT NULL
+    GROUP BY curr_dv.sourceid, curr_dv.periodid
+),
+previous_hiv_negative_notifications AS (
+    SELECT 
+        prev_dv.sourceid,
+        prev_dv.periodid,
+        SUM(CAST(prev_dv.value AS NUMERIC)) AS total_hiv_negative_last_year
+    FROM datavalue prev_dv
+    JOIN dataelement prev_de ON prev_dv.dataelementid = prev_de.dataelementid
+    JOIN categoryoptioncombo coc ON prev_dv.categoryoptioncomboid = coc.categoryoptioncomboid
+    WHERE prev_de.uid IN ('DEuOqBJpQF4', 'DEr7lbOTDc9', 'DEi13n1C33W', 'DErJ8txQdpk')
+      AND coc.uid IN ('yf8tH1D7QM1', 'nF18YrT0Fpc') 
+      AND prev_dv.value IS NOT NULL
+    GROUP BY prev_dv.sourceid, prev_dv.periodid
+),
+hiv_unk_outcome AS (
+    SELECT 
+        curr_dv.sourceid,
+        curr_dv.periodid,
+        SUM(CAST(curr_dv.value AS NUMERIC)) AS current_value
+    FROM datavalue curr_dv
+    JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+    WHERE curr_de.uid = 'gyrDO1xkxwn'
+      AND curr_dv.value IS NOT NULL
+    GROUP BY curr_dv.sourceid, curr_dv.periodid
+),
+previous_hiv_unknown_notifications AS (
+    SELECT 
+        prev_dv.sourceid,
+        prev_dv.periodid,
+        SUM(CAST(prev_dv.value AS NUMERIC)) AS total_hiv_unknown_last_year
+    FROM datavalue prev_dv
+    JOIN dataelement prev_de ON prev_dv.dataelementid = prev_de.dataelementid
+    JOIN categoryoptioncombo coc ON prev_dv.categoryoptioncomboid = coc.categoryoptioncomboid
+    WHERE prev_de.uid IN ('DEuOqBJpQF4', 'DEr7lbOTDc9', 'DEi13n1C33W', 'DErJ8txQdpk')
+      AND coc.uid IN ('ojSeaQ950SQ', 'grQrXS0BWZA') 
+      AND prev_dv.value IS NOT NULL
+    GROUP BY prev_dv.sourceid, prev_dv.periodid
+),
+relapse_hiv_pos_outcome AS (
+    SELECT 
+        curr_dv.sourceid,
+        curr_dv.periodid,
+        SUM(CAST(curr_dv.value AS NUMERIC)) AS current_value
+    FROM datavalue curr_dv
+    JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+    WHERE curr_de.uid = 'QrS7RPeMOkI'
+      AND curr_dv.value IS NOT NULL
+    GROUP BY curr_dv.sourceid, curr_dv.periodid
+),
+previous_relapse_hiv_positive AS (
+    SELECT 
+        prev_dv.sourceid,
+        prev_dv.periodid,
+        SUM(CAST(prev_dv.value AS NUMERIC)) AS total_relapse_hiv_positive_last_year
+    FROM datavalue prev_dv
+    JOIN dataelement prev_de ON prev_dv.dataelementid = prev_de.dataelementid
+    JOIN categoryoptioncombo coc ON prev_dv.categoryoptioncomboid = coc.categoryoptioncomboid
+    WHERE prev_de.uid = 'DEr7lbOTDc9' 
+      AND coc.uid IN ('LdhWLEP9Pwm', 'lLfxeKm4GMo') 
+      AND prev_dv.value IS NOT NULL
+    GROUP BY prev_dv.sourceid, prev_dv.periodid
+)
+
+-- 1. Main Treatment Outcomes (New, Relapse, Unknown, Other Retreatment categories)
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    prev_de.name AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    MAX(pn.total_notified) AS "Notified value",
+    co.patient_category_row AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    SUM(co.outcome_value) AS "Outcome value",
+    CASE 
+        WHEN MAX(pn.total_notified) IS NULL THEN '⚠️ Data entry missing for the corresponding quarter last year; unable to verify consistency.'
+        WHEN SUM(co.outcome_value) = MAX(pn.total_notified) THEN '✅ Values match between current quarter and same period last year.'
+        ELSE '❌ Current quarter row total (' || SUM(co.outcome_value) || ') does not equal last year notification total (' || MAX(pn.total_notified) || ').'
+    END AS "Discrepancy detected"
+FROM current_outcomes co
+JOIN organisationunit ou ON co.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON co.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN dataelement prev_de ON prev_de.uid = co.target_notified_de_uid
+LEFT JOIN previous_notifications pn ON pn.sourceid = co.sourceid 
+    AND pn.periodid = prev_p.periodid 
+    AND pn.dataelementid = prev_de.dataelementid
+GROUP BY 
+    parent_ou.name,
+    ou.name,
+    co.patient_category_row,
+    curr_p.startdate,
+    prev_p.startdate,
+    prev_de.name
+	
+UNION ALL
+
+-- 2. Bacteriologically Diagnosed
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Total of All Notification Types (Bacteriological Methods)' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    SUM(CAST(prev_notified.value AS NUMERIC)) AS "Notified value",
+    curr_de.name AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    SUM(CAST(curr_dv.value AS NUMERIC)) AS "Outcome value",
+    CASE 
+        WHEN SUM(CAST(prev_notified.value AS NUMERIC)) IS NULL THEN '⚠️ Data entry missing for corresponding quarter last year.'
+        WHEN SUM(CAST(curr_dv.value AS NUMERIC)) = SUM(CAST(prev_notified.value AS NUMERIC)) THEN '✅ Values match between current quarter and same period last year.'
+        ELSE '❌ Current quarter sum (' || SUM(CAST(curr_dv.value AS NUMERIC)) || ') does not equal last year value (' || SUM(CAST(prev_notified.value AS NUMERIC)) || ').'
+    END AS "Discrepancy detected"
+FROM datavalue curr_dv
+JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+JOIN organisationunit ou ON curr_dv.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON curr_dv.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN datavalue prev_notified ON prev_notified.sourceid = curr_dv.sourceid 
+    AND prev_notified.periodid = prev_p.periodid
+    AND prev_notified.dataelementid IN (
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEdfzg3cHu0'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEjuupaBfLe'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEtB4fiWb4J'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEqZVvXmLGY')  
+    )
+    AND prev_notified.categoryoptioncomboid IN (
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'TBmpSc5fpmz'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'oJBbCqy2x11'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'Za68JUQFqX7'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'lMCVHuVK8c4'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'wi1f5BlGS3e'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'Ef2t5saJMZf')  
+    )
+WHERE curr_de.uid = 'GMbJmTPSIAo' 
+  AND curr_dv.value IS NOT NULL
+GROUP BY parent_ou.name, ou.name, curr_de.name, curr_p.startdate, prev_p.startdate
+
+UNION ALL
+
+-- 3. Clinically Diagnosed
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Total of All Notification Types (Clinical Diagnosis Methods)' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    SUM(CAST(prev_notified.value AS NUMERIC)) AS "Notified value",
+    curr_de.name AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    SUM(CAST(curr_dv.value AS NUMERIC)) AS "Outcome value",
+    CASE 
+        WHEN SUM(CAST(prev_notified.value AS NUMERIC)) IS NULL THEN '⚠️ Data entry missing for corresponding quarter last year.'
+        WHEN SUM(CAST(curr_dv.value AS NUMERIC)) = SUM(CAST(prev_notified.value AS NUMERIC)) THEN '✅ Values match between current quarter and same period last year.'
+        ELSE '❌ Current quarter sum (' || SUM(CAST(curr_dv.value AS NUMERIC)) || ') does not equal last year value (' || SUM(CAST(prev_notified.value AS NUMERIC)) || ').'
+    END AS "Discrepancy detected"
+FROM datavalue curr_dv
+JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+JOIN organisationunit ou ON curr_dv.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON curr_dv.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN datavalue prev_notified ON prev_notified.sourceid = curr_dv.sourceid 
+    AND prev_notified.periodid = prev_p.periodid
+    AND prev_notified.dataelementid IN (
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEdfzg3cHu0'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEjuupaBfLe'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEtB4fiWb4J'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEqZVvXmLGY')  
+    )
+    AND prev_notified.categoryoptioncomboid IN (
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'xIHsNtyBRf2'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'hQVymquqZ7N')  
+    )
+WHERE curr_de.uid = 'CLrZ3aWZkSB' 
+  AND curr_dv.value IS NOT NULL
+GROUP BY parent_ou.name, ou.name, curr_de.name, curr_p.startdate, prev_p.startdate
+
+UNION ALL
+
+-- 4. PTB Categories
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Total of All Notification Types (PTB Categories)' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    SUM(CAST(prev_notified.value AS NUMERIC)) AS "Notified value",
+    curr_de.name AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    SUM(CAST(curr_dv.value AS NUMERIC)) AS "Outcome value",
+    CASE 
+        WHEN SUM(CAST(prev_notified.value AS NUMERIC)) IS NULL THEN '⚠️ Data entry missing for corresponding quarter last year.'
+        WHEN SUM(CAST(curr_dv.value AS NUMERIC)) = SUM(CAST(prev_notified.value AS NUMERIC)) THEN '✅ Values match between current quarter and same period last year.'
+        ELSE '❌ Current quarter sum (' || SUM(CAST(curr_dv.value AS NUMERIC)) || ') does not equal last year value (' || SUM(CAST(prev_notified.value AS NUMERIC)) || ').'
+    END AS "Discrepancy detected"
+FROM datavalue curr_dv
+JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+JOIN organisationunit ou ON curr_dv.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON curr_dv.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN datavalue prev_notified ON prev_notified.sourceid = curr_dv.sourceid 
+    AND prev_notified.periodid = prev_p.periodid
+    AND prev_notified.dataelementid IN (
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEdfzg3cHu0'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEjuupaBfLe'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEtB4fiWb4J'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEqZVvXmLGY')  
+    )
+    AND prev_notified.categoryoptioncomboid IN (
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'TBmpSc5fpmz'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'oJBbCqy2x11'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'Za68JUQFqX7'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'lMCVHuVK8c4'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'wi1f5BlGS3e'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'Ef2t5saJMZf'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'xIHsNtyBRf2')  
+    )
+WHERE curr_de.uid = 'vrjn9Wvgfyg' 
+  AND curr_dv.value IS NOT NULL
+GROUP BY parent_ou.name, ou.name, curr_de.name, curr_p.startdate, prev_p.startdate
+
+UNION ALL
+
+-- 5. EPTB Categories
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Total of All Notification Types (EPTB Categories)' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    SUM(CAST(prev_notified.value AS NUMERIC)) AS "Notified value",
+    curr_de.name AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    SUM(CAST(curr_dv.value AS NUMERIC)) AS "Outcome value",
+    CASE 
+        WHEN SUM(CAST(prev_notified.value AS NUMERIC)) IS NULL THEN '⚠️ Data entry missing for corresponding quarter last year.'
+        WHEN SUM(CAST(curr_dv.value AS NUMERIC)) = SUM(CAST(prev_notified.value AS NUMERIC)) THEN '✅ Values match between current quarter and same period last year.'
+        ELSE '❌ Current quarter sum (' || SUM(CAST(curr_dv.value AS NUMERIC)) || ') does not equal last year value (' || SUM(CAST(prev_notified.value AS NUMERIC)) || ').'
+    END AS "Discrepancy detected"
+FROM datavalue curr_dv
+JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+JOIN organisationunit ou ON curr_dv.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON curr_dv.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN datavalue prev_notified ON prev_notified.sourceid = curr_dv.sourceid 
+    AND prev_notified.periodid = prev_p.periodid
+    AND prev_notified.dataelementid IN (
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEdfzg3cHu0'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEjuupaBfLe'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEtB4fiWb4J'), 
+        (SELECT dataelementid FROM dataelement WHERE uid = 'DEqZVvXmLGY')  
+    )
+    AND prev_notified.categoryoptioncomboid IN (
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'JLsfAroAc6d'), 
+        (SELECT categoryoptioncomboid FROM categoryoptioncombo WHERE uid = 'hQVymquqZ7N')  
+    )
+WHERE curr_de.uid = 'w2wMqZcUDIh' 
+  AND curr_dv.value IS NOT NULL
+GROUP BY parent_ou.name, ou.name, curr_de.name, curr_p.startdate, prev_p.startdate
+
+UNION ALL
+
+-- 6. Treatment Supporter
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    prev_de.name AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    SUM(CAST(prev_dv.value AS NUMERIC)) AS "Notified value",
+    curr_de.name AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    SUM(CAST(curr_dv.value AS NUMERIC)) AS "Outcome value",
+    CASE 
+        WHEN SUM(CAST(prev_dv.value AS NUMERIC)) IS NULL THEN '⚠️ Data entry missing for the corresponding quarter last year; unable to verify consistency.'
+        WHEN SUM(CAST(curr_dv.value AS NUMERIC)) = SUM(CAST(prev_dv.value AS NUMERIC)) THEN '✅ Values match between current quarter and same period last year.'
+        ELSE '❌ Current quarter value (' || SUM(CAST(curr_dv.value AS NUMERIC)) || ') does not equal last year value (' || SUM(CAST(prev_dv.value AS NUMERIC)) || ').'
+    END AS "Discrepancy detected"
+FROM datavalue curr_dv
+JOIN dataelement curr_de ON curr_dv.dataelementid = curr_de.dataelementid
+JOIN organisationunit ou ON curr_dv.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON curr_dv.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN datavalue prev_dv ON prev_dv.sourceid = curr_dv.sourceid 
+    AND prev_dv.periodid = prev_p.periodid
+    AND prev_dv.dataelementid = (SELECT dataelementid FROM dataelement WHERE uid = 'DEcjC6PdjCf')
+LEFT JOIN dataelement prev_de ON prev_dv.dataelementid = prev_de.dataelementid
+WHERE curr_de.uid = 'yfJs1ON43xK'
+  AND curr_dv.value IS NOT NULL
+GROUP BY 
+    parent_ou.name,
+    ou.name,
+    curr_de.name,
+    curr_p.startdate,
+    prev_p.startdate,
+    prev_de.name
+
+UNION ALL
+
+-- 7. All Forms HIV Negative
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Sum of New, Relapse, Previous, & Other Retreatment HIV-Negative Cases' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    COALESCE(pn.total_hiv_negative_last_year, 0) AS "Notified value",
+    'Treatment Outcome_All Forms HIV negative TB Cases' AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    COALESCE(co.current_value, 0) AS "Outcome value",
+    CASE 
+        WHEN pn.total_hiv_negative_last_year IS NULL THEN '⚠️ Data entry missing for HIV-negative cases last year; unable to verify consistency.'
+        WHEN COALESCE(co.current_value, 0) = pn.total_hiv_negative_last_year THEN '✅ Values match between current HIV-negative outcomes and last year notifications.'
+        ELSE '❌ Current HIV-negative outcome (' || COALESCE(co.current_value, 0) || ') does not equal last year HIV-negative notification sum (' || pn.total_hiv_negative_last_year || ').'
+    END AS "Discrepancy detected"
+FROM hiv_neg_outcome co
+JOIN organisationunit ou ON co.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON co.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN previous_hiv_negative_notifications pn ON pn.sourceid = co.sourceid 
+    AND pn.periodid = prev_p.periodid
+
+UNION ALL
+
+-- 8. All Forms HIV Unknown
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Sum of New, Relapse, Previous, & Other Retreatment HIV-Unknown Cases' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    COALESCE(pn.total_hiv_unknown_last_year, 0) AS "Notified value",
+    'Treatment Outcome_All Forms HIV Unknown TB Cases' AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    COALESCE(co.current_value, 0) AS "Outcome value",
+    CASE 
+        WHEN pn.total_hiv_unknown_last_year IS NULL THEN '⚠️ Data entry missing for HIV-unknown cases last year; unable to verify consistency.'
+        WHEN COALESCE(co.current_value, 0) = pn.total_hiv_unknown_last_year THEN '✅ Values match between current HIV-unknown outcomes and last year notifications.'
+        ELSE '❌ Current HIV-unknown outcome (' || COALESCE(co.current_value, 0) || ') does not equal last year HIV-unknown notification sum (' || pn.total_hiv_unknown_last_year || ').'
+    END AS "Discrepancy detected"
+FROM hiv_unk_outcome co
+JOIN organisationunit ou ON co.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON co.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN previous_hiv_unknown_notifications pn ON pn.sourceid = co.sourceid 
+    AND pn.periodid = prev_p.periodid
+
+UNION ALL
+
+-- 9. Relapse HIV Positive
+SELECT 
+    parent_ou.name AS "State",
+    ou.name AS "LGA",
+    'Relapse/Recurrent HIV-Positive Cases' AS "Notification",
+    CASE 
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM prev_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(prev_p.startdate, 'YYYY')
+        ELSE TO_CHAR(prev_p.startdate, 'Mon-YYYY')
+    END AS "Notified Period",
+    COALESCE(pn.total_relapse_hiv_positive_last_year, 0) AS "Notified value",
+    'Treatment Outcome_New & Relapse HIV Positive TB' AS "Treatment Outcome",
+    CASE 
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 1 THEN 'Jan-Mar ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 4 THEN 'Apr-Jun ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 7 THEN 'Jul-Sep ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        WHEN EXTRACT(MONTH FROM curr_p.startdate) = 10 THEN 'Oct-Dec ' || TO_CHAR(curr_p.startdate, 'YYYY')
+        ELSE TO_CHAR(curr_p.startdate, 'Mon-YYYY')
+    END AS "Reporting Period",
+    COALESCE(co.current_value, 0) AS "Outcome value",
+    CASE 
+        WHEN pn.total_relapse_hiv_positive_last_year IS NULL THEN '⚠️ Data entry missing for relapse HIV-positive cases last year; unable to verify consistency.'
+        WHEN COALESCE(co.current_value, 0) = pn.total_relapse_hiv_positive_last_year THEN '✅ Values match between current new & relapse HIV-positive outcomes and last year relapse HIV-positive notifications.'
+        ELSE '❌ Current outcome value (' || COALESCE(co.current_value, 0) || ') does not equal last year relapse HIV-positive notification sum (' || pn.total_relapse_hiv_positive_last_year || ').'
+    END AS "Discrepancy detected"
+FROM relapse_hiv_pos_outcome co
+JOIN organisationunit ou ON co.sourceid = ou.organisationunitid
+LEFT JOIN organisationunit parent_ou ON ou.parentid = parent_ou.organisationunitid
+JOIN period curr_p ON co.periodid = curr_p.periodid
+JOIN period prev_p ON prev_p.periodtypeid = curr_p.periodtypeid
+    AND prev_p.startdate = (curr_p.startdate - INTERVAL '1 year')
+LEFT JOIN previous_relapse_hiv_positive pn ON pn.sourceid = co.sourceid 
+    AND pn.periodid = prev_p.periodid;

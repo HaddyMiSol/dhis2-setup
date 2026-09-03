@@ -1,0 +1,42 @@
+{
+  "dataSets": [
+    {
+      "id": "dD1zEb9owVZ",
+      "name": "Sputum Conversion Reporting Form",
+      "shortName": "Sputum Conversion",
+      "periodType": "Monthly",
+      "dataSetElements": [
+        {
+          "dataSet": { "id": "dD1zEb9owVZ" },
+          "dataElement": { "id": "U4UqGWlG6g3" }
+        },
+        {
+          "dataSet": { "id": "dD1zEb9owVZ" },
+          "dataElement": { "id": "Ot1OGMmjxWk" }
+        }
+      ]
+    }
+  ],
+  "dataElements": [
+    {
+      "id": "U4UqGWlG6g3",
+      "name": "New TB Cases",
+      "shortName": "New TB Cases",
+      "code": "DE_NEW_TB_CASES",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "SR9E0veKIcx" }
+    },
+    {
+      "id": "Ot1OGMmjxWk",
+      "name": "Retreatment TB Cases",
+      "shortName": "Retreatment TB Cases",
+      "code": "DE_RETREATMENT_TB_CASES",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "SR9E0veKIcx" }
+    }
+  ]
+}

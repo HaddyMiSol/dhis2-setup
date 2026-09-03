@@ -1,0 +1,826 @@
+<div class="page-section" style="font-family: Arial, sans-serif; margin: 20px;"><!-- Form Title -->
+<div style="background-color: #9F7FA4; color: white; padding: 15px; text-align: center; border-radius: 4px; margin-bottom: 20px;">
+<h2 style="margin: 0; font-size: 22px; font-weight: bold; color: #ffffff !important;"><span style="color: #000000 !important;">TB TREATMENT OUTCOME REPORTING FORM</span></h2>
+
+<p style="margin: 5px 0 0 0; font-size: 14px; color: #ffffff !important;">&nbsp;</p>
+</div>
+<style type="text/css">.dhis2-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 13px;
+    }
+    .dhis2-table th, .dhis2-table td {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+      text-align: center;
+      color: #000000;
+    }
+    .dhis2-table th {
+      background-color: #E5D9E6;
+      color: #000000 !important;
+      font-weight: bold;
+    }
+    .dhis2-table td.row-header {
+      text-align: left;
+      font-weight: bold;
+      background-color: #fafbfc;
+      color: #000000 !important;
+    }
+    .dhis2-table input[type="text"], .dhis2-table input[type="number"] {
+      width: 55px;
+      padding: 4px;
+      text-align: center;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      color: #000000;
+    }
+    .block-title {
+      background-color: #9F7FA4;
+      color: #000000 !important;
+      padding: 8px 12px;
+      font-weight: bold;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+</style>
+<!-- BLOCK 1 -->
+<div class="block-title"><span style="color: #000000 !important;">Block 1: Treatment outcome for all TB cases registered by Case category</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Patient Category</span></th>
+			<th rowspan="2" style="width: 25%;">Total TB Cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Removed from Reg.</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Cured</span></th>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Treatment Failure</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">New</span></td>
+			<td class="row-header" style="text-align: center;"><input id="E8A4TzxHbcb-YFLhjZErm8A-val" name="entryfield" title="Treatment Outcome_ Total TB Cases registered New" value="[ Treatment Outcome_ Total TB Cases registered New ]" /></td>
+			<td><input id="V5IfLBcbfno-f1XHoFkWYWm-val" name="entryfield" title="Treatment Outcome Cured, New" value="[ Treatment Outcome Cured, New ]" /></td>
+			<td><input id="V5IfLBcbfno-UGGYZ7Y8iuT-val" name="entryfield" title="Treatment Outcome Treatment Completed, New" value="[ Treatment Outcome Treatment Completed, New ]" /></td>
+			<td><input id="V5IfLBcbfno-hLFl7M5FFnV-val" name="entryfield" title="Treatment Outcome Died, New" value="[ Treatment Outcome Died, New ]" /></td>
+			<td><input id="V5IfLBcbfno-jFuc46JpLUt-val" name="entryfield" title="Treatment Outcome Treatment failure, New" value="[ Treatment Outcome Treatment failure, New ]" /></td>
+			<td><input id="V5IfLBcbfno-hu2kDeacN9s-val" name="entryfield" title="Treatment Outcome Loss to Follow-up, New" value="[ Treatment Outcome Loss to Follow-up, New ]" /></td>
+			<td><input id="V5IfLBcbfno-LxCCwS2jIG6-val" name="entryfield" title="Treatment Outcome Not Evaluated, New" value="[ Treatment Outcome Not Evaluated, New ]" /></td>
+			<td><input id="V5IfLBcbfno-oGP1wC5OtiF-val" name="entryfield" title="Treatment Outcome Removed from Reg., New" value="[ Treatment Outcome Removed from Reg., New ]" /></td>
+			<td><input id="indicatorg4Ukc1hdvly" indicatorid="g4Ukc1hdvly" name="indicator" readonly="readonly" title="Treatment Outcome_New by Treatment Outcome &amp; Treatment History" value="[ Treatment Outcome_New by Treatment Outcome &amp; Treatment History ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Relapse (Recurrent)</span></td>
+			<td class="row-header" style="text-align: center;"><input id="E8A4TzxHbcb-Xh3LD3jwKmd-val" name="entryfield" title="Treatment Outcome_ Total TB Cases registered Relapse" value="[ Treatment Outcome_ Total TB Cases registered Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-XpP0Xb8tDlq-val" name="entryfield" title="Treatment Outcome Cured, Relapse" value="[ Treatment Outcome Cured, Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-ZIOucFDkVfX-val" name="entryfield" title="Treatment Outcome Treatment Completed, Relapse" value="[ Treatment Outcome Treatment Completed, Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-vxGaRkoCJww-val" name="entryfield" title="Treatment Outcome Died, Relapse" value="[ Treatment Outcome Died, Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-iuMXoHrqWIh-val" name="entryfield" title="Treatment Outcome Treatment failure, Relapse" value="[ Treatment Outcome Treatment failure, Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-DuqRFk147lb-val" name="entryfield" title="Treatment Outcome Loss to Follow-up, Relapse" value="[ Treatment Outcome Loss to Follow-up, Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-em0epriXLcC-val" name="entryfield" title="Treatment Outcome Not Evaluated, Relapse" value="[ Treatment Outcome Not Evaluated, Relapse ]" /></td>
+			<td><input id="V5IfLBcbfno-KkyA4AXRQyl-val" name="entryfield" title="Treatment Outcome Removed from Reg., Relapse" value="[ Treatment Outcome Removed from Reg., Relapse ]" /></td>
+			<td><input id="indicatorlOwo2iksx1g" indicatorid="lOwo2iksx1g" name="indicator" readonly="readonly" title="Treatment Outcome_Relapse by Treatment Outcome &amp; Treatment History" value="[ Treatment Outcome_Relapse by Treatment Outcome &amp; Treatment History ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Tx History Unknown</span></td>
+			<td class="row-header" style="text-align: center;"><input id="E8A4TzxHbcb-hhunlp2Haxy-val" name="entryfield" title="Treatment Outcome_ Total TB Cases registered Treatment History Unknown" value="[ Treatment Outcome_ Total TB Cases registered Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-e0uehhVmS59-val" name="entryfield" title="Treatment Outcome Cured, Treatment History Unknown" value="[ Treatment Outcome Cured, Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-BxybHI93j9t-val" name="entryfield" title="Treatment Outcome Treatment Completed, Treatment History Unknown" value="[ Treatment Outcome Treatment Completed, Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-Fzk39NORUYS-val" name="entryfield" title="Treatment Outcome Died, Treatment History Unknown" value="[ Treatment Outcome Died, Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-XPD3KrYYx8o-val" name="entryfield" title="Treatment Outcome Treatment failure, Treatment History Unknown" value="[ Treatment Outcome Treatment failure, Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-m3fZWJs1W4o-val" name="entryfield" title="Treatment Outcome Loss to Follow-up, Treatment History Unknown" value="[ Treatment Outcome Loss to Follow-up, Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-k76a3MdgPRY-val" name="entryfield" title="Treatment Outcome Not Evaluated, Treatment History Unknown" value="[ Treatment Outcome Not Evaluated, Treatment History Unknown ]" /></td>
+			<td><input id="V5IfLBcbfno-s1cSp5wwpy8-val" name="entryfield" title="Treatment Outcome Removed from Reg., Treatment History Unknown" value="[ Treatment Outcome Removed from Reg., Treatment History Unknown ]" /></td>
+			<td><input id="indicatorG2eTwCxv0rC" indicatorid="G2eTwCxv0rC" name="indicator" readonly="readonly" title="Treatment Outcome_Unknown by Treatment Outcome &amp; Treatment History" value="[ Treatment Outcome_Unknown by Treatment Outcome &amp; Treatment History ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Other Retreatment (Re-registered)</span></td>
+			<td class="row-header" style="text-align: center;"><input id="E8A4TzxHbcb-PMY9JvtKOSg-val" name="entryfield" title="Treatment Outcome_ Total TB Cases registered Other Retreatment" value="[ Treatment Outcome_ Total TB Cases registered Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-RUlhJ9YQ9XU-val" name="entryfield" title="Treatment Outcome Cured, Other Retreatment" value="[ Treatment Outcome Cured, Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-MBnFj9fBBZP-val" name="entryfield" title="Treatment Outcome Treatment Completed, Other Retreatment" value="[ Treatment Outcome Treatment Completed, Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-DJEazXcGx8z-val" name="entryfield" title="Treatment Outcome Died, Other Retreatment" value="[ Treatment Outcome Died, Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-cgSoxw6mfu9-val" name="entryfield" title="Treatment Outcome Treatment failure, Other Retreatment" value="[ Treatment Outcome Treatment failure, Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-PhujFAV45qW-val" name="entryfield" title="Treatment Outcome Loss to Follow-up, Other Retreatment" value="[ Treatment Outcome Loss to Follow-up, Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-mWXF1XxKcCY-val" name="entryfield" title="Treatment Outcome Not Evaluated, Other Retreatment" value="[ Treatment Outcome Not Evaluated, Other Retreatment ]" /></td>
+			<td><input id="V5IfLBcbfno-sN9issmKt0o-val" name="entryfield" title="Treatment Outcome Removed from Reg., Other Retreatment" value="[ Treatment Outcome Removed from Reg., Other Retreatment ]" /></td>
+			<td><input id="indicatorqesAK04yPRq" indicatorid="qesAK04yPRq" name="indicator" readonly="readonly" title="Treatment Outcome_Other by Treatment Outcome &amp; Treatment History" value="[ Treatment Outcome_Other by Treatment Outcome &amp; Treatment History ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">All Forms of TB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorITGjCtPf9rI" indicatorid="ITGjCtPf9rI" name="indicator" readonly="readonly" title="Treatment Outcome_ Total TB Cases registered" value="[ Treatment Outcome_ Total TB Cases registered ]" /></td>
+			<td><input id="indicatorBrXjQQalamb" indicatorid="BrXjQQalamb" name="indicator" readonly="readonly" title="Treatment Outcome_Cured by Treatment History" value="[ Treatment Outcome_Cured by Treatment History ]" /></td>
+			<td><input id="indicatornxLQ1o6cxEs" indicatorid="nxLQ1o6cxEs" name="indicator" readonly="readonly" title="Treatment Outcome_Tx completed by Treatment History" value="[ Treatment Outcome_Tx completed by Treatment History ]" /></td>
+			<td><input id="indicatorXLJSAjCM118" indicatorid="XLJSAjCM118" name="indicator" readonly="readonly" title="Treatment Outcome_Died by Treatment History" value="[ Treatment Outcome_Died by Treatment History ]" /></td>
+			<td><input id="indicatorY5SfMz4NIoS" indicatorid="Y5SfMz4NIoS" name="indicator" readonly="readonly" title="Treatment Outcome_Tx failure by Treatment History" value="[ Treatment Outcome_Tx failure by Treatment History ]" /></td>
+			<td><input id="indicatorTeu1qoV0qfS" indicatorid="Teu1qoV0qfS" name="indicator" readonly="readonly" title="Treatment Outcome_LTFU by Treatment History" value="[ Treatment Outcome_LTFU by Treatment History ]" /></td>
+			<td><input id="indicatoroqRrkDccZVs" indicatorid="oqRrkDccZVs" name="indicator" readonly="readonly" title="Treatment Outcome_Not Evaluated by Treatment History" value="[ Treatment Outcome_Not Evaluated by Treatment History ]" /></td>
+			<td><input id="indicatorYfRoPQLdSld" indicatorid="YfRoPQLdSld" name="indicator" readonly="readonly" title="Treatment Outcome_Removed_from_Reg. by Treatment History" value="[ Treatment Outcome_Removed_from_Reg. by Treatment History ]" /></td>
+			<td><input id="indicatorQ7Oeh06Crbi" indicatorid="Q7Oeh06Crbi" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms of TB Cases by Treatment History" value="[ Treatment Outcome_All Forms of TB Cases by Treatment History ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 2 -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 2: Treatment outcome for all TB cases registered by diagnosis, site and type of services provided</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Patient Category / Classification</span></th>
+			<th rowspan="2" style="width: 25%;">Total no. of cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Removed from Reg.</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Cured</span></th>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Treatment Failure</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Bacteriologically Diagnosed</span></td>
+			<td class="row-header" style="text-align: center;"><input id="YlTt8RInO12-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed_Total" value="[ Treatment Outcome_Bacteriologically Diagnosed_Total ]" /></td>
+			<td><input id="GMbJmTPSIAo-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Cured" value="[ Treatment Outcome_Bacteriologically Diagnosed Cured ]" /></td>
+			<td><input id="GMbJmTPSIAo-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Treatment Completed" value="[ Treatment Outcome_Bacteriologically Diagnosed Treatment Completed ]" /></td>
+			<td><input id="GMbJmTPSIAo-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Died" value="[ Treatment Outcome_Bacteriologically Diagnosed Died ]" /></td>
+			<td><input id="GMbJmTPSIAo-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Treatment failure" value="[ Treatment Outcome_Bacteriologically Diagnosed Treatment failure ]" /></td>
+			<td><input id="GMbJmTPSIAo-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Loss to Follow-up" value="[ Treatment Outcome_Bacteriologically Diagnosed Loss to Follow-up ]" /></td>
+			<td><input id="GMbJmTPSIAo-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Not Evaluated" value="[ Treatment Outcome_Bacteriologically Diagnosed Not Evaluated ]" /></td>
+			<td><input id="GMbJmTPSIAo-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_Bacteriologically Diagnosed Removed from Reg." value="[ Treatment Outcome_Bacteriologically Diagnosed Removed from Reg. ]" /></td>
+			<td><input id="indicatorQjS1TuE1cy3" indicatorid="QjS1TuE1cy3" name="indicator" readonly="readonly" title="Treatment Outcome_Bacteriologically Diagnosed " value="[ Treatment Outcome_Bacteriologically Diagnosed  ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Clinically Diagnosed</span></td>
+			<td class="row-header" style="text-align: center;"><input id="TjZlUYkkbTj-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed_Total" value="[ Treatment Outcome_Clinically Diagnosed_Total ]" /></td>
+			<td><input id="CLrZ3aWZkSB-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Cured" value="[ Treatment Outcome_Clinically Diagnosed Cured ]" /></td>
+			<td><input id="CLrZ3aWZkSB-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Treatment Completed" value="[ Treatment Outcome_Clinically Diagnosed Treatment Completed ]" /></td>
+			<td><input id="CLrZ3aWZkSB-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Died" value="[ Treatment Outcome_Clinically Diagnosed Died ]" /></td>
+			<td><input id="CLrZ3aWZkSB-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Treatment failure" value="[ Treatment Outcome_Clinically Diagnosed Treatment failure ]" /></td>
+			<td><input id="CLrZ3aWZkSB-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Loss to Follow-up" value="[ Treatment Outcome_Clinically Diagnosed Loss to Follow-up ]" /></td>
+			<td><input id="CLrZ3aWZkSB-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Not Evaluated" value="[ Treatment Outcome_Clinically Diagnosed Not Evaluated ]" /></td>
+			<td><input id="CLrZ3aWZkSB-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_Clinically Diagnosed Removed from Reg." value="[ Treatment Outcome_Clinically Diagnosed Removed from Reg. ]" /></td>
+			<td><input id="indicatorCvQ7w9Uoz7I" indicatorid="CvQ7w9Uoz7I" name="indicator" readonly="readonly" title="Treatment Outcome_Clinically Diagnosed" value="[ Treatment Outcome_Clinically Diagnosed ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Pulmonary TB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="FfSreqPRMHg-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_PTB_Total" value="[ Treatment Outcome_PTB_Total ]" /></td>
+			<td><input id="vrjn9Wvgfyg-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_PTB Cured" value="[ Treatment Outcome_PTB Cured ]" /></td>
+			<td><input id="vrjn9Wvgfyg-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_PTB Treatment Completed" value="[ Treatment Outcome_PTB Treatment Completed ]" /></td>
+			<td><input id="vrjn9Wvgfyg-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_PTB Died" value="[ Treatment Outcome_PTB Died ]" /></td>
+			<td><input id="vrjn9Wvgfyg-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_PTB Treatment failure" value="[ Treatment Outcome_PTB Treatment failure ]" /></td>
+			<td><input id="vrjn9Wvgfyg-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_PTB Loss to Follow-up" value="[ Treatment Outcome_PTB Loss to Follow-up ]" /></td>
+			<td><input id="vrjn9Wvgfyg-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_PTB Not Evaluated" value="[ Treatment Outcome_PTB Not Evaluated ]" /></td>
+			<td><input id="vrjn9Wvgfyg-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_PTB Removed from Reg." value="[ Treatment Outcome_PTB Removed from Reg. ]" /></td>
+			<td><input id="indicatordmOWkhC2KXL" indicatorid="dmOWkhC2KXL" name="indicator" readonly="readonly" title="Treatment Outcome_PTB" value="[ Treatment Outcome_PTB ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">EPTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="wkS6XnluRZw-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome EPTB_Total" value="[ Treatment Outcome EPTB_Total ]" /></td>
+			<td><input id="w2wMqZcUDIh-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome EPTB Cured" value="[ Treatment Outcome EPTB Cured ]" /></td>
+			<td><input id="w2wMqZcUDIh-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome EPTB Treatment Completed" value="[ Treatment Outcome EPTB Treatment Completed ]" /></td>
+			<td><input id="w2wMqZcUDIh-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome EPTB Died" value="[ Treatment Outcome EPTB Died ]" /></td>
+			<td><input id="w2wMqZcUDIh-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome EPTB Treatment failure" value="[ Treatment Outcome EPTB Treatment failure ]" /></td>
+			<td><input id="w2wMqZcUDIh-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome EPTB Loss to Follow-up" value="[ Treatment Outcome EPTB Loss to Follow-up ]" /></td>
+			<td><input id="w2wMqZcUDIh-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome EPTB Not Evaluated" value="[ Treatment Outcome EPTB Not Evaluated ]" /></td>
+			<td><input id="w2wMqZcUDIh-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome EPTB Removed from Reg." value="[ Treatment Outcome EPTB Removed from Reg. ]" /></td>
+			<td><input id="indicatorNwN8k8185oo" indicatorid="NwN8k8185oo" name="indicator" readonly="readonly" title="Treatment Outcome EPTB" value="[ Treatment Outcome EPTB ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">TB Cases Managed by TS</span></td>
+			<td class="row-header" style="text-align: center;"><input id="t9d8CMv4O4s-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases_Total" value="[ Treatment Outcome_TS Managed TB Cases_Total ]" /></td>
+			<td><input id="yfJs1ON43xK-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Cured" value="[ Treatment Outcome_TS Managed TB Cases Cured ]" /></td>
+			<td><input id="yfJs1ON43xK-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Treatment Completed" value="[ Treatment Outcome_TS Managed TB Cases Treatment Completed ]" /></td>
+			<td><input id="yfJs1ON43xK-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Died" value="[ Treatment Outcome_TS Managed TB Cases Died ]" /></td>
+			<td><input id="yfJs1ON43xK-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Treatment failure" value="[ Treatment Outcome_TS Managed TB Cases Treatment failure ]" /></td>
+			<td><input id="yfJs1ON43xK-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Loss to Follow-up" value="[ Treatment Outcome_TS Managed TB Cases Loss to Follow-up ]" /></td>
+			<td><input id="yfJs1ON43xK-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Not Evaluated" value="[ Treatment Outcome_TS Managed TB Cases Not Evaluated ]" /></td>
+			<td><input id="yfJs1ON43xK-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_TS Managed TB Cases Removed from Reg." value="[ Treatment Outcome_TS Managed TB Cases Removed from Reg. ]" /></td>
+			<td><input id="indicatorY0oZyhofn9M" indicatorid="Y0oZyhofn9M" name="indicator" readonly="readonly" title="Treatment Outcome_TS Managed TB Cases" value="[ Treatment Outcome_TS Managed TB Cases ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">HIV-Negative TB Cases (All Forms)</span></td>
+			<td class="row-header" style="text-align: center;"><input id="ILJKuRmerPI-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases_Total" value="[ Treatment Outcome_All Forms HIV negative TB Cases_Total ]" /></td>
+			<td><input id="mTecQoXsf2o-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Cured" value="[ Treatment Outcome_All Forms HIV negative TB Cases Cured ]" /></td>
+			<td><input id="mTecQoXsf2o-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Treatment Completed" value="[ Treatment Outcome_All Forms HIV negative TB Cases Treatment Completed ]" /></td>
+			<td><input id="mTecQoXsf2o-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Died" value="[ Treatment Outcome_All Forms HIV negative TB Cases Died ]" /></td>
+			<td><input id="mTecQoXsf2o-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Treatment failure" value="[ Treatment Outcome_All Forms HIV negative TB Cases Treatment failure ]" /></td>
+			<td><input id="mTecQoXsf2o-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Loss to Follow-up" value="[ Treatment Outcome_All Forms HIV negative TB Cases Loss to Follow-up ]" /></td>
+			<td><input id="mTecQoXsf2o-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Not Evaluated" value="[ Treatment Outcome_All Forms HIV negative TB Cases Not Evaluated ]" /></td>
+			<td><input id="mTecQoXsf2o-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_All Forms HIV negative TB Cases Removed from Reg." value="[ Treatment Outcome_All Forms HIV negative TB Cases Removed from Reg. ]" /></td>
+			<td><input id="indicatorIDR7AAzsFJb" indicatorid="IDR7AAzsFJb" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms HIV negative TB Cases" value="[ Treatment Outcome_All Forms HIV negative TB Cases ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">HIV Unknown Status (All Forms)</span></td>
+			<td class="row-header" style="text-align: center;"><input id="qtTvYXcpugT-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases_Total" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases_Total ]" /></td>
+			<td><input id="gyrDO1xkxwn-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Cured" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Cured ]" /></td>
+			<td><input id="gyrDO1xkxwn-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Treatment Completed" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Treatment Completed ]" /></td>
+			<td><input id="gyrDO1xkxwn-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Died" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Died ]" /></td>
+			<td><input id="gyrDO1xkxwn-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Treatment failure" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Treatment failure ]" /></td>
+			<td><input id="gyrDO1xkxwn-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Loss to Follow-up" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Loss to Follow-up ]" /></td>
+			<td><input id="gyrDO1xkxwn-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Not Evaluated" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Not Evaluated ]" /></td>
+			<td><input id="gyrDO1xkxwn-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_All Forms HIV Unknown TB Cases Removed from Reg." value="[ Treatment Outcome_All Forms HIV Unknown TB Cases Removed from Reg. ]" /></td>
+			<td><input id="indicatorQqJ82poatDb" indicatorid="QqJ82poatDb" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms HIV Unknown TB Cases" value="[ Treatment Outcome_All Forms HIV Unknown TB Cases ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">HIV-Positive TB Cases (New &amp; Relapse)</span></td>
+			<td class="row-header" style="text-align: center;"><input id="XgPvqIQql7J-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB_Total" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB_Total ]" /></td>
+			<td><input id="QrS7RPeMOkI-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Cured" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Cured ]" /></td>
+			<td><input id="QrS7RPeMOkI-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Treatment Completed ]" /></td>
+			<td><input id="QrS7RPeMOkI-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Died" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Died ]" /></td>
+			<td><input id="QrS7RPeMOkI-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Treatment failure" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Treatment failure ]" /></td>
+			<td><input id="QrS7RPeMOkI-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Loss to Follow-up ]" /></td>
+			<td><input id="QrS7RPeMOkI-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Not Evaluated ]" /></td>
+			<td><input id="QrS7RPeMOkI-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Removed from Reg. ]" /></td>
+			<td><input id="indicatory1dF250m7hH" indicatorid="y1dF250m7hH" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse HIV Positive TB Cases" value="[ Treatment Outcome_New &amp; Relapse HIV Positive TB Cases ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header">TB/COVID-19 COinfected Cases</td>
+			<td class="row-header" style="text-align: center;"><input id="cddK01p3ChB-HllvX50cXC0-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases_Total" value="[ Treatment Outcome_Covid 19/TB Cases_Total ]" /></td>
+			<td><input id="UpkDyr7OSJo-jHdkRwugjqS-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Cured" value="[ Treatment Outcome_Covid 19/TB Cases Cured ]" /></td>
+			<td><input id="UpkDyr7OSJo-qrIPE9izDoF-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Treatment Completed" value="[ Treatment Outcome_Covid 19/TB Cases Treatment Completed ]" /></td>
+			<td><input id="UpkDyr7OSJo-fxyE1TyoMcO-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Died" value="[ Treatment Outcome_Covid 19/TB Cases Died ]" /></td>
+			<td><input id="UpkDyr7OSJo-Y17EKGiCT67-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Treatment failure" value="[ Treatment Outcome_Covid 19/TB Cases Treatment failure ]" /></td>
+			<td><input id="UpkDyr7OSJo-vLEeGMOWp1J-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Loss to Follow-up" value="[ Treatment Outcome_Covid 19/TB Cases Loss to Follow-up ]" /></td>
+			<td><input id="UpkDyr7OSJo-j0Pm3PwSeoz-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Not Evaluated" value="[ Treatment Outcome_Covid 19/TB Cases Not Evaluated ]" /></td>
+			<td><input id="UpkDyr7OSJo-CFqYUWCleVc-val" name="entryfield" title="Treatment Outcome_Covid 19/TB Cases Removed from Reg." value="[ Treatment Outcome_Covid 19/TB Cases Removed from Reg. ]" /></td>
+			<td><input id="indicatorDm6jpQFyNuz" indicatorid="Dm6jpQFyNuz" name="indicator" readonly="readonly" title="Treatment Outcome_Covid 19/TB Cases" value="[ Treatment Outcome_Covid 19/TB Cases ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 3a -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 3a: Treatment Outcome of Male by age and Sex registered by case category</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 20%;"><span style="color: #000000 !important;">Patient Category</span></th>
+			<th rowspan="2" style="width: 15%;"><span style="color: #000000 !important;">Age Groups</span></th>
+			<th rowspan="2" style="width: 15%;">Total no. of cases registered (Male)</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes (Male)</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Removed from Reg.</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Cured</span></th>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Treatment Failure</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header" rowspan="3"><span style="color: #000000 !important;">All Forms</span></td>
+			<td><span style="color: #000000 !important;">0 - 4 years</span></td>
+			<td style="text-align: center;"><input id="DFgnw59bRSw-WPHZbqs7hoJ-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases_Total Male, 0-4" value="[ Treatment Outcome_All Forms TB Cases_Total Male, 0-4 ]" /></td>
+			<td><input id="Ru1XXdo0cZu-lwF8mMVL2Bq-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Cured" value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Cured ]" /></td>
+			<td><input id="Ru1XXdo0cZu-Svm1fnO5yhh-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Treatment Completed" value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Treatment Completed ]" /></td>
+			<td><input id="Ru1XXdo0cZu-tYw0JJwJiQq-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Died" value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Died ]" /></td>
+			<td><input id="Ru1XXdo0cZu-LjEZYBMrISs-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Treatment failure" value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Treatment failure ]" /></td>
+			<td><input id="Ru1XXdo0cZu-wjg1JmgvMRd-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Loss to Follow-up" value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Loss to Follow-up ]" /></td>
+			<td><input id="Ru1XXdo0cZu-UE5wzvQeCbs-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Not Evaluated" value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Not Evaluated ]" /></td>
+			<td><input id="Ru1XXdo0cZu-C0TyZnYiITL-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 0-4, Removed from Reg." value="[ Treatment Outcome_All Forms TB Cases Male, 0-4, Removed from Reg. ]" /></td>
+			<td><input id="indicatorkZ9iatpjx29" indicatorid="kZ9iatpjx29" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms TB Cases_Male (0-4yr)" value="[ Treatment Outcome_All Forms TB Cases_Male (0-4yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">5 - 14 years</span></td>
+			<td style="text-align: center;"><input id="DFgnw59bRSw-MKsndSGSSVI-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases_Total Male, 5-14" value="[ Treatment Outcome_All Forms TB Cases_Total Male, 5-14 ]" /></td>
+			<td><input id="Ru1XXdo0cZu-dpGBMmDmjn3-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Cured" value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Cured ]" /></td>
+			<td><input id="Ru1XXdo0cZu-CFXU5GgAxoz-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Treatment Completed" value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Treatment Completed ]" /></td>
+			<td><input id="Ru1XXdo0cZu-wcxfjiXAk74-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Died" value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Died ]" /></td>
+			<td><input id="Ru1XXdo0cZu-C1uSsRblFCc-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Treatment failure" value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Treatment failure ]" /></td>
+			<td><input id="Ru1XXdo0cZu-YtZPRQB9s6Z-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Loss to Follow-up" value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Loss to Follow-up ]" /></td>
+			<td><input id="Ru1XXdo0cZu-VeQCUq19rs6-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Not Evaluated" value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Not Evaluated ]" /></td>
+			<td><input id="Ru1XXdo0cZu-eOeKkU9699w-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 5-14, Removed from Reg." value="[ Treatment Outcome_All Forms TB Cases Male, 5-14, Removed from Reg. ]" /></td>
+			<td><input id="indicatorFSOaEMmZhLp" indicatorid="FSOaEMmZhLp" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms TB Cases_Male (5-14yr)" value="[ Treatment Outcome_All Forms TB Cases_Male (5-14yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">15 years and above</span></td>
+			<td style="text-align: center;"><input id="DFgnw59bRSw-s4tuMM98eSk-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases_Total Male, 15+" value="[ Treatment Outcome_All Forms TB Cases_Total Male, 15+ ]" /></td>
+			<td><input id="Ru1XXdo0cZu-TXDq0D6wESL-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Cured" value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Cured ]" /></td>
+			<td><input id="Ru1XXdo0cZu-IV6BL4WPrUu-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Treatment Completed" value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Treatment Completed ]" /></td>
+			<td><input id="Ru1XXdo0cZu-jEXhRASn4fn-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Died" value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Died ]" /></td>
+			<td><input id="Ru1XXdo0cZu-RngipiuSLCM-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Treatment failure" value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Treatment failure ]" /></td>
+			<td><input id="Ru1XXdo0cZu-tcv098gVSc8-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Loss to Follow-up" value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Loss to Follow-up ]" /></td>
+			<td><input id="Ru1XXdo0cZu-zhloZB5X2nZ-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Not Evaluated" value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Not Evaluated ]" /></td>
+			<td><input id="Ru1XXdo0cZu-fcsNGR9sxsg-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Male, 15+, Removed from Reg." value="[ Treatment Outcome_All Forms TB Cases Male, 15+, Removed from Reg. ]" /></td>
+			<td><input id="indicatorIm8Sufa8dMV" indicatorid="Im8Sufa8dMV" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms TB Cases_Male (15+)" value="[ Treatment Outcome_All Forms TB Cases_Male (15+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header" rowspan="3"><span style="color: #000000 !important;">New &amp; Relapse (Recurrent)</span></td>
+			<td><span style="color: #000000 !important;">0 - 4 years</span></td>
+			<td style="text-align: center;"><input id="EVbNjY8dVW8-WPHZbqs7hoJ-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases_Total Male, 0-4" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Total Male, 0-4 ]" /></td>
+			<td><input id="zren68K4Tun-lwF8mMVL2Bq-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Cured" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Cured ]" /></td>
+			<td><input id="zren68K4Tun-Svm1fnO5yhh-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Treatment Completed ]" /></td>
+			<td><input id="zren68K4Tun-tYw0JJwJiQq-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Died" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Died ]" /></td>
+			<td><input id="zren68K4Tun-LjEZYBMrISs-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Treatment failure" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Treatment failure ]" /></td>
+			<td><input id="zren68K4Tun-wjg1JmgvMRd-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Loss to Follow-up ]" /></td>
+			<td><input id="zren68K4Tun-UE5wzvQeCbs-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Not Evaluated ]" /></td>
+			<td><input id="zren68K4Tun-C0TyZnYiITL-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 0-4, Removed from Reg. ]" /></td>
+			<td><input id="indicatorsga21myNGT7" indicatorid="sga21myNGT7" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse TB Cases_Male (0-4yr)" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Male (0-4yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">5 - 14 years</span></td>
+			<td style="text-align: center;"><input id="EVbNjY8dVW8-MKsndSGSSVI-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases_Total Male, 5-14" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Total Male, 5-14 ]" /></td>
+			<td><input id="zren68K4Tun-dpGBMmDmjn3-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Cured" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Cured ]" /></td>
+			<td><input id="zren68K4Tun-CFXU5GgAxoz-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Treatment Completed ]" /></td>
+			<td><input id="zren68K4Tun-wcxfjiXAk74-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Died" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Died ]" /></td>
+			<td><input id="zren68K4Tun-C1uSsRblFCc-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Treatment failure" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Treatment failure ]" /></td>
+			<td><input id="zren68K4Tun-YtZPRQB9s6Z-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Loss to Follow-up ]" /></td>
+			<td><input id="zren68K4Tun-VeQCUq19rs6-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Not Evaluated ]" /></td>
+			<td><input id="zren68K4Tun-eOeKkU9699w-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 5-14, Removed from Reg. ]" /></td>
+			<td><input id="indicatorSW8hyfKICVh" indicatorid="SW8hyfKICVh" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse TB Cases_Male (5-14yr)" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Male (5-14yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">15 years and above</span></td>
+			<td style="text-align: center;"><input id="EVbNjY8dVW8-s4tuMM98eSk-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases_Total Male, 15+" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Total Male, 15+ ]" /></td>
+			<td><input id="zren68K4Tun-TXDq0D6wESL-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Cured" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Cured ]" /></td>
+			<td><input id="zren68K4Tun-IV6BL4WPrUu-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Treatment Completed ]" /></td>
+			<td><input id="zren68K4Tun-jEXhRASn4fn-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Died" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Died ]" /></td>
+			<td><input id="zren68K4Tun-RngipiuSLCM-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Treatment failure" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Treatment failure ]" /></td>
+			<td><input id="zren68K4Tun-tcv098gVSc8-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Loss to Follow-up ]" /></td>
+			<td><input id="zren68K4Tun-zhloZB5X2nZ-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Not Evaluated ]" /></td>
+			<td><input id="zren68K4Tun-fcsNGR9sxsg-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse TB Cases Male, 15+, Removed from Reg. ]" /></td>
+			<td><input id="indicatorWFCA9P7SGho" indicatorid="WFCA9P7SGho" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse TB Cases_Male (15+)" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Male (15+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header" rowspan="3"><span style="color: #000000 !important;">All Forms HIV Positive</span></td>
+			<td><span style="color: #000000 !important;">0 - 4 years</span></td>
+			<td style="text-align: center;"><input id="JzEC906qAsS-WPHZbqs7hoJ-val" name="entryfield" title="Treatment Outcome_HIV Positive_Total Male, 0-4" value="[ Treatment Outcome_HIV Positive_Total Male, 0-4 ]" /></td>
+			<td><input id="PFz46PDjqip-lwF8mMVL2Bq-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Cured" value="[ Treatment Outcome_HIV Positive Male, 0-4, Cured ]" /></td>
+			<td><input id="PFz46PDjqip-Svm1fnO5yhh-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Treatment Completed" value="[ Treatment Outcome_HIV Positive Male, 0-4, Treatment Completed ]" /></td>
+			<td><input id="PFz46PDjqip-tYw0JJwJiQq-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Died" value="[ Treatment Outcome_HIV Positive Male, 0-4, Died ]" /></td>
+			<td><input id="PFz46PDjqip-LjEZYBMrISs-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Treatment failure" value="[ Treatment Outcome_HIV Positive Male, 0-4, Treatment failure ]" /></td>
+			<td><input id="PFz46PDjqip-wjg1JmgvMRd-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Loss to Follow-up" value="[ Treatment Outcome_HIV Positive Male, 0-4, Loss to Follow-up ]" /></td>
+			<td><input id="PFz46PDjqip-UE5wzvQeCbs-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Not Evaluated" value="[ Treatment Outcome_HIV Positive Male, 0-4, Not Evaluated ]" /></td>
+			<td><input id="PFz46PDjqip-C0TyZnYiITL-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 0-4, Removed from Reg." value="[ Treatment Outcome_HIV Positive Male, 0-4, Removed from Reg. ]" /></td>
+			<td><input id="indicatorBwVxCZ9Yjm0" indicatorid="BwVxCZ9Yjm0" name="indicator" readonly="readonly" title="Treatment Outcome_HIV Positive_Male (0-4yr)" value="[ Treatment Outcome_HIV Positive_Male (0-4yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">5 - 14 years</span></td>
+			<td style="text-align: center;"><input id="JzEC906qAsS-MKsndSGSSVI-val" name="entryfield" title="Treatment Outcome_HIV Positive_Total Male, 5-14" value="[ Treatment Outcome_HIV Positive_Total Male, 5-14 ]" /></td>
+			<td><input id="PFz46PDjqip-dpGBMmDmjn3-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Cured" value="[ Treatment Outcome_HIV Positive Male, 5-14, Cured ]" /></td>
+			<td><input id="PFz46PDjqip-CFXU5GgAxoz-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Treatment Completed" value="[ Treatment Outcome_HIV Positive Male, 5-14, Treatment Completed ]" /></td>
+			<td><input id="PFz46PDjqip-wcxfjiXAk74-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Died" value="[ Treatment Outcome_HIV Positive Male, 5-14, Died ]" /></td>
+			<td><input id="PFz46PDjqip-C1uSsRblFCc-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Treatment failure" value="[ Treatment Outcome_HIV Positive Male, 5-14, Treatment failure ]" /></td>
+			<td><input id="PFz46PDjqip-YtZPRQB9s6Z-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Loss to Follow-up" value="[ Treatment Outcome_HIV Positive Male, 5-14, Loss to Follow-up ]" /></td>
+			<td><input id="PFz46PDjqip-VeQCUq19rs6-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Not Evaluated" value="[ Treatment Outcome_HIV Positive Male, 5-14, Not Evaluated ]" /></td>
+			<td><input id="PFz46PDjqip-eOeKkU9699w-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 5-14, Removed from Reg." value="[ Treatment Outcome_HIV Positive Male, 5-14, Removed from Reg. ]" /></td>
+			<td><input id="indicatorC3LIQcfIugb" indicatorid="C3LIQcfIugb" name="indicator" readonly="readonly" title="Treatment Outcome_HIV Positive_Male (5-14yr)" value="[ Treatment Outcome_HIV Positive_Male (5-14yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">15 years and above</span></td>
+			<td style="text-align: center;"><input id="JzEC906qAsS-s4tuMM98eSk-val" name="entryfield" title="Treatment Outcome_HIV Positive_Total Male, 15+" value="[ Treatment Outcome_HIV Positive_Total Male, 15+ ]" /></td>
+			<td><input id="PFz46PDjqip-TXDq0D6wESL-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Cured" value="[ Treatment Outcome_HIV Positive Male, 15+, Cured ]" /></td>
+			<td><input id="PFz46PDjqip-IV6BL4WPrUu-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Treatment Completed" value="[ Treatment Outcome_HIV Positive Male, 15+, Treatment Completed ]" /></td>
+			<td><input id="PFz46PDjqip-jEXhRASn4fn-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Died" value="[ Treatment Outcome_HIV Positive Male, 15+, Died ]" /></td>
+			<td><input id="PFz46PDjqip-RngipiuSLCM-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Treatment failure" value="[ Treatment Outcome_HIV Positive Male, 15+, Treatment failure ]" /></td>
+			<td><input id="PFz46PDjqip-tcv098gVSc8-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Loss to Follow-up" value="[ Treatment Outcome_HIV Positive Male, 15+, Loss to Follow-up ]" /></td>
+			<td><input id="PFz46PDjqip-zhloZB5X2nZ-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Not Evaluated" value="[ Treatment Outcome_HIV Positive Male, 15+, Not Evaluated ]" /></td>
+			<td><input id="PFz46PDjqip-fcsNGR9sxsg-val" name="entryfield" title="Treatment Outcome_HIV Positive Male, 15+, Removed from Reg." value="[ Treatment Outcome_HIV Positive Male, 15+, Removed from Reg. ]" /></td>
+			<td><input id="indicatorAyb5pWdWcJ2" indicatorid="Ayb5pWdWcJ2" name="indicator" readonly="readonly" title="Treatment Outcome_HIV Positive_Male (15+)" value="[ Treatment Outcome_HIV Positive_Male (15+) ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 3b -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 3b: Treatment Outcome of Female by age and Sex registered by case category</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 20%;"><span style="color: #000000 !important;">Patient Category</span></th>
+			<th rowspan="2" style="width: 15%;"><span style="color: #000000 !important;">Age Groups</span></th>
+			<th rowspan="2" style="width: 15%;">Total no. of cases registered (Female)</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes (Female)</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Removed from Reg.</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Cured</span></th>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Treatment Failure</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header" rowspan="3"><span style="color: #000000 !important;">All Forms</span></td>
+			<td><span style="color: #000000 !important;">0 - 4 years</span></td>
+			<td style="text-align: center;"><input id="DFgnw59bRSw-dBXzW8hcypJ-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases_Total Female, 0-4" value="[ Treatment Outcome_All Forms TB Cases_Total Female, 0-4 ]" /></td>
+			<td><input id="Ru1XXdo0cZu-KcDc5bUBICt-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Cured" value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Cured ]" /></td>
+			<td><input id="Ru1XXdo0cZu-gUsOcqXC574-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Treatment Completed" value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Treatment Completed ]" /></td>
+			<td><input id="Ru1XXdo0cZu-ksa5ZPcrzaE-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Died" value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Died ]" /></td>
+			<td><input id="Ru1XXdo0cZu-D8SSDnV2Ra1-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Treatment failure" value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Treatment failure ]" /></td>
+			<td><input id="Ru1XXdo0cZu-gtc6MMZ2oMt-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Loss to Follow-up" value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Loss to Follow-up ]" /></td>
+			<td><input id="Ru1XXdo0cZu-MxPk1UmfKDN-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Not Evaluated" value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Not Evaluated ]" /></td>
+			<td><input id="Ru1XXdo0cZu-RkcfLPGhVTB-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 0-4, Removed from Reg." value="[ Treatment Outcome_All Forms TB Cases Female, 0-4, Removed from Reg. ]" /></td>
+			<td><input id="indicatorGR1d7rXZx6Q" indicatorid="GR1d7rXZx6Q" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms TB Cases_Female (0-4yr)" value="[ Treatment Outcome_All Forms TB Cases_Female (0-4yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">5 - 14 years</span></td>
+			<td style="text-align: center;"><input id="DFgnw59bRSw-mCTerYyo95F-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases_Total Female, 5-14" value="[ Treatment Outcome_All Forms TB Cases_Total Female, 5-14 ]" /></td>
+			<td><input id="Ru1XXdo0cZu-uVDcGVnaXXx-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Cured" value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Cured ]" /></td>
+			<td><input id="Ru1XXdo0cZu-d7QSrhqwYf5-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Treatment Completed" value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Treatment Completed ]" /></td>
+			<td><input id="Ru1XXdo0cZu-Q0t5l6BCdZb-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Died" value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Died ]" /></td>
+			<td><input id="Ru1XXdo0cZu-zyYw18JEGtS-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Treatment failure" value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Treatment failure ]" /></td>
+			<td><input id="Ru1XXdo0cZu-StT1dBDwCnv-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Loss to Follow-up" value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Loss to Follow-up ]" /></td>
+			<td><input id="Ru1XXdo0cZu-CN3oaxD46Il-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Not Evaluated" value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Not Evaluated ]" /></td>
+			<td><input id="Ru1XXdo0cZu-uWLZZ1vAhE1-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 5-14, Removed from Reg." value="[ Treatment Outcome_All Forms TB Cases Female, 5-14, Removed from Reg. ]" /></td>
+			<td><input id="indicatorrTUHRoVcZaJ" indicatorid="rTUHRoVcZaJ" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms TB Cases_Female (5-14yr)" value="[ Treatment Outcome_All Forms TB Cases_Female (5-14yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">15 years and above</span></td>
+			<td style="text-align: center;"><input id="DFgnw59bRSw-FDtJ5IWJrAM-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases_Total Female, 15+" value="[ Treatment Outcome_All Forms TB Cases_Total Female, 15+ ]" /></td>
+			<td><input id="Ru1XXdo0cZu-uU4zlnj45Mv-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Cured" value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Cured ]" /></td>
+			<td><input id="Ru1XXdo0cZu-cvDwzcJXjWT-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Treatment Completed" value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Treatment Completed ]" /></td>
+			<td><input id="Ru1XXdo0cZu-kggaHSV7C7v-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Died" value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Died ]" /></td>
+			<td><input id="Ru1XXdo0cZu-sdK4fiyAvNT-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Treatment failure" value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Treatment failure ]" /></td>
+			<td><input id="Ru1XXdo0cZu-Y5uyPhl8DX7-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Loss to Follow-up" value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Loss to Follow-up ]" /></td>
+			<td><input id="Ru1XXdo0cZu-f3dyfrM3k1b-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Not Evaluated" value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Not Evaluated ]" /></td>
+			<td><input id="Ru1XXdo0cZu-vG9kbJZ19Hq-val" name="entryfield" title="Treatment Outcome_All Forms TB Cases Female, 15+, Removed from Reg." value="[ Treatment Outcome_All Forms TB Cases Female, 15+, Removed from Reg. ]" /></td>
+			<td><input id="indicatornskTJzTDml1" indicatorid="nskTJzTDml1" name="indicator" readonly="readonly" title="Treatment Outcome_All Forms TB Cases_Female (15+)" value="[ Treatment Outcome_All Forms TB Cases_Female (15+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header" rowspan="3"><span style="color: #000000 !important;">New &amp; Relapse (Recurrent)</span></td>
+			<td><span style="color: #000000 !important;">0 - 4 years</span></td>
+			<td style="text-align: center;"><input id="EVbNjY8dVW8-dBXzW8hcypJ-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases_Total Female, 0-4" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Total Female, 0-4 ]" /></td>
+			<td><input id="zren68K4Tun-KcDc5bUBICt-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Cured" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Cured ]" /></td>
+			<td><input id="zren68K4Tun-gUsOcqXC574-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Treatment Completed ]" /></td>
+			<td><input id="zren68K4Tun-ksa5ZPcrzaE-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Died" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Died ]" /></td>
+			<td><input id="zren68K4Tun-D8SSDnV2Ra1-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Treatment failure" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Treatment failure ]" /></td>
+			<td><input id="zren68K4Tun-gtc6MMZ2oMt-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Loss to Follow-up ]" /></td>
+			<td><input id="zren68K4Tun-MxPk1UmfKDN-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Not Evaluated ]" /></td>
+			<td><input id="zren68K4Tun-RkcfLPGhVTB-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 0-4, Removed from Reg. ]" /></td>
+			<td><input id="indicatorFfFXdKHP7iG" indicatorid="FfFXdKHP7iG" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse TB Cases_Female (0-4yr)" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Female (0-4yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">5 - 14 years</span></td>
+			<td style="text-align: center;"><input id="EVbNjY8dVW8-mCTerYyo95F-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases_Total Female, 5-14" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Total Female, 5-14 ]" /></td>
+			<td><input id="zren68K4Tun-uVDcGVnaXXx-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Cured" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Cured ]" /></td>
+			<td><input id="zren68K4Tun-d7QSrhqwYf5-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Treatment Completed ]" /></td>
+			<td><input id="zren68K4Tun-Q0t5l6BCdZb-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Died" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Died ]" /></td>
+			<td><input id="zren68K4Tun-zyYw18JEGtS-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Treatment failure" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Treatment failure ]" /></td>
+			<td><input id="zren68K4Tun-StT1dBDwCnv-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Loss to Follow-up ]" /></td>
+			<td><input id="zren68K4Tun-CN3oaxD46Il-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Not Evaluated ]" /></td>
+			<td><input id="zren68K4Tun-uWLZZ1vAhE1-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 5-14, Removed from Reg. ]" /></td>
+			<td><input id="indicatorypvE5Sot9Zz" indicatorid="ypvE5Sot9Zz" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse TB Cases_Female (5-14yr)" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Female (5-14yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">15 years and above</span></td>
+			<td style="text-align: center;"><input id="EVbNjY8dVW8-FDtJ5IWJrAM-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases_Total Female, 15+" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Total Female, 15+ ]" /></td>
+			<td><input id="zren68K4Tun-uU4zlnj45Mv-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Cured" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Cured ]" /></td>
+			<td><input id="zren68K4Tun-cvDwzcJXjWT-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Treatment Completed" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Treatment Completed ]" /></td>
+			<td><input id="zren68K4Tun-kggaHSV7C7v-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Died" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Died ]" /></td>
+			<td><input id="zren68K4Tun-sdK4fiyAvNT-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Treatment failure" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Treatment failure ]" /></td>
+			<td><input id="zren68K4Tun-Y5uyPhl8DX7-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Loss to Follow-up" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Loss to Follow-up ]" /></td>
+			<td><input id="zren68K4Tun-f3dyfrM3k1b-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Not Evaluated" value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Not Evaluated ]" /></td>
+			<td><input id="zren68K4Tun-vG9kbJZ19Hq-val" name="entryfield" title="Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Removed from Reg." value="[ Treatment Outcome_New &amp; Relapse TB Cases Female, 15+, Removed from Reg. ]" /></td>
+			<td><input id="indicatorLqPjo0blrJI" indicatorid="LqPjo0blrJI" name="indicator" readonly="readonly" title="Treatment Outcome_New &amp; Relapse TB Cases_Female (15+)" value="[ Treatment Outcome_New &amp; Relapse TB Cases_Female (15+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header" rowspan="3"><span style="color: #000000 !important;">All Forms HIV Positive</span></td>
+			<td><span style="color: #000000 !important;">0 - 4 years</span></td>
+			<td style="text-align: center;"><input id="JzEC906qAsS-dBXzW8hcypJ-val" name="entryfield" title="Treatment Outcome_HIV Positive_Total Female, 0-4" value="[ Treatment Outcome_HIV Positive_Total Female, 0-4 ]" /></td>
+			<td><input id="PFz46PDjqip-KcDc5bUBICt-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Cured" value="[ Treatment Outcome_HIV Positive Female, 0-4, Cured ]" /></td>
+			<td><input id="PFz46PDjqip-gUsOcqXC574-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Treatment Completed" value="[ Treatment Outcome_HIV Positive Female, 0-4, Treatment Completed ]" /></td>
+			<td><input id="PFz46PDjqip-ksa5ZPcrzaE-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Died" value="[ Treatment Outcome_HIV Positive Female, 0-4, Died ]" /></td>
+			<td><input id="PFz46PDjqip-D8SSDnV2Ra1-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Treatment failure" value="[ Treatment Outcome_HIV Positive Female, 0-4, Treatment failure ]" /></td>
+			<td><input id="PFz46PDjqip-gtc6MMZ2oMt-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Loss to Follow-up" value="[ Treatment Outcome_HIV Positive Female, 0-4, Loss to Follow-up ]" /></td>
+			<td><input id="PFz46PDjqip-MxPk1UmfKDN-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Not Evaluated" value="[ Treatment Outcome_HIV Positive Female, 0-4, Not Evaluated ]" /></td>
+			<td><input id="PFz46PDjqip-RkcfLPGhVTB-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 0-4, Removed from Reg." value="[ Treatment Outcome_HIV Positive Female, 0-4, Removed from Reg. ]" /></td>
+			<td><input id="indicatordV93zmseoG7" indicatorid="dV93zmseoG7" name="indicator" readonly="readonly" title="Treatment Outcome_HIV Positive_Female (0-4yr)" value="[ Treatment Outcome_HIV Positive_Female (0-4yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">5 - 14 years</span></td>
+			<td style="text-align: center;"><input id="JzEC906qAsS-mCTerYyo95F-val" name="entryfield" title="Treatment Outcome_HIV Positive_Total Female, 5-14" value="[ Treatment Outcome_HIV Positive_Total Female, 5-14 ]" /></td>
+			<td><input id="PFz46PDjqip-uVDcGVnaXXx-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Cured" value="[ Treatment Outcome_HIV Positive Female, 5-14, Cured ]" /></td>
+			<td><input id="PFz46PDjqip-d7QSrhqwYf5-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Treatment Completed" value="[ Treatment Outcome_HIV Positive Female, 5-14, Treatment Completed ]" /></td>
+			<td><input id="PFz46PDjqip-Q0t5l6BCdZb-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Died" value="[ Treatment Outcome_HIV Positive Female, 5-14, Died ]" /></td>
+			<td><input id="PFz46PDjqip-zyYw18JEGtS-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Treatment failure" value="[ Treatment Outcome_HIV Positive Female, 5-14, Treatment failure ]" /></td>
+			<td><input id="PFz46PDjqip-StT1dBDwCnv-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Loss to Follow-up" value="[ Treatment Outcome_HIV Positive Female, 5-14, Loss to Follow-up ]" /></td>
+			<td><input id="PFz46PDjqip-CN3oaxD46Il-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Not Evaluated" value="[ Treatment Outcome_HIV Positive Female, 5-14, Not Evaluated ]" /></td>
+			<td><input id="PFz46PDjqip-uWLZZ1vAhE1-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 5-14, Removed from Reg." value="[ Treatment Outcome_HIV Positive Female, 5-14, Removed from Reg. ]" /></td>
+			<td><input id="indicatoruhRVXJYWjmH" indicatorid="uhRVXJYWjmH" name="indicator" readonly="readonly" title="Treatment Outcome_HIV Positive_Female (5-14yr)" value="[ Treatment Outcome_HIV Positive_Female (5-14yr) ]" /></td>
+		</tr>
+		<tr>
+			<td><span style="color: #000000 !important;">15 years and above</span></td>
+			<td style="text-align: center;"><input id="JzEC906qAsS-FDtJ5IWJrAM-val" name="entryfield" title="Treatment Outcome_HIV Positive_Total Female, 15+" value="[ Treatment Outcome_HIV Positive_Total Female, 15+ ]" /></td>
+			<td><input id="PFz46PDjqip-uU4zlnj45Mv-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Cured" value="[ Treatment Outcome_HIV Positive Female, 15+, Cured ]" /></td>
+			<td><input id="PFz46PDjqip-cvDwzcJXjWT-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Treatment Completed" value="[ Treatment Outcome_HIV Positive Female, 15+, Treatment Completed ]" /></td>
+			<td><input id="PFz46PDjqip-kggaHSV7C7v-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Died" value="[ Treatment Outcome_HIV Positive Female, 15+, Died ]" /></td>
+			<td><input id="PFz46PDjqip-sdK4fiyAvNT-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Treatment failure" value="[ Treatment Outcome_HIV Positive Female, 15+, Treatment failure ]" /></td>
+			<td><input id="PFz46PDjqip-Y5uyPhl8DX7-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Loss to Follow-up" value="[ Treatment Outcome_HIV Positive Female, 15+, Loss to Follow-up ]" /></td>
+			<td><input id="PFz46PDjqip-f3dyfrM3k1b-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Not Evaluated" value="[ Treatment Outcome_HIV Positive Female, 15+, Not Evaluated ]" /></td>
+			<td><input id="PFz46PDjqip-vG9kbJZ19Hq-val" name="entryfield" title="Treatment Outcome_HIV Positive Female, 15+, Removed from Reg." value="[ Treatment Outcome_HIV Positive Female, 15+, Removed from Reg. ]" /></td>
+			<td><input id="indicatorE7lRsdObXeJ" indicatorid="E7lRsdObXeJ" name="indicator" readonly="readonly" title="Treatment Outcome_HIV Positive_Female (15+)" value="[ Treatment Outcome_HIV Positive_Female (15+) ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 4a: All Contacts placed on TPT -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 4a: All Contacts placed on TPT during 1st quarter of year</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Age Category</span></th>
+			<th rowspan="2" style="width: 25%;">Total TPT cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Developed Active TB</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">TPT Discontinued due to toxicity</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">0 &lt; 5 years</span></td>
+			<td class="row-header" style="text-align: center;"><input id="Ei6untV0e6Q-iOqh1Ee3osE-val" name="entryfield" title="All contact placed on TPT_Total TPT cases registered 0-4" value="[ All contact placed on TPT_Total TPT cases registered 0-4 ]" /></td>
+			<td><input id="indicatorhUgUQewaitk" indicatorid="hUgUQewaitk" name="indicator" readonly="readonly" title="All contact placed on TPT_Treatment completed (&lt;5)" value="[ All contact placed on TPT_Treatment completed (&lt;5) ]" /></td>
+			<td><input id="indicatorNiDfJXWEhPw" indicatorid="NiDfJXWEhPw" name="indicator" readonly="readonly" title="All contact placed on TPT_Died (&lt;5)" value="[ All contact placed on TPT_Died (&lt;5) ]" /></td>
+			<td><input id="indicatorleWUYmKtATa" indicatorid="leWUYmKtATa" name="indicator" readonly="readonly" title="All contact placed on TPT_Active TB (&lt;5)" value="[ All contact placed on TPT_Active TB (&lt;5) ]" /></td>
+			<td><input id="indicatornHKvGKPiNPU" indicatorid="nHKvGKPiNPU" name="indicator" readonly="readonly" title="All contact placed on TPT_LTFU (&lt;5)" value="[ All contact placed on TPT_LTFU (&lt;5) ]" /></td>
+			<td><input id="indicatorzxv8uwDfVep" indicatorid="zxv8uwDfVep" name="indicator" readonly="readonly" title="All contact placed on TPT_Discontinued (&lt;5)" value="[ All contact placed on TPT_Discontinued (&lt;5) ]" /></td>
+			<td><input id="indicatorEPhs7IjZ4v9" indicatorid="EPhs7IjZ4v9" name="indicator" readonly="readonly" title="All contact placed on TPT_Not Evaluated (&lt;5)" value="[ All contact placed on TPT_Not Evaluated (&lt;5) ]" /></td>
+			<td><input id="indicatorxBtC7sm1k0k" indicatorid="xBtC7sm1k0k" name="indicator" readonly="readonly" title="All contact placed on TPT_(&lt;5)" value="[ All contact placed on TPT_(&lt;5) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">5 years and above</span></td>
+			<td class="row-header" style="text-align: center;"><input id="Ei6untV0e6Q-zTYOsuAn2m4-val" name="entryfield" title="All contact placed on TPT_Total TPT cases registered 5 years and above" value="[ All contact placed on TPT_Total TPT cases registered 5 years and above ]" /></td>
+			<td><input id="indicatorZeW6y5WOm3F" indicatorid="ZeW6y5WOm3F" name="indicator" readonly="readonly" title="All contact placed on TPT_Treatment completed (5+)" value="[ All contact placed on TPT_Treatment completed (5+) ]" /></td>
+			<td><input id="indicatorFVmW0rcpwUo" indicatorid="FVmW0rcpwUo" name="indicator" readonly="readonly" title="All contact placed on TPT_Died (5+)" value="[ All contact placed on TPT_Died (5+) ]" /></td>
+			<td><input id="indicatorzN4F0LKW0sE" indicatorid="zN4F0LKW0sE" name="indicator" readonly="readonly" title="All contact placed on TPT_Active TB (5+)" value="[ All contact placed on TPT_Active TB (5+) ]" /></td>
+			<td><input id="indicatorzVLkKrZ38WN" indicatorid="zVLkKrZ38WN" name="indicator" readonly="readonly" title="All contact placed on TPT_LTFU (5+)" value="[ All contact placed on TPT_LTFU (5+) ]" /></td>
+			<td><input id="indicatorftFcCcDZ3ml" indicatorid="ftFcCcDZ3ml" name="indicator" readonly="readonly" title="All contact placed on TPT_Discontinued (5+)" value="[ All contact placed on TPT_Discontinued (5+) ]" /></td>
+			<td><input id="indicatorY0VEw0R6I0I" indicatorid="Y0VEw0R6I0I" name="indicator" readonly="readonly" title="All contact placed on TPT_Not Evaluated (5+)" value="[ All contact placed on TPT_Not Evaluated (5+) ]" /></td>
+			<td><input id="indicatorW4JusASAo2O" indicatorid="W4JusASAo2O" name="indicator" readonly="readonly" title="All contact placed on TPT_(5+)" value="[ All contact placed on TPT_(5+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">All Contacts</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorRIb776Cbthu" indicatorid="RIb776Cbthu" name="indicator" readonly="readonly" title="All contact placed on TPT_Total TPT cases registered" value="[ All contact placed on TPT_Total TPT cases registered ]" /></td>
+			<td><input id="indicatorZq3ob4k4TqV" indicatorid="Zq3ob4k4TqV" name="indicator" readonly="readonly" title="All contact placed on TPT_Treatment completed_All contacts" value="[ All contact placed on TPT_Treatment completed_All contacts ]" /></td>
+			<td><input id="indicatori36axt9Wqan" indicatorid="i36axt9Wqan" name="indicator" readonly="readonly" title="All contact placed on TPT_Died_All contacts" value="[ All contact placed on TPT_Died_All contacts ]" /></td>
+			<td><input id="indicatorIThIpfmrVQx" indicatorid="IThIpfmrVQx" name="indicator" readonly="readonly" title="All contact placed on TPT_Active TB_All contacts" value="[ All contact placed on TPT_Active TB_All contacts ]" /></td>
+			<td><input id="indicatorcdE6JbDSBu8" indicatorid="cdE6JbDSBu8" name="indicator" readonly="readonly" title="All contact placed on TPT_LTFU_All contacts" value="[ All contact placed on TPT_LTFU_All contacts ]" /></td>
+			<td><input id="indicatorqiRqhGdwQed" indicatorid="qiRqhGdwQed" name="indicator" readonly="readonly" title="All contact placed on TPT_Discontinued_All contacts" value="[ All contact placed on TPT_Discontinued_All contacts ]" /></td>
+			<td><input id="indicatorxcqM8Oz2Nxg" indicatorid="xcqM8Oz2Nxg" name="indicator" readonly="readonly" title="All contact placed on TPT_Not Evaluated_All contacts" value="[ All contact placed on TPT_Not Evaluated_All contacts ]" /></td>
+			<td><input id="indicatornVbLgeQnY41" indicatorid="nVbLgeQnY41" name="indicator" readonly="readonly" title="All contact placed on TPT_Total reported" value="[ All contact placed on TPT_Total reported ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 4b: All Contacts placed on 6H -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 4b: All Contacts placed on 6H&nbsp;during 1st quarter of year</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Age Category</span></th>
+			<th rowspan="2" style="width: 25%;">Total TPT cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Developed Active TB</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">TPT Discontinued due to toxicity</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">0 &lt; 5 years</span></td>
+			<td class="row-header" style="text-align: center;"><input id="Vc1M8vo68EH-iOqh1Ee3osE-val" name="entryfield" title="All contact placed on 6H_Total 0-4" value="[ All contact placed on 6H_Total 0-4 ]" /></td>
+			<td><input id="oiGFfWd3hjO-TgArTCKxmvR-val" name="entryfield" title="All contact placed on 6H 0-4, Treatment Completed" value="[ All contact placed on 6H 0-4, Treatment Completed ]" /></td>
+			<td><input id="oiGFfWd3hjO-Y1zBrOhpEe4-val" name="entryfield" title="All contact placed on 6H 0-4, Died" value="[ All contact placed on 6H 0-4, Died ]" /></td>
+			<td><input id="oiGFfWd3hjO-stQfFk0zGtV-val" name="entryfield" title="All contact placed on 6H 0-4, Developed Active TB" value="[ All contact placed on 6H 0-4, Developed Active TB ]" /></td>
+			<td><input id="oiGFfWd3hjO-dc2isgchO1Z-val" name="entryfield" title="All contact placed on 6H 0-4, TPT Loss to Follow-up" value="[ All contact placed on 6H 0-4, TPT Loss to Follow-up ]" /></td>
+			<td><input id="oiGFfWd3hjO-q34tvPMlGkw-val" name="entryfield" title="All contact placed on 6H 0-4, TPT Discontinued due to toxicity" value="[ All contact placed on 6H 0-4, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="oiGFfWd3hjO-zZryvm8fZiO-val" name="entryfield" title="All contact placed on 6H 0-4, Not Evaluated" value="[ All contact placed on 6H 0-4, Not Evaluated ]" /></td>
+			<td><input id="indicatora6VCXmnrw7V" indicatorid="a6VCXmnrw7V" name="indicator" readonly="readonly" title="All contact placed on 6H_(&lt;5yr)" value="[ All contact placed on 6H_(&lt;5yr) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">5 years and above</span></td>
+			<td class="row-header" style="text-align: center;"><input id="Vc1M8vo68EH-zTYOsuAn2m4-val" name="entryfield" title="All contact placed on 6H_Total 5 years and above" value="[ All contact placed on 6H_Total 5 years and above ]" /></td>
+			<td><input id="oiGFfWd3hjO-TLZEjWki8OW-val" name="entryfield" title="All contact placed on 6H 5 years and above, Treatment Completed" value="[ All contact placed on 6H 5 years and above, Treatment Completed ]" /></td>
+			<td><input id="oiGFfWd3hjO-kpYZw97Fg21-val" name="entryfield" title="All contact placed on 6H 5 years and above, Died" value="[ All contact placed on 6H 5 years and above, Died ]" /></td>
+			<td><input id="oiGFfWd3hjO-pod2Qluaf8b-val" name="entryfield" title="All contact placed on 6H 5 years and above, Developed Active TB" value="[ All contact placed on 6H 5 years and above, Developed Active TB ]" /></td>
+			<td><input id="oiGFfWd3hjO-OuR9Yn4CN0h-val" name="entryfield" title="All contact placed on 6H 5 years and above, TPT Loss to Follow-up" value="[ All contact placed on 6H 5 years and above, TPT Loss to Follow-up ]" /></td>
+			<td><input id="oiGFfWd3hjO-jb5k5rkbQJS-val" name="entryfield" title="All contact placed on 6H 5 years and above, TPT Discontinued due to toxicity" value="[ All contact placed on 6H 5 years and above, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="oiGFfWd3hjO-r3rPqRpojip-val" name="entryfield" title="All contact placed on 6H 5 years and above, Not Evaluated" value="[ All contact placed on 6H 5 years and above, Not Evaluated ]" /></td>
+			<td><input id="indicatorS8I9BX9zoZB" indicatorid="S8I9BX9zoZB" name="indicator" readonly="readonly" title="All contact placed on 6H_(5+)" value="[ All contact placed on 6H_(5+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">All Contacts</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorEFUH1rRv4Wp" indicatorid="EFUH1rRv4Wp" name="indicator" readonly="readonly" title="All contact placed on 6H_All contacts" value="[ All contact placed on 6H_All contacts ]" /></td>
+			<td><input id="indicatorLkD6TUxnaa6" indicatorid="LkD6TUxnaa6" name="indicator" readonly="readonly" title="All contact placed on 6H_Tx Completed" value="[ All contact placed on 6H_Tx Completed ]" /></td>
+			<td><input id="indicatorQprpFvC7whi" indicatorid="QprpFvC7whi" name="indicator" readonly="readonly" title="All contact placed on 6H_Died" value="[ All contact placed on 6H_Died ]" /></td>
+			<td><input id="indicatoro3PtQrbawBp" indicatorid="o3PtQrbawBp" name="indicator" readonly="readonly" title="All contact placed on 6H_Active TB" value="[ All contact placed on 6H_Active TB ]" /></td>
+			<td><input id="indicatorMMtZD0hOeMf" indicatorid="MMtZD0hOeMf" name="indicator" readonly="readonly" title="All contact placed on 6H_LTFU" value="[ All contact placed on 6H_LTFU ]" /></td>
+			<td><input id="indicatorUSQ9aGAV9A6" indicatorid="USQ9aGAV9A6" name="indicator" readonly="readonly" title="All contact placed on 6H_Discontinued" value="[ All contact placed on 6H_Discontinued ]" /></td>
+			<td><input id="indicatorDsF9a2gtFlG" indicatorid="DsF9a2gtFlG" name="indicator" readonly="readonly" title="All contact placed on 6H_Not Evaluated" value="[ All contact placed on 6H_Not Evaluated ]" /></td>
+			<td><input id="indicatortvvT8Ec6KTP" indicatorid="tvvT8Ec6KTP" name="indicator" readonly="readonly" title="All contact placed on 6H_Total" value="[ All contact placed on 6H_Total ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 4c: All Contacts placed on 3HP -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 4c: All Contacts placed on 3HP&nbsp;during 1st quarter of year</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Age Category</span></th>
+			<th rowspan="2" style="width: 25%;">Total TPT cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Developed Active TB</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">TPT Discontinued due to toxicity</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">0 &lt; 5 years</span></td>
+			<td class="row-header" style="text-align: center;"><input id="ItDMWpUt619-iOqh1Ee3osE-val" name="entryfield" title="All contact placed on 3HP_Total 0-4" value="[ All contact placed on 3HP_Total 0-4 ]" /></td>
+			<td><input id="kYRBMeyyMDH-TgArTCKxmvR-val" name="entryfield" title="All contact placed on 3HP 0-4, Treatment Completed" value="[ All contact placed on 3HP 0-4, Treatment Completed ]" /></td>
+			<td><input id="kYRBMeyyMDH-Y1zBrOhpEe4-val" name="entryfield" title="All contact placed on 3HP 0-4, Died" value="[ All contact placed on 3HP 0-4, Died ]" /></td>
+			<td><input id="kYRBMeyyMDH-stQfFk0zGtV-val" name="entryfield" title="All contact placed on 3HP 0-4, Developed Active TB" value="[ All contact placed on 3HP 0-4, Developed Active TB ]" /></td>
+			<td><input id="kYRBMeyyMDH-dc2isgchO1Z-val" name="entryfield" title="All contact placed on 3HP 0-4, TPT Loss to Follow-up" value="[ All contact placed on 3HP 0-4, TPT Loss to Follow-up ]" /></td>
+			<td><input id="kYRBMeyyMDH-q34tvPMlGkw-val" name="entryfield" title="All contact placed on 3HP 0-4, TPT Discontinued due to toxicity" value="[ All contact placed on 3HP 0-4, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="kYRBMeyyMDH-zZryvm8fZiO-val" name="entryfield" title="All contact placed on 3HP 0-4, Not Evaluated" value="[ All contact placed on 3HP 0-4, Not Evaluated ]" /></td>
+			<td><input id="indicatorxh5GUkZtSj7" indicatorid="xh5GUkZtSj7" name="indicator" readonly="readonly" title="All contact placed on 3HP_(&lt;5yr)" value="[ All contact placed on 3HP_(&lt;5yr) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">5 years and above</span></td>
+			<td class="row-header" style="text-align: center;"><input id="ItDMWpUt619-zTYOsuAn2m4-val" name="entryfield" title="All contact placed on 3HP_Total 5 years and above" value="[ All contact placed on 3HP_Total 5 years and above ]" /></td>
+			<td><input id="kYRBMeyyMDH-TLZEjWki8OW-val" name="entryfield" title="All contact placed on 3HP 5 years and above, Treatment Completed" value="[ All contact placed on 3HP 5 years and above, Treatment Completed ]" /></td>
+			<td><input id="kYRBMeyyMDH-kpYZw97Fg21-val" name="entryfield" title="All contact placed on 3HP 5 years and above, Died" value="[ All contact placed on 3HP 5 years and above, Died ]" /></td>
+			<td><input id="kYRBMeyyMDH-pod2Qluaf8b-val" name="entryfield" title="All contact placed on 3HP 5 years and above, Developed Active TB" value="[ All contact placed on 3HP 5 years and above, Developed Active TB ]" /></td>
+			<td><input id="kYRBMeyyMDH-OuR9Yn4CN0h-val" name="entryfield" title="All contact placed on 3HP 5 years and above, TPT Loss to Follow-up" value="[ All contact placed on 3HP 5 years and above, TPT Loss to Follow-up ]" /></td>
+			<td><input id="kYRBMeyyMDH-jb5k5rkbQJS-val" name="entryfield" title="All contact placed on 3HP 5 years and above, TPT Discontinued due to toxicity" value="[ All contact placed on 3HP 5 years and above, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="kYRBMeyyMDH-r3rPqRpojip-val" name="entryfield" title="All contact placed on 3HP 5 years and above, Not Evaluated" value="[ All contact placed on 3HP 5 years and above, Not Evaluated ]" /></td>
+			<td><input id="indicatorWePpnbiwmRv" indicatorid="WePpnbiwmRv" name="indicator" readonly="readonly" title="All contact placed on 3HP_(5+)" value="[ All contact placed on 3HP_(5+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">All Contacts</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorC9WAlq0CKto" indicatorid="C9WAlq0CKto" name="indicator" readonly="readonly" title="All contact placed on 3HP_All contacts" value="[ All contact placed on 3HP_All contacts ]" /></td>
+			<td><input id="indicatorj5T6Z5LT9xL" indicatorid="j5T6Z5LT9xL" name="indicator" readonly="readonly" title="All contact placed on 3HP_Tx Completed" value="[ All contact placed on 3HP_Tx Completed ]" /></td>
+			<td><input id="indicatorSMAlq7oMHU0" indicatorid="SMAlq7oMHU0" name="indicator" readonly="readonly" title="All contact placed on 3HP_Died" value="[ All contact placed on 3HP_Died ]" /></td>
+			<td><input id="indicatorIACKZwPQL2R" indicatorid="IACKZwPQL2R" name="indicator" readonly="readonly" title="All contact placed on 3HP_Active TB" value="[ All contact placed on 3HP_Active TB ]" /></td>
+			<td><input id="indicatorcY4xLfrxcEK" indicatorid="cY4xLfrxcEK" name="indicator" readonly="readonly" title="All contact placed on 3HP_LTFU" value="[ All contact placed on 3HP_LTFU ]" /></td>
+			<td><input id="indicatora5BZbXEuU71" indicatorid="a5BZbXEuU71" name="indicator" readonly="readonly" title="All contact placed on 3HP_Discontinued" value="[ All contact placed on 3HP_Discontinued ]" /></td>
+			<td><input id="indicatorBgOhoxWrDWG" indicatorid="BgOhoxWrDWG" name="indicator" readonly="readonly" title="All contact placed on 3HP_Not Evaluated" value="[ All contact placed on 3HP_Not Evaluated ]" /></td>
+			<td><input id="indicatorFpeCZGOQwPA" indicatorid="FpeCZGOQwPA" name="indicator" readonly="readonly" title="All contact placed on 3HP_Total" value="[ All contact placed on 3HP_Total ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 4d: All Contacts placed on 3HR -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 4d: All Contacts placed on 3HR&nbsp;during 1st quarter of year</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Age Category</span></th>
+			<th rowspan="2" style="width: 25%;">Total TPT cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Developed Active TB</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">TPT Discontinued due to toxicity</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">0 &lt; 5 years</span></td>
+			<td class="row-header" style="text-align: center;"><input id="GoRsNzj4hD6-iOqh1Ee3osE-val" name="entryfield" title="All contact placed on 3HR_Total 0-4" value="[ All contact placed on 3HR_Total 0-4 ]" /></td>
+			<td><input id="qJ38aRUhR4I-TgArTCKxmvR-val" name="entryfield" title="All contact placed on 3HR 0-4, Treatment Completed" value="[ All contact placed on 3HR 0-4, Treatment Completed ]" /></td>
+			<td><input id="qJ38aRUhR4I-Y1zBrOhpEe4-val" name="entryfield" title="All contact placed on 3HR 0-4, Died" value="[ All contact placed on 3HR 0-4, Died ]" /></td>
+			<td><input id="qJ38aRUhR4I-stQfFk0zGtV-val" name="entryfield" title="All contact placed on 3HR 0-4, Developed Active TB" value="[ All contact placed on 3HR 0-4, Developed Active TB ]" /></td>
+			<td><input id="qJ38aRUhR4I-dc2isgchO1Z-val" name="entryfield" title="All contact placed on 3HR 0-4, TPT Loss to Follow-up" value="[ All contact placed on 3HR 0-4, TPT Loss to Follow-up ]" /></td>
+			<td><input id="qJ38aRUhR4I-q34tvPMlGkw-val" name="entryfield" title="All contact placed on 3HR 0-4, TPT Discontinued due to toxicity" value="[ All contact placed on 3HR 0-4, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="qJ38aRUhR4I-zZryvm8fZiO-val" name="entryfield" title="All contact placed on 3HR 0-4, Not Evaluated" value="[ All contact placed on 3HR 0-4, Not Evaluated ]" /></td>
+			<td><input id="indicatorPpjcu3kFz5E" indicatorid="Ppjcu3kFz5E" name="indicator" readonly="readonly" title="All contact placed on 3HR_(&lt;5yr)" value="[ All contact placed on 3HR_(&lt;5yr) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">5 years and above</span></td>
+			<td class="row-header" style="text-align: center;"><input id="GoRsNzj4hD6-zTYOsuAn2m4-val" name="entryfield" title="All contact placed on 3HR_Total 5 years and above" value="[ All contact placed on 3HR_Total 5 years and above ]" /></td>
+			<td><input id="qJ38aRUhR4I-TLZEjWki8OW-val" name="entryfield" title="All contact placed on 3HR 5 years and above, Treatment Completed" value="[ All contact placed on 3HR 5 years and above, Treatment Completed ]" /></td>
+			<td><input id="qJ38aRUhR4I-kpYZw97Fg21-val" name="entryfield" title="All contact placed on 3HR 5 years and above, Died" value="[ All contact placed on 3HR 5 years and above, Died ]" /></td>
+			<td><input id="qJ38aRUhR4I-pod2Qluaf8b-val" name="entryfield" title="All contact placed on 3HR 5 years and above, Developed Active TB" value="[ All contact placed on 3HR 5 years and above, Developed Active TB ]" /></td>
+			<td><input id="qJ38aRUhR4I-OuR9Yn4CN0h-val" name="entryfield" title="All contact placed on 3HR 5 years and above, TPT Loss to Follow-up" value="[ All contact placed on 3HR 5 years and above, TPT Loss to Follow-up ]" /></td>
+			<td><input id="qJ38aRUhR4I-jb5k5rkbQJS-val" name="entryfield" title="All contact placed on 3HR 5 years and above, TPT Discontinued due to toxicity" value="[ All contact placed on 3HR 5 years and above, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="qJ38aRUhR4I-r3rPqRpojip-val" name="entryfield" title="All contact placed on 3HR 5 years and above, Not Evaluated" value="[ All contact placed on 3HR 5 years and above, Not Evaluated ]" /></td>
+			<td><input id="indicatorYSRD5HWz0DA" indicatorid="YSRD5HWz0DA" name="indicator" readonly="readonly" title="All contact placed on 3HR_(5+)" value="[ All contact placed on 3HR_(5+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">All Contacts</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorOjpV2g9yBPV" indicatorid="OjpV2g9yBPV" name="indicator" readonly="readonly" title="All contact placed on 3HR_All contacts" value="[ All contact placed on 3HR_All contacts ]" /></td>
+			<td><input id="indicatorti5vFiJz1t3" indicatorid="ti5vFiJz1t3" name="indicator" readonly="readonly" title="All contact placed on 3HR_Tx Completed" value="[ All contact placed on 3HR_Tx Completed ]" /></td>
+			<td><input id="indicatorbA3RYB585cf" indicatorid="bA3RYB585cf" name="indicator" readonly="readonly" title="All contact placed on 3HR_Died" value="[ All contact placed on 3HR_Died ]" /></td>
+			<td><input id="indicatorsvnvVPj58gt" indicatorid="svnvVPj58gt" name="indicator" readonly="readonly" title="All contact placed on 3HR_Active TB" value="[ All contact placed on 3HR_Active TB ]" /></td>
+			<td><input id="indicatorKtKakXna2rQ" indicatorid="KtKakXna2rQ" name="indicator" readonly="readonly" title="All contact placed on 3HR_LTFU" value="[ All contact placed on 3HR_LTFU ]" /></td>
+			<td><input id="indicatorLQU6lkY1E8K" indicatorid="LQU6lkY1E8K" name="indicator" readonly="readonly" title="All contact placed on 3HR_Discontinued" value="[ All contact placed on 3HR_Discontinued ]" /></td>
+			<td><input id="indicatorzraweGrOXKG" indicatorid="zraweGrOXKG" name="indicator" readonly="readonly" title="All contact placed on 3HR_Not Evaluated" value="[ All contact placed on 3HR_Not Evaluated ]" /></td>
+			<td><input id="indicatordghB1VoORmv" indicatorid="dghB1VoORmv" name="indicator" readonly="readonly" title="All contact placed on 3HR_Total" value="[ All contact placed on 3HR_Total ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 4e: All Contacts placed on 1HP -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 4e: All Contacts placed on 1HP&nbsp;during 1st quarter of year</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 25%;"><span style="color: #000000 !important;">Age Category</span></th>
+			<th rowspan="2" style="width: 25%;">Total TPT cases registered</th>
+			<th colspan="6"><span style="color: #000000 !important;">Treatment Outcomes</span></th>
+			<th rowspan="2">Total reported</th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Treatment Completed</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Developed Active TB</span></th>
+			<th><span style="color: #000000 !important;">Loss to Follow-up</span></th>
+			<th><span style="color: #000000 !important;">TPT Discontinued due to toxicity</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">0 &lt; 5 years</span></td>
+			<td class="row-header" style="text-align: center;"><input id="AsGgPrQe5oP-iOqh1Ee3osE-val" name="entryfield" title="All contact placed on 1HP_Total 0-4" value="[ All contact placed on 1HP_Total 0-4 ]" /></td>
+			<td><input id="WrXPvhsBkDa-TgArTCKxmvR-val" name="entryfield" title="All contact placed on 1HP 0-4, Treatment Completed" value="[ All contact placed on 1HP 0-4, Treatment Completed ]" /></td>
+			<td><input id="WrXPvhsBkDa-Y1zBrOhpEe4-val" name="entryfield" title="All contact placed on 1HP 0-4, Died" value="[ All contact placed on 1HP 0-4, Died ]" /></td>
+			<td><input id="WrXPvhsBkDa-stQfFk0zGtV-val" name="entryfield" title="All contact placed on 1HP 0-4, Developed Active TB" value="[ All contact placed on 1HP 0-4, Developed Active TB ]" /></td>
+			<td><input id="WrXPvhsBkDa-dc2isgchO1Z-val" name="entryfield" title="All contact placed on 1HP 0-4, TPT Loss to Follow-up" value="[ All contact placed on 1HP 0-4, TPT Loss to Follow-up ]" /></td>
+			<td><input id="WrXPvhsBkDa-q34tvPMlGkw-val" name="entryfield" title="All contact placed on 1HP 0-4, TPT Discontinued due to toxicity" value="[ All contact placed on 1HP 0-4, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="WrXPvhsBkDa-zZryvm8fZiO-val" name="entryfield" title="All contact placed on 1HP 0-4, Not Evaluated" value="[ All contact placed on 1HP 0-4, Not Evaluated ]" /></td>
+			<td><input id="indicatorsemnuRxuTEf" indicatorid="semnuRxuTEf" name="indicator" readonly="readonly" title="All contact placed on 1HP_(&lt;5yr)" value="[ All contact placed on 1HP_(&lt;5yr) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">5 years and above</span></td>
+			<td class="row-header" style="text-align: center;"><input id="AsGgPrQe5oP-zTYOsuAn2m4-val" name="entryfield" title="All contact placed on 1HP_Total 5 years and above" value="[ All contact placed on 1HP_Total 5 years and above ]" /></td>
+			<td><input id="WrXPvhsBkDa-TLZEjWki8OW-val" name="entryfield" title="All contact placed on 1HP 5 years and above, Treatment Completed" value="[ All contact placed on 1HP 5 years and above, Treatment Completed ]" /></td>
+			<td><input id="WrXPvhsBkDa-kpYZw97Fg21-val" name="entryfield" title="All contact placed on 1HP 5 years and above, Died" value="[ All contact placed on 1HP 5 years and above, Died ]" /></td>
+			<td><input id="WrXPvhsBkDa-pod2Qluaf8b-val" name="entryfield" title="All contact placed on 1HP 5 years and above, Developed Active TB" value="[ All contact placed on 1HP 5 years and above, Developed Active TB ]" /></td>
+			<td><input id="WrXPvhsBkDa-OuR9Yn4CN0h-val" name="entryfield" title="All contact placed on 1HP 5 years and above, TPT Loss to Follow-up" value="[ All contact placed on 1HP 5 years and above, TPT Loss to Follow-up ]" /></td>
+			<td><input id="WrXPvhsBkDa-jb5k5rkbQJS-val" name="entryfield" title="All contact placed on 1HP 5 years and above, TPT Discontinued due to toxicity" value="[ All contact placed on 1HP 5 years and above, TPT Discontinued due to toxicity ]" /></td>
+			<td><input id="WrXPvhsBkDa-r3rPqRpojip-val" name="entryfield" title="All contact placed on 1HP 5 years and above, Not Evaluated" value="[ All contact placed on 1HP 5 years and above, Not Evaluated ]" /></td>
+			<td><input id="indicatorA0tx9YMAdV3" indicatorid="A0tx9YMAdV3" name="indicator" readonly="readonly" title="All contact placed on 1HP_(5+)" value="[ All contact placed on 1HP_(5+) ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">All Contacts</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorwPqGARDHXIs" indicatorid="wPqGARDHXIs" name="indicator" readonly="readonly" title="All contact placed on 1HP_All contacts" value="[ All contact placed on 1HP_All contacts ]" /></td>
+			<td><input id="indicatorfOdEWowg6Bh" indicatorid="fOdEWowg6Bh" name="indicator" readonly="readonly" title="All contact placed on 1HP_Tx Completed" value="[ All contact placed on 1HP_Tx Completed ]" /></td>
+			<td><input id="indicatorP3ZaAMqxiAc" indicatorid="P3ZaAMqxiAc" name="indicator" readonly="readonly" title="All contact placed on 1HP_Died" value="[ All contact placed on 1HP_Died ]" /></td>
+			<td><input id="indicatorMFJzfXHdv7d" indicatorid="MFJzfXHdv7d" name="indicator" readonly="readonly" title="All contact placed on 1HP_Active TB" value="[ All contact placed on 1HP_Active TB ]" /></td>
+			<td><input id="indicatorW1XW9IsMpdI" indicatorid="W1XW9IsMpdI" name="indicator" readonly="readonly" title="All contact placed on 1HP_LTFU" value="[ All contact placed on 1HP_LTFU ]" /></td>
+			<td><input id="indicatorRO1ZPB5kLHg" indicatorid="RO1ZPB5kLHg" name="indicator" readonly="readonly" title="All contact placed on 1HP_Discontinued" value="[ All contact placed on 1HP_Discontinued ]" /></td>
+			<td><input id="indicatorCNmcSPwbQZM" indicatorid="CNmcSPwbQZM" name="indicator" readonly="readonly" title="All contact placed on 1HP_Not Evaluated" value="[ All contact placed on 1HP_Not Evaluated ]" /></td>
+			<td><input id="indicatorisRCCUD9BO5" indicatorid="isRCCUD9BO5" name="indicator" readonly="readonly" title="All contact placed on 1HP_Total" value="[ All contact placed on 1HP_Total ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>

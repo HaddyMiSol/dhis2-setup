@@ -1,0 +1,366 @@
+{
+  "categories": [
+    {
+      "id": "dqVqZ2xIvdi",
+      "name": "Type of TB",
+      "code": "CAT_TYPE_OF_TB",
+      "shortName": "Type of TB",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "OgTpigTHKbf"
+        },
+        {
+          "id": "oFbmOHnKYaX"
+        }
+      ]
+    },
+    {
+      "id": "JupaBfLetB4",
+      "name": "Site of Disease",
+      "code": "CAT_SITE_OF_DISEASE",
+      "shortName": "Site of Disease",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "SArnVgxwvqc"
+        },
+        {
+          "id": "DH8xIZM1JRc"
+        }
+      ]
+    },
+    {
+      "id": "fPh4sADDcsG",
+      "name": "Sex",
+      "code": "CAT_SEX",
+      "shortName": "Sex",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "oV911xCZkwP"
+        },
+        {
+          "id": "S6OLkTkx9NI"
+        }
+      ]
+    },
+    {
+      "id": "EmLGYtyVFQN",
+      "name": "Age Group",
+      "code": "CAT_AGE_GROUP",
+      "shortName": "Age Group",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "RuVdYXye4JS"
+        },
+        {
+          "id": "nOy4CqpIqK3"
+        },
+        {
+          "id": "zw9iEU1jjQK"
+        },
+        {
+          "id": "yx9G81aSQHq"
+        },
+        {
+          "id": "PvsjaSS8VFg"
+        },
+        {
+          "id": "OsNLjVHWGau"
+        },
+        {
+          "id": "bgw9YooJeTY"
+        },
+        {
+          "id": "WHhO6kGL75U"
+        },
+        {
+          "id": "Smt9OBGhnuK"
+        },
+        {
+          "id": "oKaRdebuFrE"
+        }
+      ]
+    },
+    {
+      "id": "QKZGAF0OTfE",
+      "name": "Diagnostic Method",
+      "code": "CAT_DIAGNOSTIC_METHOD",
+      "shortName": "Diagnostic Method",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "Ii6JDWYlgAA"
+        },
+        {
+          "id": "D1dOOdTXglH"
+        },
+        {
+          "id": "iArp5B1Id9Z"
+        },
+        {
+          "id": "f50kEnydx9q"
+        },
+        {
+          "id": "YWrRTWPElnd"
+        },
+        {
+          "id": "VHUdKF0j7el"
+        },
+        {
+          "id": "Me1z6JJcfOJ"
+        },
+        {
+          "id": "u5mSoyPstUe"
+        },
+        {
+          "id": "DMIgHFivepr"
+        }
+      ]
+    },
+    {
+      "id": "qkuyeCJulfM",
+      "name": "TPT Regimen",
+      "code": "CAT_TPT_REGIMEN",
+      "shortName": "TPT Regimen",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "CZRL9OaYsP6"
+        },
+        {
+          "id": "iq3UjrnvQ0F"
+        },
+        {
+          "id": "q40fAraVNqT"
+        },
+        {
+          "id": "JRIg6QjcwIA"
+        }
+      ]
+    },
+    {
+      "id": "a39zFZdrEVS",
+      "name": "HIV Status",
+      "code": "CAT_HIV_STATUS",
+      "shortName": "HIV Status",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "ct3X13npgW2"
+        },
+        {
+          "id": "A8U5okXkzl5"
+        },
+        {
+          "id": "Y5X1YqWg21n"
+        }
+      ]
+    },
+    {
+      "id": "IDl9BUcilpv",
+      "name": "Treatment History",
+      "code": "CAT_TREATMENT_HISTORY",
+      "shortName": "Treatment History",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "DvY2nOyreVv"
+        },
+        {
+          "id": "Gy8H6h8l7qg"
+        },
+        {
+          "id": "BvWB9h3lcBG"
+        },
+        {
+          "id": "ZHSUPwePut0"
+        }
+      ]
+    },
+    {
+      "id": "r7NaMFRf3Xx",
+      "name": "Facility Level",
+      "code": "CAT_FACILITY_LEVEL",
+      "shortName": "Facility Level",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "U3FPuRIlPxU"
+        },
+        {
+          "id": "lMsHarAJOCB"
+        },
+        {
+          "id": "nFX7TOrPMf7"
+        }
+      ]
+    },
+    {
+      "id": "IRz9qDUuvN8",
+      "name": "Facility Ownership",
+      "code": "CAT_FACILITY_OWNERSHIP",
+      "shortName": "Facility Ownership",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "pPnmbpD0ezN"
+        },
+        {
+          "id": "mSxyjQ312Wn"
+        },
+        {
+          "id": "Z7Gdp0CXP9K"
+        },
+        {
+          "id": "W3LSFZH3UDq"
+        },
+        {
+          "id": "p0rWEoBSou3"
+        }
+      ]
+    },
+    {
+      "id": "Ad1iPUZMUys",
+      "name": "Testing Period",
+      "code": "CAT_TESTING_PERIOD",
+      "shortName": "Testing Period",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "fioRRdzHzmA"
+        },
+        {
+          "id": "XKR1VxavU07"
+        }
+      ]
+    },
+    {
+      "id": "FYUNZTlbnwH",
+      "name": "TB Coinfection Type",
+      "code": "CAT_TB_COINFECTION_TYPE",
+      "shortName": "TB Coinfection Type",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        {
+          "id": "pqwcWtLdlfd"
+        },
+        {
+          "id": "mtF650d0s5V"
+        },
+        {
+          "id": "cb4MAyyXTmx"
+        },
+        {
+          "id": "QNBYPgcQKkF"
+        }
+      ]
+    },
+    {
+      "id": "Ot1OGMmjxWk",
+      "name": "Treatment Outcome",
+      "shortName": "Treatment Outcome",
+      "code": "CAT_TREATMENT_OUTCOME",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        { "id": "OhbVrpoiVgR" },
+        { "id": "V5IfLBcbfno" },
+        { "id": "GMbJmTPSIAo" },
+        { "id": "CLrZ3aWZkSB" },
+        { "id": "vrjn9Wvgfyg" },
+        { "id": "w2wMqZcUDIh" },
+        { "id": "yfJs1ON43xK" }
+      ]
+    },
+    {
+      "id": "h7x41Ztpdp4",
+      "name": "TPT Outcome",
+      "shortName": "TPT Outcome",
+      "code": "CAT_TPT_OUTCOME",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        { "id": "V5IfLBcbfno" },
+        { "id": "GMbJmTPSIAo" },
+        { "id": "zren68K4Tun" },
+        { "id": "PFz46PDjqip" },
+        { "id": "VJIqVLB5Lzx" },
+        { "id": "w2wMqZcUDIh" }
+      ]
+    },
+    {
+      "id": "K8ffUF0eWIX",
+      "name": "Conversion status",
+      "shortName": "Conversion status",
+      "code": "CAT_CONVERSION_STATUS",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        { "id": "oiGFfWd3hjO" },
+        { "id": "kYRBMeyyMDH" },
+        { "id": "qJ38aRUhR4I" },
+        { "id": "WrXPvhsBkDa" },
+        { "id": "GMbJmTPSIAo" },
+        { "id": "w2wMqZcUDIh" }
+      ]
+    },
+    {
+      "id": "EmLGYtyVFQN",
+      "name": "Age Group",
+      "shortName": "Age Group",
+      "code": "CAT_AGE_GROUP",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        { "id": "zw9iEU1jjQK" },
+        { "id": "yx9G81aSQHq" },
+        { "id": "nOy4CqpIqK3" },
+        { "id": "UpkDyr7OSJo" },
+        {
+          "id": "RuVdYXye4JS"
+        },
+        {
+          "id": "nOy4CqpIqK3"
+        },
+        {
+          "id": "zw9iEU1jjQK"
+        },
+        {
+          "id": "yx9G81aSQHq"
+        },
+        {
+          "id": "PvsjaSS8VFg"
+        },
+        {
+          "id": "OsNLjVHWGau"
+        },
+        {
+          "id": "bgw9YooJeTY"
+        },
+        {
+          "id": "WHhO6kGL75U"
+        },
+        {
+          "id": "Smt9OBGhnuK"
+        },
+        {
+          "id": "oKaRdebuFrE"
+        }
+        
+      ]
+    },
+    {
+      "id": "iiQE8JkqH3M",
+      "name": "Diagnostic Type",
+      "shortName": "Diagnostic Type",
+      "code": "CAT_DIAGNOSTIC_TYPE",
+      "dataDimensionType": "DISAGGREGATION",
+      "categoryOptions": [
+        { "id": "Ii6JDWYlgAA" },
+        { "id": "D1dOOdTXglH" },
+        { "id": "f50kEnydx9q" },
+        { "id": "VHUdKF0j7el" },
+        { "id": "U4UqGWlG6g3" }
+      ]
+    }
+  ]
+}

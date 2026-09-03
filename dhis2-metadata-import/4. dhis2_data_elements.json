@@ -1,0 +1,847 @@
+{
+  "dataElements": [
+    {
+      "id": "DEdfzg3cHu0",
+      "name": "New TB Case Notified",
+      "shortName": "New TB Case Notified",
+      "code": "DE_NEW_TB_CASE_NOTIFIED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "quXu8Y0Aw9C"
+      }
+    },
+    {
+      "id": "DEjuupaBfLe",
+      "name": "Relapse/Recurrent TB Case Notified",
+      "shortName": "Relapse/Recurrent TB Case Notified",
+      "code": "DE_RELAPSE_RECURRENT_TB_CASE_NOTIFIED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "quXu8Y0Aw9C"
+      }
+    },
+    {
+      "id": "DEtB4fiWb4J",
+      "name": "Previous treatment history unknown TB Case Notified",
+      "shortName": "Previous treatment history unknown TB Case Notifie",
+      "code": "DE_PREVIOUS_TREATMENT_HISTORY_UNKNOWN__5CA8AF",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "quXu8Y0Aw9C"
+      }
+    },
+    {
+      "id": "DEqZVvXmLGY",
+      "name": "All other retreatment (Re-registered) TB Case Notified",
+      "shortName": "All other retreatment (Re-registered) TB Case Noti",
+      "code": "DE_ALL_OTHER_RETREATMENT_RE_REGISTERED_F517A0",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "quXu8Y0Aw9C"
+      }
+    },
+    {
+      "id": "DEtyVFQNP3E",
+      "name": "New_All TB cases who had Xpert test",
+      "shortName": "New_All TB cases who had Xpert test",
+      "code": "DE_NEW_ALL_TB_CASES_WHO_HAD_XPERT_TEST",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEPxbUlY4Ok",
+      "name": "New_All TB cases who had TB LAMP test",
+      "shortName": "New_All TB cases who had TB LAMP test",
+      "code": "DE_NEW_ALL_TB_CASES_WHO_HAD_TB_LAMP_TEST",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEuyeCJulfM",
+      "name": "New_All TB cases who had COBAS test",
+      "shortName": "New_All TB cases who had COBAS test",
+      "code": "DE_NEW_ALL_TB_CASES_WHO_HAD_COBAS_TEST",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEavoGS4N97",
+      "name": "New_All TB cases who had Truenat test",
+      "shortName": "New_All TB cases who had Truenat test",
+      "code": "DE_NEW_ALL_TB_CASES_WHO_HAD_TRUENAT_TEST",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DENoDl9BUci",
+      "name": "Relapse/Recurrent_ All TB cases who had Xpert test",
+      "shortName": "Relapse/Recurrent_ All TB cases who had Xpert test",
+      "code": "DE_RELAPSE_RECURRENT_XPERT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DElpvqAAgdw",
+      "name": "Relapse/Recurrent_ All TB cases who had TB LAMP test",
+      "shortName": "Relapse/Recurrent_ All TB cases who had TB LAMP te",
+      "code": "DE_RELAPSE_RECURRENT_TB LAMP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEfAaHeRz9q",
+      "name": "Relapse/Recurrent_All TB cases who had COBAS test",
+      "shortName": "Relapse/Recurrent_All TB cases who had COBAS test",
+      "code": "DE_RELAPSE_RECURRENT_COBAS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEDUuvN82zS",
+      "name": "Relapse/Recurrent_ All TB cases who had Truenat test",
+      "shortName": "Relapse/Recurrent_ All TB cases who had Truenat te",
+      "code": "DE_RELAPSE_RECURRENT_Truenat",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEQxoe2dGHj",
+      "name": "Previous treatment history unknown_All TB cases who had Xpert test",
+      "shortName": "Previous treatment history unknown_Xpert",
+      "code": "DE_PREVIOUS_TREAT_HISTORY_UNKNOWN_Xpert",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEO4Wyh8GNX",
+      "name": "Previous treatment history unknown_ All TB cases who had TB LAMP test",
+      "shortName": "Previous treatment history unknown_TB LAMP",
+      "code": "DE_PREVIOUS_TREAT_HISTORY_UNKNOWN_TBLAMP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DExdiPv2T8P",
+      "name": "Previous treatment history unknown_ All TB cases who had Truenat test",
+      "shortName": "Previous treatment history unknown_Truenat",
+      "code": "DE_PREVIOUS_TREATMENT_HISTORY_UNKNOWN_Truenat",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEsXbG2FiFH",
+      "name": "Previous treatment history unknown_ All TB cases who had COBAS test",
+      "shortName": "Previous treatment history unknown_COBAS",
+      "code": "DE_PREVIOUS_TREATMENT_HISTORY_UNKNOWN_COBAS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEw3vqFmty6",
+      "name": "Other Retreatment_All TB cases who had Xpert test",
+      "shortName": "Other Retreatment_All TB cases who had Xpert test",
+      "code": "DE_OTHER_RETREATMENT_Xpert",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEemm93mJft",
+      "name": "Other Retreatment_All TB cases who had Truenat test",
+      "shortName": "Other Retreatment_All TB cases who had Truenat tes",
+      "code": "DE_OTHER_RETREATMENT_Truenat",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEvH5YHWETW",
+      "name": "Other Retreatment_All TB cases who had COBAS test",
+      "shortName": "Other Retreatment_All TB cases who had COBAS test",
+      "code": "DE_OTHER_RETREATMENT_COBAS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEpZJEynFhN",
+      "name": "Other Retreatment_All TB cases who had TB LAMP test",
+      "shortName": "Other Retreatment_All TB cases who had TB LAMP tes",
+      "code": "DE_OTHER_RETREATMENT_TB LAMP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DE3XLERhd1w",
+      "name": "All Forms TB Cases Notified",
+      "shortName": "All Forms TB Cases Notified",
+      "code": "DE_ALL_FORMS_TB_CASES_NOTIFIED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "YQ3JHD2ONNY"
+      }
+    },
+    {
+      "id": "DEPAwVvUYl8",
+      "name": "New and Relapse TB Cases",
+      "shortName": "New and Relapse TB Cases",
+      "code": "DE_NEW_AND_RELAPSE_TB_CASES",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "YQ3JHD2ONNY"
+      }
+    },
+    {
+      "id": "DEdzFZkIw5h",
+      "name": "TB/HIV Cases Notified",
+      "shortName": "TB/HIV Cases Notified",
+      "code": "DE_TB_HIV_CASES_NOTIFIED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "YQ3JHD2ONNY"
+      }
+    },
+    {
+      "id": "DEqYt6dygJ7",
+      "name": "TB/HIV Cases enrolled on ART",
+      "shortName": "TB/HIV Cases enrolled on ART",
+      "code": "DE_TB_HIV_CASES_ENROLLED_ON_ART",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "YQ3JHD2ONNY"
+      }
+    },
+    {
+      "id": "DEuOqBJpQF4",
+      "name": "New TB Cases_HIV Status",
+      "shortName": "New TB Cases_HIV Status",
+      "code": "DE_NEW_TB_CASES_HIV_STATUS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "z5F4dkw5hsn"
+      }
+    },
+    {
+      "id": "DEr7lbOTDc9",
+      "name": "Relapse/Recurrent TB Cases_HIV Status",
+      "shortName": "Relapse/Recurrent TB Cases_HIV Status",
+      "code": "DE_RELAPSE_RECURRENT_TB_CASES_HIV_STATUS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "z5F4dkw5hsn"
+      }
+    },
+    {
+      "id": "DEi13n1C33W",
+      "name": "Previous treatment TB Cases _HIV Status",
+      "shortName": "Previous treatment TB Cases _HIV Status",
+      "code": "DE_PREVIOUS_TREATMENT_TB_CASES_HIV_STATUS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "z5F4dkw5hsn"
+      }
+    },
+    {
+      "id": "DErJ8txQdpk",
+      "name": "All other retreatment TB Cases_HIV Status",
+      "shortName": "All other retreatment TB Cases_HIV Status",
+      "code": "DE_ALL_OTHER_RETREATMENT_TB_CASES_HIV_STATUS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "z5F4dkw5hsn"
+      }
+    },
+    {
+      "id": "DEzALEkcGV5",
+      "name": "New Cases _TB/HIV_CPT",
+      "shortName": "New Cases _TB/HIV_CPT",
+      "code": "DE_NEW_CASES_TB_HIV_CPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DE0s1CrfBHr",
+      "name": "New Cases_TB/HIV_ART",
+      "shortName": "New Cases_TB/HIV_ART",
+      "code": "DE_NEW_CASES_TB_HIV_ART",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DEm6e6zXgJV",
+      "name": "Relapse/Recurrent_TB/HIV_CPT",
+      "shortName": "Relapse/Recurrent_TB/HIV_CPT",
+      "code": "DE_RELAPSE_RECURRENT_TB_HIV_CPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DEBwEmnoc4e",
+      "name": "Relapse/Recurrent_TB/HIV_ART",
+      "shortName": "Relapse/Recurrent_TB/HIV_ART",
+      "code": "DE_RELAPSE_RECURRENT_TB_HIV_ART",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DE5aOHc6T2B",
+      "name": "Previous treated_TB/HIV_CPT",
+      "shortName": "Previous treated_TB/HIV_CPT",
+      "code": "DE_PREVIOUS_TREATED_TB_HIV_CPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DEslgPYnbwj",
+      "name": "Previous treated_TB/HIV_ART",
+      "shortName": "Previous treated_TB/HIV_ART",
+      "code": "DE_PREVIOUS_TREATED_TB_HIV_ART",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DEnnPAIy8Ec",
+      "name": "All other retreatment_TB/HIV_CPT",
+      "shortName": "All other retreatment_TB/HIV_CPT",
+      "code": "DE_ALL_OTHER_RETREATMENT_TB_HIV_CPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DEiT4hC1IbG",
+      "name": "All other retreatment_TB/HIV_ART",
+      "shortName": "All other retreatment_TB/HIV_ART",
+      "code": "DE_ALL_OTHER_RETREATMENT_TB_HIV_ART",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DErn6gZUKuf",
+      "name": "Referral_TB Case referred from PPM",
+      "shortName": "Referral_TB Case referred from PPM",
+      "code": "DE_REFERRAL_TB_CASE_REFERRED_FROM_PPM",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEP7lhD0aWf",
+      "name": "Referral_TB Case referred from Community",
+      "shortName": "Referral_TB Case referred from Community",
+      "code": "DE_REFERRAL_TB_CASE_REFERRED_FROM_COMMUNITY",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEcjC6PdjCf",
+      "name": "Referral_TB Cases Managed by Treatment Supporter",
+      "shortName": "Referral_TB Cases Managed by Treatment Supporter",
+      "code": "DE_REFERRAL_TB_CASES_MANAGED_BY_TREATM_22A4D5",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEPw7YYoAPf",
+      "name": "Notified_Healthcare Workers among Patients",
+      "shortName": "Notified_Healthcare Workers among Patients",
+      "code": "DE_Notified_HEALTHCARE_WORKERS_AMONG_PATIENTS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "GtZxPT9kQCo"
+      }
+    },
+    {
+      "id": "DEauyWYde5r",
+      "name": "Notified_TB Patient Contact Investigated",
+      "shortName": "Notified_TB Patient Contact Investigated",
+      "code": "DE_Notified_TB_PATIENT_CONTACT_INVESTIGATED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEhXWLV10qA",
+      "name": "TB Coinfection",
+      "shortName": "TB Coinfection",
+      "code": "DE_TB_COINFECTION",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "TZnzYv0Q9fZ"
+      }
+    },
+    {
+      "id": "DE9wM02LvQa",
+      "name": "Notified_TB Patients covered by Health Insurance",
+      "shortName": "Notified_TB Patients covered by Health Insurance",
+      "code": "DE_Notified_COVERED_BY_HEALTH_INSURANCE",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEvVOeSLBgK",
+      "name": "Notified_TB Patients that received Cash Transfer",
+      "shortName": "Notified_TB Patients that received Cash Transfer",
+      "code": "DE_Notified_THAT_RECEIVED_CASH_TRANSFER",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEUmNemwWr3",
+      "name": "Notified_TB Patients that received Nutritional Support (Supplement or Food Provision)",
+      "shortName": "Notified_received Nutritional Support",
+      "code": "DE_Notified_THAT_RECEIVED_NUTRITION",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DE8kbTV3PWw",
+      "name": "Under 5_Contacts identified",
+      "shortName": "Under 5_Contacts identified",
+      "code": "DE_UNDER_5_CONTACTS_IDENTIFIED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEg9Lq3edpi",
+      "name": "Under 5_Contacts Screened for TB",
+      "shortName": "Under 5_Contacts Screened for TB",
+      "code": "DE_UNDER_5_CONTACTS_SCREENED_FOR_TB",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEzMGIhH8uX",
+      "name": "Under 5_ Eligible for TPT among screened",
+      "shortName": "Under 5_ Eligible for TPT among screened",
+      "code": "DE_UNDER_5_ELIGIBLE_FOR_TPT_AMONG_SCREENED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DENVOBofhgV",
+      "name": "Under 5_Placed on TPT in the Health facility among eligible",
+      "shortName": "Under 5_Placed on TPT in the Health facility among",
+      "code": "DE_UNDER_5_PLACED_ON_TPT_IN_THE_HEALTH_4AEE03",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEZY2wPYiam",
+      "name": "Under 5_Placed on TPT in the community among eligible",
+      "shortName": "Under 5_Placed on TPT in the community among eligi",
+      "code": "DE_UNDER_5_PLACED_ON_TPT_IN_THE_COMMUN_032443",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DE4Yi0kqk2Z",
+      "name": "Under 5_SCREENED CONTACTS IDENTIFIED WITH ACTIVE TB",
+      "shortName": "Under 5_SCREENED CONTACTS IDENTIFIED WITH ACTIVE T",
+      "code": "DE_UNDER_5_SCREENED_CONTACTS_IDENTIFIE_6E7C4E",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEebXyJNHlt",
+      "name": "5yrs and Above_ Contacts identified",
+      "shortName": "5yrs and Above_ Contacts identified",
+      "code": "DE_5YRS_AND_ABOVE_CONTACTS_IDENTIFIED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DELWubjr7AE",
+      "name": "5yrs and Above_ Contacts Screened for TB",
+      "shortName": "5yrs and Above_ Contacts Screened for TB",
+      "code": "DE_5YRS_AND_ABOVE_CONTACTS_SCREENED_FOR_TB",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEA1XjPI3dJ",
+      "name": "5yrs and Above_ Eligible for TPT among screened",
+      "shortName": "5yrs and Above_ Eligible for TPT among screened",
+      "code": "DE_5YRS_AND_ABOVE_ELIGIBLE_FOR_TPT_AMONG_SCREENED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DElJYAHw61f",
+      "name": "5yrs and Above_ Placed on TPT in the Health facility among eligible",
+      "shortName": "5yrs and Above_ Placed on TPT in the Health facili",
+      "code": "DE_5YRS_AND_ABOVE_PLACED_ON_TPT_IN_THE_4E5177",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEcHtbPjNgS",
+      "name": "5yrs and Above_ Placed on TPT in the community among eligible",
+      "shortName": "5yrs and Above_ Placed on TPT in the community amo",
+      "code": "DE_5YRS_AND_ABOVE_PLACED_ON_TPT_IN_THE_025955",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEZX2MulO8O",
+      "name": "5yrs and Above_ SCREENED CONTACTS IDENTIFIED WITH ACTIVE TB",
+      "shortName": "5yrs and Above_ SCREENED CONTACTS IDENTIFIED WITH",
+      "code": "DE_5YRS_AND_ABOVE_SCREENED_CONTACTS_ID_979278",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM"
+    },
+    {
+      "id": "DEgcjXiRKwA",
+      "name": "Enrolled on TPT",
+      "shortName": "Enrolled on TPT",
+      "code": "DE_ENROLLED_ON_TPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "hXRzNdCnZ3F"
+      }
+    },
+    {
+      "id": "DEqzlGOI953",
+      "name": "TB Cases Notified by Facility Type",
+      "shortName": "TB Cases Notified by Facility Type",
+      "code": "DE_TB_CASES_NOTIFIED_BY_FACILITY_TYPE",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "Oup0JOdqEzb"
+      }
+    },
+    {
+      "id": "V5IfLBcbfno",
+      "name": "Treatment Outcome",
+      "shortName": "Treatment Outcome",
+      "code": "DE_TREATMENT_OUTCOME",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "VC9DByY4PcN"
+      }
+    },
+    {
+      "id": "GMbJmTPSIAo",
+      "name": "Treatment Outcome_Bacteriologically Diagnosed",
+      "shortName": "Treatment Outcome_Bacteriologically Diagnosed",
+      "code": "DE_TREATMENT_OUTCOME_BACT_DIAG",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "CLrZ3aWZkSB",
+      "name": "Treatment Outcome_Clinically Diagnosed",
+      "shortName": "Treatment Outcome_Clinically Diagnosed",
+      "code": "DE_TREATMENT_OUTCOME_CLIN_DIAG",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "vrjn9Wvgfyg",
+      "name": "Treatment Outcome_PTB",
+      "shortName": "Treatment Outcome_PTB",
+      "code": "DE_TREATMENT_OUTCOME_PTB",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "w2wMqZcUDIh",
+      "name": "Treatment Outcome EPTB",
+      "shortName": "Treatment Outcome EPTB",
+      "code": "DE_TREATMENT_OUTCOME_EPTB",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "yfJs1ON43xK",
+      "name": "Treatment Outcome_TS Managed TB Cases",
+      "shortName": "Treatment Outcome_TS Managed TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_TS_MANAGED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "mTecQoXsf2o",
+      "name": "Treatment Outcome_All Forms HIV negative TB Cases",
+      "shortName": "Treatment Outcome_All Forms HIV negative TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_HIV_NEG",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "gyrDO1xkxwn",
+      "name": "Treatment Outcome_All Forms HIV Unknown TB Cases",
+      "shortName": "Treatment Outcome_All Forms HIV Unknown TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_HIV_UNKNOWN",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "QrS7RPeMOkI",
+      "name": "Treatment Outcome_New & Relapse HIV Positive TB",
+      "shortName": "Treatment Outcome_New & Relapse HIV Positive TB",
+      "code": "DE_TREATMENT_OUTCOME_HIV_POS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "UpkDyr7OSJo",
+      "name": "Treatment Outcome_Covid 19/TB Cases",
+      "shortName": "Treatment Outcome_Covid 19/TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_COVID19",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "U05YH4huFWh"
+      }
+    },
+    {
+      "id": "Ru1XXdo0cZu",
+      "name": "Treatment Outcome_All Forms TB Cases",
+      "shortName": "Treatment Outcome_All Forms TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_ALL_FORMS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "TZjXVUGahwX"
+      }
+    },
+    {
+      "id": "zren68K4Tun",
+      "name": "Treatment Outcome_New & Relapse TB Cases",
+      "shortName": "Treatment Outcome_New & Relapse TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_NEW_RELAPSE",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "TZjXVUGahwX"
+      }
+    },
+    {
+      "id": "PFz46PDjqip",
+      "name": "Treatment Outcome_HIV Positive",
+      "shortName": "Treatment Outcome_HIV Positive",
+      "code": "DE_TREATMENT_OUTCOME_HIV_POSITIVE",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "TZjXVUGahwX"
+      }
+    },
+    {
+      "id": "VJIqVLB5Lzx",
+      "name": "All contact placed on TPT",
+      "shortName": "All contact placed on TPT",
+      "code": "DE_CONTACT_PLACED_TPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "yHNYIT57PLJ"
+      }
+    },
+    {
+      "id": "oiGFfWd3hjO",
+      "name": "All contact placed on 6H",
+      "shortName": "All contact placed on 6H",
+      "code": "DE_CONTACT_PLACED_6H",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "yHNYIT57PLJ"
+      }
+    },
+    {
+      "id": "kYRBMeyyMDH",
+      "name": "All contact placed on 3HP",
+      "shortName": "All contact placed on 3HP",
+      "code": "DE_CONTACT_PLACED_3HP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "yHNYIT57PLJ"
+      }
+    },
+    {
+      "id": "qJ38aRUhR4I",
+      "name": "All contact placed on 3HR",
+      "shortName": "All contact placed on 3HR",
+      "code": "DE_CONTACT_PLACED_3HR",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "yHNYIT57PLJ"
+      }
+    },
+    {
+      "id": "WrXPvhsBkDa",
+      "name": "All contact placed on 1HP",
+      "shortName": "All contact placed on 1HP",
+      "code": "DE_CONTACT_PLACED_1HP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "yHNYIT57PLJ"
+      }
+    },
+    {
+      "id": "U4UqGWlG6g3",
+      "name": "New TB Cases",
+      "shortName": "New TB Cases",
+      "code": "DE_NEW_TB_CASES",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "SR9E0veKIcx"
+      }
+    },
+    {
+      "id": "Ot1OGMmjxWk",
+      "name": "Retreatment TB Cases",
+      "shortName": "Retreatment TB Cases",
+      "code": "DE_RETREATMENT_TB_CASES",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": {
+        "id": "SR9E0veKIcx"
+      }
+    }
+  ]
+}

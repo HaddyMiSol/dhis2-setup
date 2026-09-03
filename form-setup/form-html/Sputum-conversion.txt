@@ -1,0 +1,317 @@
+<div class="page-section" style="font-family: Arial, sans-serif; margin: 20px;"><!-- Form Title Banner -->
+<div style="background-color: #68A0CE; color: white; padding: 15px; text-align: center; border-radius: 4px; margin-bottom: 20px; width: 100%; box-sizing: border-box;">
+<h2 style="margin: 0; font-size: 22px; font-weight: bold; color: #ffffff !important;"><span style="color: #ffffff !important;">SPUTUM CONVERSION REPORTING FORM</span></h2>
+</div>
+<style type="text/css">.dhis2-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      font-size: 13px;
+    }
+    .dhis2-table th, .dhis2-table td {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+      text-align: center;
+      color: #000000;
+    }
+    .dhis2-table th {
+      background-color: #DDF1FA;
+      color: #000000 !important;
+      font-weight: bold;
+    }
+    .dhis2-table td.row-header {
+      text-align: left;
+      font-weight: bold;
+      background-color: #fafbfc;
+      color: #000000 !important;
+    }
+    .dhis2-table input[type="text"], .dhis2-table input[type="number"] {
+      width: 55px;
+      padding: 4px;
+      text-align: center;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      color: #000000;
+    }
+    .block-title {
+      background-color: #68A0CE;
+      color: #000000 !important;
+      padding: 8px 12px;
+      font-weight: bold;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+</style>
+<!-- BLOCK 1 -->
+<div class="block-title"><span style="color: #000000 !important;">Block 1: Breakdown of Xpert Positive TB (a+b) cases registered by month 2 AFB result</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 30%;"><span style="color: #000000 !important;">TB case category</span></th>
+			<th rowspan="2" style="width: 30%;">Total cases enrolled</th>
+			<th colspan="3"><span style="color: #000000 !important;">Smear done</span></th>
+			<th colspan="2"><span style="color: #000000 !important;">Smear not done</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total Cases Reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Smear negative</span></th>
+			<th><span style="color: #000000 !important;">Smear positive</span></th>
+			<th><span style="color: #000000 !important;">Continuing treatment</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">New TB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="dKE9jfTTxqC-JgJompQYk01-val" name="entryfield" title="New TB Cases_Total cases enrolled Xpert" value="[ New TB Cases_Total cases enrolled Xpert ]" /></td>
+			<td><input id="U4UqGWlG6g3-rHGcHumevyP-val" name="entryfield" title="New TB Cases Smear negative, Xpert" value="[ New TB Cases Smear negative, Xpert ]" /></td>
+			<td><input id="U4UqGWlG6g3-uNzIip9zLbw-val" name="entryfield" title="New TB Cases Smear positive, Xpert" value="[ New TB Cases Smear positive, Xpert ]" /></td>
+			<td><input id="U4UqGWlG6g3-YB5PlXCkA6a-val" name="entryfield" title="New TB Cases Continuing treatment, Xpert" value="[ New TB Cases Continuing treatment, Xpert ]" /></td>
+			<td><input id="U4UqGWlG6g3-MfuXE4jRI7M-val" name="entryfield" title="New TB Cases Died, Xpert" value="[ New TB Cases Died, Xpert ]" /></td>
+			<td><input id="U4UqGWlG6g3-vIKcZb371fH-val" name="entryfield" title="New TB Cases Not Evaluated, Xpert" value="[ New TB Cases Not Evaluated, Xpert ]" /></td>
+			<td><input id="indicatorGKzgzMaHSky" indicatorid="GKzgzMaHSky" name="indicator" readonly="readonly" title="Sputum_New TB Cases_Total Cases Reported_Xpert" value="[ Sputum_New TB Cases_Total Cases Reported_Xpert ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Retreatment TB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="aCxTe5A3P3Q-JgJompQYk01-val" name="entryfield" title="Retreatment TB Cases_Total cases enrolled Xpert" value="[ Retreatment TB Cases_Total cases enrolled Xpert ]" /></td>
+			<td><input id="Ot1OGMmjxWk-rHGcHumevyP-val" name="entryfield" title="Retreatment TB Cases Smear negative, Xpert" value="[ Retreatment TB Cases Smear negative, Xpert ]" /></td>
+			<td><input id="Ot1OGMmjxWk-uNzIip9zLbw-val" name="entryfield" title="Retreatment TB Cases Smear positive, Xpert" value="[ Retreatment TB Cases Smear positive, Xpert ]" /></td>
+			<td><input id="Ot1OGMmjxWk-YB5PlXCkA6a-val" name="entryfield" title="Retreatment TB Cases Continuing treatment, Xpert" value="[ Retreatment TB Cases Continuing treatment, Xpert ]" /></td>
+			<td><input id="Ot1OGMmjxWk-MfuXE4jRI7M-val" name="entryfield" title="Retreatment TB Cases Died, Xpert" value="[ Retreatment TB Cases Died, Xpert ]" /></td>
+			<td><input id="Ot1OGMmjxWk-vIKcZb371fH-val" name="entryfield" title="Retreatment TB Cases Not Evaluated, Xpert" value="[ Retreatment TB Cases Not Evaluated, Xpert ]" /></td>
+			<td><input id="indicatorqJpMyKCAsJQ" indicatorid="qJpMyKCAsJQ" name="indicator" readonly="readonly" title="Sputum_Retreatment TB Cases_Total Cases Reported_Xpert" value="[ Sputum_Retreatment TB Cases_Total Cases Reported_Xpert ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Total</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatornl4JFfrW9ok" indicatorid="nl4JFfrW9ok" name="indicator" readonly="readonly" title="Sputum_Total cases enrolled_Xpert" value="[ Sputum_Total cases enrolled_Xpert ]" /></td>
+			<td><input id="indicatorh0bztWKL37O" indicatorid="h0bztWKL37O" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Negative_Xpert" value="[ Sputum_TB Cases_Smear Negative_Xpert ]" /></td>
+			<td><input id="indicatorg2wULQz1jdu" indicatorid="g2wULQz1jdu" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Positive_Xpert" value="[ Sputum_TB Cases_Smear Positive_Xpert ]" /></td>
+			<td><input id="indicatorUaBvwnHbIWG" indicatorid="UaBvwnHbIWG" name="indicator" readonly="readonly" title="Sputum_TB Cases_Continuing Tx_Xpert" value="[ Sputum_TB Cases_Continuing Tx_Xpert ]" /></td>
+			<td><input id="indicatorwSmq7Ce2ojN" indicatorid="wSmq7Ce2ojN" name="indicator" readonly="readonly" title="Sputum_TB Cases_Died_Xpert" value="[ Sputum_TB Cases_Died_Xpert ]" /></td>
+			<td><input id="indicatorEFFB4US5npK" indicatorid="EFFB4US5npK" name="indicator" readonly="readonly" title="Sputum_TB Cases_Not Evaluated_Xpert" value="[ Sputum_TB Cases_Not Evaluated_Xpert ]" /></td>
+			<td><input id="indicatorUCdn0TXFYKh" indicatorid="UCdn0TXFYKh" name="indicator" readonly="readonly" title="Sputum_Total Cases Reported_Xpert" value="[ Sputum_Total Cases Reported_Xpert ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 2 -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 2: Breakdown of Truenat Positive TB (a+b) cases registered by month 2 AFB result</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 30%;"><span style="color: #000000 !important;">TB case category</span></th>
+			<th rowspan="2" style="width: 30%;">Total cases enrolled</th>
+			<th colspan="3"><span style="color: #000000 !important;">Smear done</span></th>
+			<th colspan="2"><span style="color: #000000 !important;">Smear not done</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total Cases Reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Smear negative</span></th>
+			<th><span style="color: #000000 !important;">Smear positive</span></th>
+			<th><span style="color: #000000 !important;">Continuing treatment</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">New TB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="dKE9jfTTxqC-Snzj29Bxs1U-val" name="entryfield" title="New TB Cases_Total cases enrolled Truenat" value="[ New TB Cases_Total cases enrolled Truenat ]" /></td>
+			<td><input id="U4UqGWlG6g3-xI657Zo5yVn-val" name="entryfield" title="New TB Cases Smear negative, Truenat" value="[ New TB Cases Smear negative, Truenat ]" /></td>
+			<td><input id="U4UqGWlG6g3-X3HmjGnheSS-val" name="entryfield" title="New TB Cases Smear positive, Truenat" value="[ New TB Cases Smear positive, Truenat ]" /></td>
+			<td><input id="U4UqGWlG6g3-i2fAs9RiXlI-val" name="entryfield" title="New TB Cases Continuing treatment, Truenat" value="[ New TB Cases Continuing treatment, Truenat ]" /></td>
+			<td><input id="U4UqGWlG6g3-bQctCV6DZQQ-val" name="entryfield" title="New TB Cases Died, Truenat" value="[ New TB Cases Died, Truenat ]" /></td>
+			<td><input id="U4UqGWlG6g3-hqX5vlroqHN-val" name="entryfield" title="New TB Cases Not Evaluated, Truenat" value="[ New TB Cases Not Evaluated, Truenat ]" /></td>
+			<td><input id="indicatorvOEqLXlXa0P" indicatorid="vOEqLXlXa0P" name="indicator" readonly="readonly" title="Sputum_New TB Cases_Total Cases Reported_Truenat" value="[ Sputum_New TB Cases_Total Cases Reported_Truenat ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Retreatment TB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="aCxTe5A3P3Q-Snzj29Bxs1U-val" name="entryfield" title="Retreatment TB Cases_Total cases enrolled Truenat" value="[ Retreatment TB Cases_Total cases enrolled Truenat ]" /></td>
+			<td><input id="Ot1OGMmjxWk-xI657Zo5yVn-val" name="entryfield" title="Retreatment TB Cases Smear negative, Truenat" value="[ Retreatment TB Cases Smear negative, Truenat ]" /></td>
+			<td><input id="Ot1OGMmjxWk-X3HmjGnheSS-val" name="entryfield" title="Retreatment TB Cases Smear positive, Truenat" value="[ Retreatment TB Cases Smear positive, Truenat ]" /></td>
+			<td><input id="Ot1OGMmjxWk-i2fAs9RiXlI-val" name="entryfield" title="Retreatment TB Cases Continuing treatment, Truenat" value="[ Retreatment TB Cases Continuing treatment, Truenat ]" /></td>
+			<td><input id="Ot1OGMmjxWk-bQctCV6DZQQ-val" name="entryfield" title="Retreatment TB Cases Died, Truenat" value="[ Retreatment TB Cases Died, Truenat ]" /></td>
+			<td><input id="Ot1OGMmjxWk-hqX5vlroqHN-val" name="entryfield" title="Retreatment TB Cases Not Evaluated, Truenat" value="[ Retreatment TB Cases Not Evaluated, Truenat ]" /></td>
+			<td><input id="indicatormCBOcCm94YB" indicatorid="mCBOcCm94YB" name="indicator" readonly="readonly" title="Sputum_Retreatment TB Cases_Total Cases Reported_Truenat" value="[ Sputum_Retreatment TB Cases_Total Cases Reported_Truenat ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Total</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorXhs4BnrkTO9" indicatorid="Xhs4BnrkTO9" name="indicator" readonly="readonly" title="Sputum_Total cases enrolled_Truenat" value="[ Sputum_Total cases enrolled_Truenat ]" /></td>
+			<td><input id="indicatorKBt2yNr8fHN" indicatorid="KBt2yNr8fHN" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Negative_Truenat" value="[ Sputum_TB Cases_Smear Negative_Truenat ]" /></td>
+			<td><input id="indicatorx7Sydeihhjc" indicatorid="x7Sydeihhjc" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Positive_Truenat" value="[ Sputum_TB Cases_Smear Positive_Truenat ]" /></td>
+			<td><input id="indicatorFfFc5IBpday" indicatorid="FfFc5IBpday" name="indicator" readonly="readonly" title="Sputum_TB Cases_Continuing Tx_Truenat" value="[ Sputum_TB Cases_Continuing Tx_Truenat ]" /></td>
+			<td><input id="indicatorVkOha5NdzJG" indicatorid="VkOha5NdzJG" name="indicator" readonly="readonly" title="Sputum_TB Cases_Died_Truenat" value="[ Sputum_TB Cases_Died_Truenat ]" /></td>
+			<td><input id="indicatorl3WpmWNT1Dt" indicatorid="l3WpmWNT1Dt" name="indicator" readonly="readonly" title="Sputum_TB Cases_Not Evaluated_Truenat" value="[ Sputum_TB Cases_Not Evaluated_Truenat ]" /></td>
+			<td><input id="indicatorDOwa58MsOGa" indicatorid="DOwa58MsOGa" name="indicator" readonly="readonly" title="Sputum_Total Cases Reported_Truenat" value="[ Sputum_Total Cases Reported_Truenat ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 3 -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 3: Breakdown of TB LAMP (a+b) cases registered by month 2 AFB result</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 30%;"><span style="color: #000000 !important;">TB case category</span></th>
+			<th rowspan="2" style="width: 30%;">Total cases enrolled</th>
+			<th colspan="3"><span style="color: #000000 !important;">Smear done</span></th>
+			<th colspan="2"><span style="color: #000000 !important;">Smear not done</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total Cases Reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Smear negative</span></th>
+			<th><span style="color: #000000 !important;">Smear positive</span></th>
+			<th><span style="color: #000000 !important;">Continuing treatment</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">New PTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="dKE9jfTTxqC-ThZ43yoGFEP-val" name="entryfield" title="New TB Cases_Total cases enrolled TB-LAMP" value="[ New TB Cases_Total cases enrolled TB-LAMP ]" /></td>
+			<td><input id="U4UqGWlG6g3-TqojrwFRQlh-val" name="entryfield" title="New TB Cases Smear negative, TB-LAMP" value="[ New TB Cases Smear negative, TB-LAMP ]" /></td>
+			<td><input id="U4UqGWlG6g3-hHvDuEGH23L-val" name="entryfield" title="New TB Cases Smear positive, TB-LAMP" value="[ New TB Cases Smear positive, TB-LAMP ]" /></td>
+			<td><input id="U4UqGWlG6g3-qyxxgYRyb4P-val" name="entryfield" title="New TB Cases Continuing treatment, TB-LAMP" value="[ New TB Cases Continuing treatment, TB-LAMP ]" /></td>
+			<td><input id="U4UqGWlG6g3-OeIVkq0Ylrq-val" name="entryfield" title="New TB Cases Died, TB-LAMP" value="[ New TB Cases Died, TB-LAMP ]" /></td>
+			<td><input id="U4UqGWlG6g3-DrorAxfNvSz-val" name="entryfield" title="New TB Cases Not Evaluated, TB-LAMP" value="[ New TB Cases Not Evaluated, TB-LAMP ]" /></td>
+			<td><input id="indicatorTjDGvld1rnN" indicatorid="TjDGvld1rnN" name="indicator" readonly="readonly" title="Sputum_New TB Cases_Total Cases Reported_TB-LAMP" value="[ Sputum_New TB Cases_Total Cases Reported_TB-LAMP ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Retreatment PTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="aCxTe5A3P3Q-ThZ43yoGFEP-val" name="entryfield" title="Retreatment TB Cases_Total cases enrolled TB-LAMP" value="[ Retreatment TB Cases_Total cases enrolled TB-LAMP ]" /></td>
+			<td><input id="Ot1OGMmjxWk-TqojrwFRQlh-val" name="entryfield" title="Retreatment TB Cases Smear negative, TB-LAMP" value="[ Retreatment TB Cases Smear negative, TB-LAMP ]" /></td>
+			<td><input id="Ot1OGMmjxWk-hHvDuEGH23L-val" name="entryfield" title="Retreatment TB Cases Smear positive, TB-LAMP" value="[ Retreatment TB Cases Smear positive, TB-LAMP ]" /></td>
+			<td><input id="Ot1OGMmjxWk-qyxxgYRyb4P-val" name="entryfield" title="Retreatment TB Cases Continuing treatment, TB-LAMP" value="[ Retreatment TB Cases Continuing treatment, TB-LAMP ]" /></td>
+			<td><input id="Ot1OGMmjxWk-OeIVkq0Ylrq-val" name="entryfield" title="Retreatment TB Cases Died, TB-LAMP" value="[ Retreatment TB Cases Died, TB-LAMP ]" /></td>
+			<td><input id="Ot1OGMmjxWk-DrorAxfNvSz-val" name="entryfield" title="Retreatment TB Cases Not Evaluated, TB-LAMP" value="[ Retreatment TB Cases Not Evaluated, TB-LAMP ]" /></td>
+			<td><input id="indicatorgzbcC0hd3SQ" indicatorid="gzbcC0hd3SQ" name="indicator" readonly="readonly" title="Sputum_Retreatment TB Cases_Total Cases Reported_TB-LAMP" value="[ Sputum_Retreatment TB Cases_Total Cases Reported_TB-LAMP ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Total</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatoryCnUkqZ6bIg" indicatorid="yCnUkqZ6bIg" name="indicator" readonly="readonly" title="Sputum_Total cases enrolled_TB-LAMP" value="[ Sputum_Total cases enrolled_TB-LAMP ]" /></td>
+			<td><input id="indicatoroCirEAWMVzD" indicatorid="oCirEAWMVzD" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Negative_TB-LAMP" value="[ Sputum_TB Cases_Smear Negative_TB-LAMP ]" /></td>
+			<td><input id="indicatorzTpbpmMMn6f" indicatorid="zTpbpmMMn6f" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Positive_TB-LAMP" value="[ Sputum_TB Cases_Smear Positive_TB-LAMP ]" /></td>
+			<td><input id="indicatorN8LZy2DoK8C" indicatorid="N8LZy2DoK8C" name="indicator" readonly="readonly" title="Sputum_TB Cases_Continuing Tx_TB-LAMP" value="[ Sputum_TB Cases_Continuing Tx_TB-LAMP ]" /></td>
+			<td><input id="indicatorP45bpFHFMwC" indicatorid="P45bpFHFMwC" name="indicator" readonly="readonly" title="Sputum_TB Cases_Died_TB-LAMP" value="[ Sputum_TB Cases_Died_TB-LAMP ]" /></td>
+			<td><input id="indicatorZbszpiCkY8b" indicatorid="ZbszpiCkY8b" name="indicator" readonly="readonly" title="Sputum_TB Cases_Not Evaluated_TB-LAMP" value="[ Sputum_TB Cases_Not Evaluated_TB-LAMP ]" /></td>
+			<td><input id="indicatorArrnZWVNPPe" indicatorid="ArrnZWVNPPe" name="indicator" readonly="readonly" title="Sputum_Total Cases Reported_TB-LAMP" value="[ Sputum_Total Cases Reported_TB-LAMP ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 4 -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 4: Breakdown of Smear Positive PTB (a+b) cases registered by month 2 AFB result</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 30%;"><span style="color: #000000 !important;">TB case category</span></th>
+			<th rowspan="2" style="width: 30%;">Total cases enrolled</th>
+			<th colspan="3"><span style="color: #000000 !important;">Smear done</span></th>
+			<th colspan="2"><span style="color: #000000 !important;">Smear not done</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total Cases Reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Smear negative</span></th>
+			<th><span style="color: #000000 !important;">Smear positive</span></th>
+			<th><span style="color: #000000 !important;">Continuing treatment</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">New PTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="dKE9jfTTxqC-LaMecKIFS51-val" name="entryfield" title="New TB Cases_Total cases enrolled AFB Smear" value="[ New TB Cases_Total cases enrolled AFB Smear ]" /></td>
+			<td><input id="U4UqGWlG6g3-MQG1KhzNOUO-val" name="entryfield" title="New TB Cases Smear negative, AFB Smear" value="[ New TB Cases Smear negative, AFB Smear ]" /></td>
+			<td><input id="U4UqGWlG6g3-P8IOTqyEwp4-val" name="entryfield" title="New TB Cases Smear positive, AFB Smear" value="[ New TB Cases Smear positive, AFB Smear ]" /></td>
+			<td><input id="U4UqGWlG6g3-SJBkSTCsnnK-val" name="entryfield" title="New TB Cases Continuing treatment, AFB Smear" value="[ New TB Cases Continuing treatment, AFB Smear ]" /></td>
+			<td><input id="U4UqGWlG6g3-Ty4PemnE8li-val" name="entryfield" title="New TB Cases Died, AFB Smear" value="[ New TB Cases Died, AFB Smear ]" /></td>
+			<td><input id="U4UqGWlG6g3-kY929PR1DYR-val" name="entryfield" title="New TB Cases Not Evaluated, AFB Smear" value="[ New TB Cases Not Evaluated, AFB Smear ]" /></td>
+			<td><input id="indicatorKdV0heAWWAY" indicatorid="KdV0heAWWAY" name="indicator" readonly="readonly" title="Sputum_New TB Cases_Total Cases Reported_Smear" value="[ Sputum_New TB Cases_Total Cases Reported_Smear ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Retreatment PTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="aCxTe5A3P3Q-LaMecKIFS51-val" name="entryfield" title="Retreatment TB Cases_Total cases enrolled AFB Smear" value="[ Retreatment TB Cases_Total cases enrolled AFB Smear ]" /></td>
+			<td><input id="Ot1OGMmjxWk-MQG1KhzNOUO-val" name="entryfield" title="Retreatment TB Cases Smear negative, AFB Smear" value="[ Retreatment TB Cases Smear negative, AFB Smear ]" /></td>
+			<td><input id="Ot1OGMmjxWk-P8IOTqyEwp4-val" name="entryfield" title="Retreatment TB Cases Smear positive, AFB Smear" value="[ Retreatment TB Cases Smear positive, AFB Smear ]" /></td>
+			<td><input id="Ot1OGMmjxWk-SJBkSTCsnnK-val" name="entryfield" title="Retreatment TB Cases Continuing treatment, AFB Smear" value="[ Retreatment TB Cases Continuing treatment, AFB Smear ]" /></td>
+			<td><input id="Ot1OGMmjxWk-Ty4PemnE8li-val" name="entryfield" title="Retreatment TB Cases Died, AFB Smear" value="[ Retreatment TB Cases Died, AFB Smear ]" /></td>
+			<td><input id="Ot1OGMmjxWk-kY929PR1DYR-val" name="entryfield" title="Retreatment TB Cases Not Evaluated, AFB Smear" value="[ Retreatment TB Cases Not Evaluated, AFB Smear ]" /></td>
+			<td><input id="indicatorgGPpAjNd24y" indicatorid="gGPpAjNd24y" name="indicator" readonly="readonly" title="Sputum_Retreatment TB Cases_Total Cases Reported_Smear" value="[ Sputum_Retreatment TB Cases_Total Cases Reported_Smear ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Total</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatorJ7Hlq7eAC3E" indicatorid="J7Hlq7eAC3E" name="indicator" readonly="readonly" title="Sputum_Total cases enrolled_Smear" value="[ Sputum_Total cases enrolled_Smear ]" /></td>
+			<td><input id="indicatorb3uganyrmyd" indicatorid="b3uganyrmyd" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Negative_AFB Smear" value="[ Sputum_TB Cases_Smear Negative_AFB Smear ]" /></td>
+			<td><input id="indicatorUvtmzmboKnP" indicatorid="UvtmzmboKnP" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Positive_AFB Smear" value="[ Sputum_TB Cases_Smear Positive_AFB Smear ]" /></td>
+			<td><input id="indicatorGXz3AWalwRv" indicatorid="GXz3AWalwRv" name="indicator" readonly="readonly" title="Sputum_TB Cases_Continuing Tx_AFB Smear" value="[ Sputum_TB Cases_Continuing Tx_AFB Smear ]" /></td>
+			<td><input id="indicatoreSOh5UXOgyE" indicatorid="eSOh5UXOgyE" name="indicator" readonly="readonly" title="Sputum_TB Cases_Died_AFB Smear" value="[ Sputum_TB Cases_Died_AFB Smear ]" /></td>
+			<td><input id="indicatorxOymV7y0kVq" indicatorid="xOymV7y0kVq" name="indicator" readonly="readonly" title="Sputum_TB Cases_Not Evaluated_AFB Smear" value="[ Sputum_TB Cases_Not Evaluated_AFB Smear ]" /></td>
+			<td><input id="indicatorYb9QfrfBDZM" indicatorid="Yb9QfrfBDZM" name="indicator" readonly="readonly" title="Sputum_Total Cases Reported_AFB Smear" value="[ Sputum_Total Cases Reported_AFB Smear ]" /></td>
+		</tr>
+	</tbody>
+</table>
+<!-- BLOCK 5 -->
+
+<div class="block-title"><span style="color: #000000 !important;">Block 5: Breakdown of other bacteriological examination PTB (a+b) cases registered by month 2 AFB result</span></div>
+
+<table class="dhis2-table">
+	<thead>
+		<tr>
+			<th rowspan="2" style="width: 30%;"><span style="color: #000000 !important;">TB case category</span></th>
+			<th rowspan="2" style="width: 30%;">Total cases enrolled</th>
+			<th colspan="3"><span style="color: #000000 !important;">Smear done</span></th>
+			<th colspan="2"><span style="color: #000000 !important;">Smear not done</span></th>
+			<th rowspan="2"><span style="color: #000000 !important;">Total Cases Reported</span></th>
+		</tr>
+		<tr>
+			<th><span style="color: #000000 !important;">Smear negative</span></th>
+			<th><span style="color: #000000 !important;">Smear positive</span></th>
+			<th><span style="color: #000000 !important;">Continuing treatment</span></th>
+			<th><span style="color: #000000 !important;">Died</span></th>
+			<th><span style="color: #000000 !important;">Not Evaluated</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">New PTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="dKE9jfTTxqC-XtrmEOe6Bes-val" name="entryfield" title="New TB Cases_Total cases enrolled Other bacteriological" value="[ New TB Cases_Total cases enrolled Other bacteriological ]" /></td>
+			<td><input id="U4UqGWlG6g3-OXJifNkrFr4-val" name="entryfield" title="New TB Cases Smear negative, Other bacteriological" value="[ New TB Cases Smear negative, Other bacteriological ]" /></td>
+			<td><input id="U4UqGWlG6g3-YRmDk7pl6FQ-val" name="entryfield" title="New TB Cases Smear positive, Other bacteriological" value="[ New TB Cases Smear positive, Other bacteriological ]" /></td>
+			<td><input id="U4UqGWlG6g3-tagOzQteUc8-val" name="entryfield" title="New TB Cases Continuing treatment, Other bacteriological" value="[ New TB Cases Continuing treatment, Other bacteriological ]" /></td>
+			<td><input id="U4UqGWlG6g3-dWEPg0cgmRy-val" name="entryfield" title="New TB Cases Died, Other bacteriological" value="[ New TB Cases Died, Other bacteriological ]" /></td>
+			<td><input id="U4UqGWlG6g3-aU3mU3B4VWp-val" name="entryfield" title="New TB Cases Not Evaluated, Other bacteriological" value="[ New TB Cases Not Evaluated, Other bacteriological ]" /></td>
+			<td><input id="indicatorNj2RIQdsZwE" indicatorid="Nj2RIQdsZwE" name="indicator" readonly="readonly" title="Sputum_New TB Cases_Total Cases Reported_Other bacteriological" value="[ Sputum_New TB Cases_Total Cases Reported_Other bacteriological ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Retreatment PTB Cases</span></td>
+			<td class="row-header" style="text-align: center;"><input id="aCxTe5A3P3Q-XtrmEOe6Bes-val" name="entryfield" title="Retreatment TB Cases_Total cases enrolled Other bacteriological" value="[ Retreatment TB Cases_Total cases enrolled Other bacteriological ]" /></td>
+			<td><input id="Ot1OGMmjxWk-OXJifNkrFr4-val" name="entryfield" title="Retreatment TB Cases Smear negative, Other bacteriological" value="[ Retreatment TB Cases Smear negative, Other bacteriological ]" /></td>
+			<td><input id="Ot1OGMmjxWk-YRmDk7pl6FQ-val" name="entryfield" title="Retreatment TB Cases Smear positive, Other bacteriological" value="[ Retreatment TB Cases Smear positive, Other bacteriological ]" /></td>
+			<td><input id="Ot1OGMmjxWk-tagOzQteUc8-val" name="entryfield" title="Retreatment TB Cases Continuing treatment, Other bacteriological" value="[ Retreatment TB Cases Continuing treatment, Other bacteriological ]" /></td>
+			<td><input id="Ot1OGMmjxWk-dWEPg0cgmRy-val" name="entryfield" title="Retreatment TB Cases Died, Other bacteriological" value="[ Retreatment TB Cases Died, Other bacteriological ]" /></td>
+			<td><input id="Ot1OGMmjxWk-aU3mU3B4VWp-val" name="entryfield" title="Retreatment TB Cases Not Evaluated, Other bacteriological" value="[ Retreatment TB Cases Not Evaluated, Other bacteriological ]" /></td>
+			<td><input id="indicatornnJYmC2UJR3" indicatorid="nnJYmC2UJR3" name="indicator" readonly="readonly" title="Sputum_Retreatment TB Cases_Total Cases Reported_Other bacteriological" value="[ Sputum_Retreatment TB Cases_Total Cases Reported_Other bacteriological ]" /></td>
+		</tr>
+		<tr>
+			<td class="row-header"><span style="color: #000000 !important;">Total</span></td>
+			<td class="row-header" style="text-align: center;"><input id="indicatormz5kvBxbhPa" indicatorid="mz5kvBxbhPa" name="indicator" readonly="readonly" title="Sputum_Total cases enrolled_other_bacteriological" value="[ Sputum_Total cases enrolled_other_bacteriological ]" /></td>
+			<td><input id="indicatorZVnC26fnBce" indicatorid="ZVnC26fnBce" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Negative_other bacteriological" value="[ Sputum_TB Cases_Smear Negative_other bacteriological ]" /></td>
+			<td><input id="indicatorQmH1dcJ9hio" indicatorid="QmH1dcJ9hio" name="indicator" readonly="readonly" title="Sputum_TB Cases_Smear Positive_other bacteriological" value="[ Sputum_TB Cases_Smear Positive_other bacteriological ]" /></td>
+			<td><input id="indicatorSGQ2KIXr1r1" indicatorid="SGQ2KIXr1r1" name="indicator" readonly="readonly" title="Sputum_TB Cases_Continuing Tx_other bacteriological" value="[ Sputum_TB Cases_Continuing Tx_other bacteriological ]" /></td>
+			<td><input id="indicatorisa7YBsmGui" indicatorid="isa7YBsmGui" name="indicator" readonly="readonly" title="Sputum_TB Cases_Died_other bacteriological" value="[ Sputum_TB Cases_Died_other bacteriological ]" /></td>
+			<td><input id="indicatorU41Ky2mhSxZ" indicatorid="U41Ky2mhSxZ" name="indicator" readonly="readonly" title="Sputum_TB Cases_Not Evaluated_other bacteriological" value="[ Sputum_TB Cases_Not Evaluated_other bacteriological ]" /></td>
+			<td><input id="indicatorG3gQyvGj18E" indicatorid="G3gQyvGj18E" name="indicator" readonly="readonly" title="Sputum_Total Cases Reported_Other bacteriological" value="[ Sputum_Total Cases Reported_Other bacteriological ]" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>

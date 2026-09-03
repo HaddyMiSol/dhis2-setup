@@ -1,0 +1,196 @@
+{
+  "categoryCombos": [
+    {
+      "id": "YQ3JHD2ONNY",
+      "name": "Sex + Age Group",
+      "code": "CC_SEX_AGE_GROUP",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "fPh4sADDcsG"
+        },
+        {
+          "id": "EmLGYtyVFQN"
+        }
+      ]
+    },
+    {
+      "id": "P9lqJRp29oN",
+      "name": "Type of TB",
+      "code": "CC_TYPE_OF_TB",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "dqVqZ2xIvdi"
+        }
+      ]
+    },
+    {
+      "id": "eq7N2m1u7f2",
+      "name": "Diagnostic Method",
+      "code": "CC_DIAGNOSTIC_METHOD",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "QKZGAF0OTfE"
+        }
+      ]
+    },
+    {
+      "id": "MCRUiOCUpg0",
+      "name": "Site of Disease + Treatment History",
+      "code": "CC_SITE_OF_DISEASE_TREATMENT_HISTORY",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "JupaBfLetB4"
+        },
+        {
+          "id": "IDl9BUcilpv"
+        }
+      ]
+    },
+    {
+      "id": "oz30w4kYALX",
+      "name": "Testing Period + HIV Status",
+      "code": "CC_TESTING_PERIOD_HIV_STATUS",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "Ad1iPUZMUys"
+        },
+        {
+          "id": "a39zFZdrEVS"
+        }
+      ]
+    },
+    {
+      "id": "quXu8Y0Aw9C",
+      "name": "Site of Disease + Diagnostic Method",
+      "code": "CC_SITE_OF_DISEASE_DIAGNOSTIC_METHOD",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "JupaBfLetB4"
+        },
+        {
+          "id": "QKZGAF0OTfE"
+        }
+      ]
+    },
+    {
+      "id": "z5F4dkw5hsn",
+      "name": "HIV Status + Sex",
+      "code": "CC_HIV_STATUS_SEX",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "a39zFZdrEVS"
+        },
+        {
+          "id": "fPh4sADDcsG"
+        }
+      ]
+    },
+    {
+      "id": "GtZxPT9kQCo",
+      "name": "Sex",
+      "code": "CC_SEX",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "fPh4sADDcsG"
+        }
+      ]
+    },
+    {
+      "id": "hXRzNdCnZ3F",
+      "name": "TPT Treatment Regimen + Age Group",
+      "code": "CC_TPT_REGIMEN_AGE_GROUP",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "qkuyeCJulfM"
+        },
+        {
+          "id": "EmLGYtyVFQN"
+        }
+      ]
+    },
+    {
+      "id": "Oup0JOdqEzb",
+      "name": "Facility Ownership + Facility Level",
+      "code": "CC_FACILITY_OWNERSHIP_LEVEL",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "IRz9qDUuvN8"
+        },
+        {
+          "id": "r7NaMFRf3Xx"
+        }
+      ]
+    },
+    {
+      "id": "TZnzYv0Q9fZ",
+      "name": "TB Coinfection Type",
+      "code": "CC_TB_COINFECTION_TYPE",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        {
+          "id": "FYUNZTlbnwH"
+        }
+      ]
+    },
+    {
+      "id": "VC9DByY4PcN",
+      "name": "Treatment Outcome + Treatment History",
+      "code": "CC_TREATMENT_OUTCOME_TREATMENT_HISTORY",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        { "id": "Ot1OGMmjxWk" },
+        { "id": "IDl9BUcilpv" }
+      ]
+    },
+    {
+      "id": "U05YH4huFWh",
+      "name": "Treatment Outcome",
+      "code": "CC_TREATMENT_OUTCOME",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        { "id": "Ot1OGMmjxWk" }
+      ]
+    },
+    {
+      "id": "yHNYIT57PLJ",
+      "name": "Age Group + TPT Outcome",
+      "code": "CC_AGE_GROUP_TPT_OUTCOME",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        { "id": "EmLGYtyVFQN" },
+        { "id": "h7x41Ztpdp4" }
+      ]
+    },
+    {
+      "id": "TZjXVUGahwX",
+      "name": "Age Group + TPT Outcome",
+      "code": "CC_AGE_GROUP_TPT_OUTCOME",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        { "id": "fPh4sADDcsG" },
+        { "id": "EmLGYtyVFQN" },
+        { "id": "Ot1OGMmjxWk" }
+      ]
+    },
+    {
+      "id": "SR9E0veKIcx",
+      "name": "Conversion status + Diagnostic Type",
+      "code": "CC_CONVERSION_STATUS_DIAGNOSTIC_TYPE",
+      "dataDimensionType": "DISAGGREGATION",
+      "categories": [
+        { "id": "K8ffUF0eWIX" },
+        { "id": "iiQE8JkqH3M" }
+      ]
+    }
+  ]
+}

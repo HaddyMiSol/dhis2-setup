@@ -1,0 +1,266 @@
+{
+  "dataSets": [
+    {
+      "id": "H9WW6X6ccKZ",
+      "name": "TB Treatment Outcome Reporting Form",
+      "shortName": "TB Treat Outcome",
+      "periodType": "Monthly",
+      "dataSetElements": [
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "V5IfLBcbfno" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "GMbJmTPSIAo" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "CLrZ3aWZkSB" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "vrjn9Wvgfyg" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "w2wMqZcUDIh" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "yfJs1ON43xK" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "mTecQoXsf2o" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "gyrDO1xkxwn" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "QrS7RPeMOkI" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "UpkDyr7OSJo" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "Ru1XXdo0cZu" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "zren68K4Tun" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "PFz46PDjqip" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "VJIqVLB5Lzx" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "oiGFfWd3hjO" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "kYRBMeyyMDH" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "qJ38aRUhR4I" }
+        },
+        {
+          "dataSet": { "id": "H9WW6X6ccKZ" },
+          "dataElement": { "id": "WrXPvhsBkDa" }
+        }
+      ]
+    }
+  ],
+  "dataElements": [
+    {
+      "id": "V5IfLBcbfno",
+      "name": "Treatment Outcome_New",
+      "shortName": "Treatment Outcome_New",
+      "code": "DE_TREATMENT_OUTCOME_NEW",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "VC9DByY4PcN" }
+    },
+    {
+      "id": "GMbJmTPSIAo",
+      "name": "Treatment Outcome_Bacteriologically Diagnosed",
+      "shortName": "Treatment Outcome_Bacteriologically Diagnosed",
+      "code": "DE_TREATMENT_OUTCOME_BACT_DIAG",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "CLrZ3aWZkSB",
+      "name": "Treatment Outcome_Clinically Diagnosed",
+      "shortName": "Treatment Outcome_Clinically Diagnosed",
+      "code": "DE_TREATMENT_OUTCOME_CLIN_DIAG",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "vrjn9Wvgfyg",
+      "name": "Treatment Outcome_PTB",
+      "shortName": "Treatment Outcome_PTB",
+      "code": "DE_TREATMENT_OUTCOME_PTB",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "w2wMqZcUDIh",
+      "name": "Treatment Outcome EPTB",
+      "shortName": "Treatment Outcome EPTB",
+      "code": "DE_TREATMENT_OUTCOME_EPTB",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "yfJs1ON43xK",
+      "name": "Treatment Outcome_TS Managed TB Cases",
+      "shortName": "Treatment Outcome_TS Managed TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_TS_MANAGED",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "mTecQoXsf2o",
+      "name": "Treatment Outcome_All Forms HIV negative TB Cases",
+      "shortName": "Treatment Outcome_All Forms HIV negative TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_HIV_NEG",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "gyrDO1xkxwn",
+      "name": "Treatment Outcome_All Forms HIV Unknown TB Cases",
+      "shortName": "Treatment Outcome_All Forms HIV Unknown TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_HIV_UNKNOWN",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "QrS7RPeMOkI",
+      "name": "Treatment Outcome_New & Relapse HIV Positive TB",
+      "shortName": "Treatment Outcome_New & Relapse HIV Positive TB",
+      "code": "DE_TREATMENT_OUTCOME_HIV_POS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "UpkDyr7OSJo",
+      "name": "Treatment Outcome_Covid 19/TB Cases",
+      "shortName": "Treatment Outcome_Covid 19/TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_COVID19",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "U05YH4huFWh" }
+    },
+    {
+      "id": "Ru1XXdo0cZu",
+      "name": "Treatment Outcome_All Forms TB Cases",
+      "shortName": "Treatment Outcome_All Forms TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_ALL_FORMS",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "TZjXVUGahwX" }
+    },
+    {
+      "id": "zren68K4Tun",
+      "name": "Treatment Outcome_New & Relapse TB Cases",
+      "shortName": "Treatment Outcome_New & Relapse TB Cases",
+      "code": "DE_TREATMENT_OUTCOME_NEW_RELAPSE",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "TZjXVUGahwX" }
+    },
+    {
+      "id": "PFz46PDjqip",
+      "name": "Treatment Outcome_HIV Positive",
+      "shortName": "Treatment Outcome_HIV Positive",
+      "code": "DE_TREATMENT_OUTCOME_HIV_POSITIVE",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "TZjXVUGahwX" }
+    },
+    {
+      "id": "VJIqVLB5Lzx",
+      "name": "All contact placed on TPT",
+      "shortName": "All contact placed on TPT",
+      "code": "DE_CONTACT_PLACED_TPT",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "yHNYIT57PLJ" }
+    },
+    {
+      "id": "oiGFfWd3hjO",
+      "name": "All contact placed on 6H",
+      "shortName": "All contact placed on 6H",
+      "code": "DE_CONTACT_PLACED_6H",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "yHNYIT57PLJ" }
+    },
+    {
+      "id": "kYRBMeyyMDH",
+      "name": "All contact placed on 3HP",
+      "shortName": "All contact placed on 3HP",
+      "code": "DE_CONTACT_PLACED_3HP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "yHNYIT57PLJ" }
+    },
+    {
+      "id": "qJ38aRUhR4I",
+      "name": "All contact placed on 3HR",
+      "shortName": "All contact placed on 3HR",
+      "code": "DE_CONTACT_PLACED_3HR",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "yHNYIT57PLJ" }
+    },
+    {
+      "id": "WrXPvhsBkDa",
+      "name": "All contact placed on 1HP",
+      "shortName": "All contact placed on 1HP",
+      "code": "DE_CONTACT_PLACED_1HP",
+      "domainType": "AGGREGATE",
+      "valueType": "INTEGER_ZERO_OR_POSITIVE",
+      "aggregationType": "SUM",
+      "categoryCombo": { "id": "yHNYIT57PLJ" }
+    }
+  ]
+}
