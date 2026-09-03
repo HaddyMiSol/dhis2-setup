@@ -20,6 +20,8 @@ DHIS2 (District Health Information System 2) is an open-source platform widely u
 ```text
 dhis2-setup/
 ├── README.md
+├── form-setup/
+├── dhis2-metadata-import/
 ├── 1. environment_setup_for_ubuntu_wsl.md
 ├── 2. Postgersql (ubuntu_wsl).md
 ├── 3. apache_tomcat_(ubuntu_wsl).md
@@ -29,6 +31,7 @@ dhis2-setup/
     ├── psql --version.png
     ├── tomcat.png
     └── dhis2_login.png
+
 ```
 
 ## 📝 Installation Steps
